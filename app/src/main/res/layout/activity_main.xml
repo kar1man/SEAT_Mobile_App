@@ -20,8 +20,8 @@
         android:layout_width="360dp"
         android:layout_height="400dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/login_rec"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/login_rec">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,12 +34,62 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/inter"
+                android:fontFamily="@font/inter_extrabold"
                 android:text="Login"
                 android:textAlignment="center"
                 android:textColor="#121212"
-                android:textSize="22dp"
-                android:textStyle="bold" />
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter"
+                android:text="Username"
+                android:textColor="#121212" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_marginStart="15dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:textColorHint="#66121212"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:layout_gravity="center"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/input_field"
+                android:hint="Enter Username"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:text="Password" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,14 +98,90 @@
             android:orientation="horizontal"
             android:weightSum="10">
 
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginStart="15dp"
+                android:paddingTop="3dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:textColorHint="#66121212"
+                android:paddingStart="15dp"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:background="@drawable/input_field"
+                android:hint="Enter Password"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textAlignment="textEnd"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Forgot Password?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="Log in"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="#121212" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Don't have an account?"
+                android:textAlignment="textEnd"
+                android:textColor="#121212"
+                android:textSize="12sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:fontFamily="@font/inter"
-                android:text="Username"
-                android:textColor="#121212" />
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:textAlignment="textStart"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="Register?" />
         </LinearLayout>
+
+
 
     </LinearLayout>
 
