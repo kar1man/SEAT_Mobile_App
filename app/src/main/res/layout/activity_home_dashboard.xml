@@ -11,14 +11,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         android:weightSum="6">
 
         <ImageButton
             android:id="@+id/location"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/loc"
             android:scaleType="fitCenter" />
@@ -26,7 +26,7 @@
         <ImageButton
             android:id="@+id/sched"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/train"
             android:scaleType="centerCrop" />
@@ -34,7 +34,7 @@
         <ImageButton
             android:id="@+id/announce"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/news"
             android:scaleType="centerCrop" />
@@ -42,7 +42,7 @@
         <ImageButton
             android:id="@+id/topup"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/money"
             android:scaleType="centerCrop" />
@@ -50,7 +50,7 @@
         <ImageButton
             android:id="@+id/home"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/home"
             android:scaleType="centerCrop" />
@@ -60,7 +60,7 @@
         <ImageButton
             android:id="@+id/menu"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:background="@drawable/menu_bar"
             android:scaleType="centerCrop" />

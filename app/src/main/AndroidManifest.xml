@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SEATMobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".transac_history"
+            android:exported="false" />
+        <activity
             android:name=".train_sched"
             android:exported="false" />
         <activity
