@@ -5,29 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DAA600"
     android:gravity="center"
+    android:background="#DAA600"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="330dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:src="@drawable/seat_random_data" />
+    tools:context=".register_page">
 
     <LinearLayout
         android:layout_width="330dp"
-        android:layout_height="360dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="530dp"
         android:orientation="vertical"
         android:background="@drawable/login_rec">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -35,7 +27,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_extrabold"
-                android:text="Login"
+                android:text="Register"
                 android:textAlignment="center"
                 android:textColor="#121212"
                 android:textSize="22sp" />
@@ -52,7 +44,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/inter"
-                android:text="Username"
+                android:text="Username/Email"
                 android:textColor="#121212" />
         </LinearLayout>
 
@@ -62,7 +54,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/reg_username"
                 android:layout_marginStart="15dp"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -75,7 +67,44 @@
                 android:layout_gravity="center"
                 android:inputType="textEmailAddress"
                 android:background="@drawable/input_field"
-                android:hint="Enter Username"/>
+                android:hint="Enter Username or Email"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:text="Phone number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/reg_phone_num"
+                android:layout_marginStart="15dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:textColorHint="#66121212"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:background="@drawable/input_field"
+                android:hint="09XX-XXXX-XXX"/>
         </LinearLayout>
 
         <LinearLayout
@@ -96,22 +125,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="10">
+            android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/reg_pw"
                 android:layout_marginStart="15dp"
-                android:paddingTop="3dp"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 android:textColor="#121212"
                 android:textColorHint="#66121212"
                 android:paddingStart="15dp"
+                android:paddingTop="3dp"
                 android:textSize="12sp"
-                android:inputType="textPassword"
                 android:layout_gravity="center"
+                android:inputType="textPassword"
                 android:background="@drawable/input_field"
                 android:hint="Enter Password"/>
         </LinearLayout>
@@ -122,17 +150,57 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="20dp"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
-                android:textAlignment="textEnd"
                 android:textColor="#121212"
-                android:textStyle="bold"
+                android:text="Confirm Password" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/reg_confirm_pw"
+                android:layout_marginStart="15dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="#121212"
+                android:textColorHint="#66121212"
+                android:paddingStart="15dp"
+                android:paddingTop="3dp"
                 android:textSize="12sp"
-                android:text="Forgot Password?" />
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:background="@drawable/input_field"
+                android:hint="Password Confirmation"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_marginStart="20dp"
+                android:background="@color/white"
+                android:layout_width="10dp"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_marginStart="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept the terms and conditions"
+                android:textSize="10sp"
+                android:textColor="#121212" />
         </LinearLayout>
 
         <LinearLayout
@@ -142,11 +210,11 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/login"
+                android:id="@+id/create_acct"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter"
-                android:text="Log in"
+                android:text="Create Account"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:backgroundTint="#121212" />
@@ -155,33 +223,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
+                android:layout_marginStart="25dp"
                 android:fontFamily="@font/poppins"
-                android:text="Don't have an account?"
+                android:text="Already have an account?"
                 android:textAlignment="textEnd"
                 android:textColor="#121212"
                 android:textSize="12sp" />
 
             <Button
-                android:id="@+id/register"
+                android:id="@+id/signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="15dp"
                 android:background="#00FFFFFF"
                 android:fontFamily="@font/poppins_extrabold"
-                android:text="Register"
+                android:text="Sign in"
                 android:textAlignment="textStart"
                 android:textColor="#121212"
                 android:textSize="12sp" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
