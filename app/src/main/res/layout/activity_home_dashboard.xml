@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#FFF3CE"
+    android:orientation="vertical"
     tools:context=".home_dashboard">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:weightSum="6"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="6">
 
         <ImageButton
             android:id="@+id/location"
@@ -56,7 +56,7 @@
             android:scaleType="centerCrop" />
 
 
-<!--        Make this into a menu option or popup -->
+        <!--        Make this into a menu option or popup -->
         <ImageButton
             android:id="@+id/menu"
             android:layout_width="0dp"
@@ -66,5 +66,142 @@
             android:scaleType="centerCrop" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_seat" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins"
+                android:paddingBottom="0dp"
+                android:text="Hello!"
+                android:textColor="#121212"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="0dp"
+                android:text="Juan Dela Cruz!"
+                android:textColor="#121212"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:background="#121212" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="330dp"
+            android:layout_height="310dp"
+            android:src="@drawable/mini_dash"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:background="#121212" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="0dp"
+            android:text="How can we help today?"
+            android:padding="0dp"
+            android:textColor="#121212"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_margin="0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="#393013"
+            android:text="Top up" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="0dp"
+            android:backgroundTint="#9B8F66"
+            android:gravity="center_horizontal"
+            android:text="other transactions"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
 </LinearLayout>

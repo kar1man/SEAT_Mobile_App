@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(MainActivity.this, register_page.class);
-                startActivity(registerIntent);
+                Intent loginIntent = new Intent(MainActivity.this, home_dashboard.class);
+                startActivity(loginIntent);
             }
 
         });

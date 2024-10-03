@@ -246,6 +246,8 @@
                 android:text="Sign in"
                 android:textAlignment="textStart"
                 android:textColor="#121212"
+                android:paddingStart="5dp"
+                android:paddingTop="0dp"
                 android:textSize="12sp" />
         </LinearLayout>
 
