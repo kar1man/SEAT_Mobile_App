@@ -181,20 +181,24 @@
         android:gravity="center_horizontal">
 
         <Button
+            android:id="@+id/topUpBig"
             android:layout_margin="0dp"
             android:gravity="center_horizontal"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:textStyle="bold"
+            android:paddingTop="8dp"
             android:textColor="@color/white"
             android:backgroundTint="#393013"
             android:text="Top up" />
 
         <Button
+            android:id="@+id/transacBig"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
+            android:paddingTop="8dp"
             android:layout_marginBottom="0dp"
             android:backgroundTint="#9B8F66"
             android:gravity="center_horizontal"
