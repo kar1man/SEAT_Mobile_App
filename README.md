@@ -28,4 +28,4 @@ For example:
   
 Despite these limitations, the app demonstrates the intended functionality and user experience, serving as a proof of concept for future development and improvements.
 
-This project is to be submitted in partial fulfillment for the subject course: Mobile Programming
+NOTE: This project is to be submitted in partial fulfillment for the subject course: Mobile Programming
