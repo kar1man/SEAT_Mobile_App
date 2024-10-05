@@ -41,13 +41,13 @@ public class home_dashboard extends AppCompatActivity {
         topUp = findViewById(R.id.topup);
         home = findViewById(R.id.home);
 
-//        loc.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent locationIntent = new Intent(home_dashboard.this, MainActivity.class);
-//                startActivity(locationIntent);
-//            }
-//        });
+        loc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent locationIntent = new Intent(home_dashboard.this, current_loc.class);
+                startActivity(locationIntent);
+            }
+        });
 
         sched.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,201 +11,218 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal"
-        android:weightSum="6">
-
-        <ImageButton
-            android:id="@+id/location"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/loc"
-            android:scaleType="fitCenter" />
-
-        <ImageButton
-            android:id="@+id/sched"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/train"
-            android:scaleType="centerCrop" />
-
-        <ImageButton
-            android:id="@+id/announce"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/news"
-            android:scaleType="centerCrop" />
-
-        <ImageButton
-            android:id="@+id/topup"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/money"
-            android:scaleType="centerCrop" />
-
-        <ImageButton
-            android:id="@+id/home"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/home"
-            android:scaleType="centerCrop" />
-
-
-        <!--        Make this into a menu option or popup -->
-        <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_weight="1"
-            android:background="@drawable/menu_bar"
-            android:scaleType="centerCrop" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginStart="40dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/home_seat" />
+        android:background="#FFF3CE"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F7DD89"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageButton
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/loc"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/sched"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/train"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/announce"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/news"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/topup"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/money"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/home"
+                android:scaleType="centerCrop" />
+
+
+            <!--        Make this into a menu option or popup -->
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/menu_bar"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_seat" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:paddingBottom="0dp"
+                    android:text="Hello!"
+                    android:textColor="#121212"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingTop="0dp"
+                    android:text="Juan Dela Cruz!"
+                    android:textColor="#121212"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#121212" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="310dp"
+                android:src="@drawable/mini_dash"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#121212" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/poppins"
                 android:paddingBottom="0dp"
-                android:text="Hello!"
+                android:text="How can we help today?"
+                android:padding="0dp"
                 android:textColor="#121212"
-                android:textSize="25sp" />
+                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/user_name"
-                android:layout_width="wrap_content"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/topUpBig"
+                android:layout_margin="0dp"
+                android:gravity="center_horizontal"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/poppins_semibold"
-                android:paddingTop="0dp"
-                android:text="Juan Dela Cruz!"
-                android:textColor="#121212"
-                android:textSize="32sp" />
+                android:layout_marginBottom="0dp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#393013"
+                android:text="Top up" />
 
+            <Button
+                android:id="@+id/transacBig"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="#9B8F66"
+                android:gravity="center_horizontal"
+                android:text="other transactions"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+<!--            footer space -->
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_width="320dp"
-            android:layout_height="2dp"
-            android:background="#121212" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="330dp"
-            android:layout_height="310dp"
-            android:src="@drawable/mini_dash"
-            android:scaleType="fitCenter" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_width="320dp"
-            android:layout_height="2dp"
-            android:background="#121212" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"
-            android:fontFamily="@font/poppins"
-            android:paddingBottom="0dp"
-            android:text="How can we help today?"
-            android:padding="0dp"
-            android:textColor="#121212"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/topUpBig"
-            android:layout_margin="0dp"
-            android:gravity="center_horizontal"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:textStyle="bold"
-            android:paddingTop="8dp"
-            android:textColor="@color/white"
-            android:backgroundTint="#393013"
-            android:text="Top up" />
-
-        <Button
-            android:id="@+id/transacBig"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:paddingTop="8dp"
-            android:layout_marginBottom="0dp"
-            android:backgroundTint="#9B8F66"
-            android:gravity="center_horizontal"
-            android:text="other transactions"
-            android:textColor="@color/white"
-            android:textStyle="bold" />
-    </LinearLayout>
 
 
-</LinearLayout>
+
+</ScrollView>
