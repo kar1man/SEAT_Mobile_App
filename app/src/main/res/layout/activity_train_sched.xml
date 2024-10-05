@@ -64,7 +64,6 @@
             android:layout_weight="1"
             android:background="@drawable/menu_bar"
             android:scaleType="centerCrop" />
-
     </LinearLayout>
 
 
@@ -76,6 +75,7 @@
         android:orientation="horizontal">
 
         <ImageView
+            android:contentDescription="TODO"
             android:src="@drawable/train_sched_label"
             android:layout_width="330dp"
             android:scaleType="fitCenter"
@@ -95,7 +95,8 @@
             android:id="@+id/station_dropdown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"/>
+            android:layout_marginEnd="20dp"
+            android:background="#FEF2CD" />
 
 
         <RadioGroup

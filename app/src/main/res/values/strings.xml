@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SEAT - Mobile App</string>
+    <string name="juan_dela_cruz">Juan Dela Cruz!</string>
+    <string name="how_can_we_help_today">How can we help today?</string>
+    <string name="top_up">Top up</string>
+    <string name="other_transactions">other transactions</string>
+    <string name="hello">Hello!</string>
+    <string name="seat_logo">Seat Logo</string>
+    <string name="user_dashboard">User Dashboard</string>
 </resources>

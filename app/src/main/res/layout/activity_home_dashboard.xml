@@ -85,6 +85,7 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginStart="40dp"
+                android:contentDescription="@string/seat_logo"
                 android:scaleType="fitCenter"
                 android:src="@drawable/home_seat" />
 
@@ -100,7 +101,7 @@
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins"
                     android:paddingBottom="0dp"
-                    android:text="Hello!"
+                    android:text="@string/hello"
                     android:textColor="#121212"
                     android:textSize="25sp" />
 
@@ -111,7 +112,7 @@
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:paddingTop="0dp"
-                    android:text="Juan Dela Cruz!"
+                    android:text="@string/juan_dela_cruz"
                     android:textColor="#121212"
                     android:textSize="32sp" />
 
@@ -143,6 +144,7 @@
             <ImageView
                 android:layout_width="330dp"
                 android:layout_height="310dp"
+                android:contentDescription="@string/user_dashboard"
                 android:src="@drawable/mini_dash"
                 android:scaleType="fitCenter" />
         </LinearLayout>
@@ -174,7 +176,7 @@
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/poppins"
                 android:paddingBottom="0dp"
-                android:text="How can we help today?"
+                android:text="@string/how_can_we_help_today"
                 android:padding="0dp"
                 android:textColor="#121212"
                 android:textSize="16sp" />
@@ -198,7 +200,7 @@
                 android:paddingTop="8dp"
                 android:textColor="@color/white"
                 android:backgroundTint="#393013"
-                android:text="Top up" />
+                android:text="@string/top_up" />
 
             <Button
                 android:id="@+id/transacBig"
@@ -209,7 +211,7 @@
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#9B8F66"
                 android:gravity="center_horizontal"
-                android:text="other transactions"
+                android:text="@string/other_transactions"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>

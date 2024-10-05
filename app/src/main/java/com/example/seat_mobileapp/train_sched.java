@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
-public class train_sched extends AppCompatActivity {
+public class train_sched extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class train_sched extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        setUpNavBar();
         stationPicker();
     }
 
@@ -46,16 +47,6 @@ public class train_sched extends AppCompatActivity {
         });
 
         String[] stationList = {"Abad Santos", "Bluementritt", "Tayuman", "Bambang", "Doroteo Jose", "Carriedo", "Central Terminal", "United Nations"};
-
-//        ArrayList<String> stationList = new ArrayList<>();
-//        stationList.add("Abad Santos");
-//        stationList.add("Blumentritt");
-//        stationList.add("Tayuman");
-//        stationList.add("Bambang");
-//        stationList.add("Doroteo Jose");
-//        stationList.add("Carriedo");
-//        stationList.add("Central Terminal");
-//        stationList.add("United Nations");
 
         ArrayAdapter<String> stationAdapter = new ArrayAdapter<>(this, R.layout.custom_spinner, stationList);
         stationAdapter.setDropDownViewResource(R.layout.custom_spinner);
