@@ -75,7 +75,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:contentDescription="TODO"
+            android:contentDescription="@string/todo"
             android:src="@drawable/train_sched_label"
             android:layout_width="330dp"
             android:scaleType="fitCenter"

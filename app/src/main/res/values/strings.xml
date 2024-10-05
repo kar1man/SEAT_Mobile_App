@@ -7,4 +7,5 @@
     <string name="hello">Hello!</string>
     <string name="seat_logo">Seat Logo</string>
     <string name="user_dashboard">User Dashboard</string>
+    <string name="todo">TODO</string>
 </resources>
