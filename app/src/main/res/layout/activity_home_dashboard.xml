@@ -84,12 +84,13 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="20dp"
                 android:contentDescription="@string/seat_logo"
                 android:scaleType="fitCenter"
                 android:src="@drawable/home_seat" />
 
             <LinearLayout
+                android:layout_marginStart="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -107,7 +108,7 @@
 
                 <TextView
                     android:id="@+id/user_name"
-                    android:layout_width="wrap_content"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins_semibold"
@@ -128,7 +129,7 @@
             android:orientation="horizontal">
 
             <View
-                android:layout_width="320dp"
+                android:layout_width="330dp"
                 android:layout_height="2dp"
                 android:background="#121212" />
 
