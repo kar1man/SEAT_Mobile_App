@@ -20,7 +20,7 @@ public class topup_page extends BaseActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(); // for navigation buttons
+        setUpNavBar(topup_page.class); // for navigation buttons
 
     }
 }

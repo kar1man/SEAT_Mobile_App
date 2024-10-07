@@ -14,6 +14,7 @@ import com.example.seat_mobileapp.home_dashboard;
 
 public class BaseActivity extends AppCompatActivity {
     protected ImageButton loc, sched, announce, topUp, home, profileMenu;
+    private Class<?> currentActivity;
 
     @Override
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
@@ -21,7 +22,9 @@ public class BaseActivity extends AppCompatActivity {
         // Any specific code to all activities can be added here daw :>
     }
 
-    protected void setUpNavBar() {
+    protected void setUpNavBar(Class<?> currentActivity) {
+        this.currentActivity = currentActivity;
+
         profileMenu = findViewById(R.id.menu);
         loc = findViewById(R.id.location);
         sched = findViewById(R.id.sched);
@@ -29,45 +32,12 @@ public class BaseActivity extends AppCompatActivity {
         topUp = findViewById(R.id.topup);
         home = findViewById(R.id.home);
 
-        loc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent locIntent = new Intent(BaseActivity.this, current_loc.class);
-                startActivity(locIntent);
-            }
-        });
-
-        sched.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent schedIntent = new Intent(BaseActivity.this, train_sched.class);
-                startActivity(schedIntent);
-            }
-        });
-
-//        announce.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent announceIntent = new Intent(com.example.seat_mobileapp.BaseActivity.this, announce_page.class);
-//                startActivity(announceIntent);
-//            }
-//        });
-
-        topUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent topupIntent = new Intent(com.example.seat_mobileapp.BaseActivity.this, topup_page.class);
-                startActivity(topupIntent);
-            }
-        });
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent homeIntent = new Intent(BaseActivity.this, home_dashboard.class);
-                startActivity(homeIntent);
-            }
-        });
+        // Nav button's functionalities
+        setupButton(loc, current_loc.class);
+        setupButton(sched, train_sched.class);
+//        setupButton(announce, announce_page.class); --> No page yet
+        setupButton(topUp, topup_page.class); // --> to be complete
+        setupButton(home, home_dashboard.class);
 
         profileMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,8 +68,19 @@ public class BaseActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
+
+    private void setupButton(ImageButton button, Class<?> targetActivity) {
+        if (currentActivity == targetActivity) {
+            button.setEnabled(false);
+        } else {
+            button.setEnabled(true);
+            button.setOnClickListener(view -> {
+                Intent redirectIntent = new Intent(BaseActivity.this, targetActivity);
+                startActivity(redirectIntent);
+            });
+        }
+    }
+
 
 }

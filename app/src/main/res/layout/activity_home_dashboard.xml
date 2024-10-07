@@ -84,7 +84,7 @@
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="35dp"
                 android:contentDescription="@string/seat_logo"
                 android:scaleType="fitCenter"
                 android:src="@drawable/home_seat" />
@@ -107,6 +107,7 @@
                     android:textSize="25sp" />
 
                 <TextView
+                    android:layout_marginEnd="20dp"
                     android:id="@+id/user_name"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
@@ -115,7 +116,7 @@
                     android:paddingTop="0dp"
                     android:text="@string/juan_dela_cruz"
                     android:textColor="#121212"
-                    android:textSize="32sp" />
+                    android:textSize="28sp" />
 
             </LinearLayout>
 
@@ -191,7 +192,7 @@
             android:gravity="center_horizontal">
 
             <Button
-                android:id="@+id/topUpBig"
+                android:id="@+id/loan"
                 android:layout_margin="0dp"
                 android:gravity="center_horizontal"
                 android:layout_width="250dp"
@@ -201,17 +202,17 @@
                 android:paddingTop="8dp"
                 android:textColor="@color/white"
                 android:backgroundTint="#393013"
-                android:text="@string/top_up" />
+                android:text="@string/loan" />
 
             <Button
-                android:id="@+id/transacBig"
+                android:id="@+id/otherTransac"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
-                android:paddingTop="8dp"
                 android:layout_marginBottom="0dp"
                 android:backgroundTint="#9B8F66"
                 android:gravity="center_horizontal"
+                android:paddingTop="8dp"
                 android:text="@string/other_transactions"
                 android:textColor="@color/white"
                 android:textStyle="bold" />

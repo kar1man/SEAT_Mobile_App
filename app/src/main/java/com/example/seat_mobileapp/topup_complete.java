@@ -25,7 +25,7 @@ public class topup_complete extends BaseActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(); // for navigation buttons
+        setUpNavBar(topup_complete.class); // for navigation buttons
 
 
         // To be implemented once topup ui was completed

@@ -20,6 +20,6 @@ public class current_loc extends BaseActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(); // for navigation buttons
+        setUpNavBar(current_loc.class); // for navigation buttons
     }
 }
