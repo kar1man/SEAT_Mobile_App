@@ -1,6 +1,9 @@
 package com.example.seat_mobileapp;
 
 import android.os.Bundle;
+import android.widget.HorizontalScrollView;
+import android.widget.LinearLayout;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,17 +13,28 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class topup_page extends BaseActivity {
 
+    private HorizontalScrollView horizontalScrollView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_topup_page);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(topup_page.class); // for navigation buttons
 
+        setUpNavBar(topup_page.class);
+
+        horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
+
+        horizontalScrollView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+            }
+        });
     }
 }
