@@ -14,7 +14,7 @@
         android:layout_width="330dp"
         android:layout_height="530dp"
         android:orientation="vertical"
-        android:background="@drawable/login_rec">
+        android:background="@drawable/shape_login_rec">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:inputType="textEmailAddress"
-                android:background="@drawable/input_field"
+                android:background="@drawable/shape_input_field"
                 android:hint="Enter Username or Email"/>
         </LinearLayout>
 
@@ -103,7 +103,7 @@
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:inputType="number"
-                android:background="@drawable/input_field"
+                android:background="@drawable/shape_input_field"
                 android:hint="09XX-XXXX-XXX"/>
         </LinearLayout>
 
@@ -140,7 +140,7 @@
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                android:background="@drawable/input_field"
+                android:background="@drawable/shape_input_field"
                 android:hint="Enter Password"/>
         </LinearLayout>
 
@@ -177,7 +177,7 @@
                 android:textSize="12sp"
                 android:layout_gravity="center"
                 android:inputType="textPassword"
-                android:background="@drawable/input_field"
+                android:background="@drawable/shape_input_field"
                 android:hint="Password Confirmation"/>
         </LinearLayout>
 
