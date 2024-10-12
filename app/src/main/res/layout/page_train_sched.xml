@@ -27,7 +27,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/home"
+                android:background="@drawable/nav_home"
                 android:scaleType="centerCrop" />
 
             <ImageButton
@@ -35,7 +35,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/train"
+                android:background="@drawable/nav_schedule"
                 android:scaleType="centerCrop" />
 
             <ImageButton
@@ -43,7 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/loc"
+                android:background="@drawable/nav_location"
                 android:scaleType="fitCenter" />
 
             <ImageButton
@@ -51,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/news"
+                android:background="@drawable/nav_news"
                 android:scaleType="centerCrop" />
 
             <ImageButton
@@ -59,7 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/money"
+                android:background="@drawable/nav_top_up"
                 android:scaleType="centerCrop" />
 
             <ImageButton
@@ -67,7 +67,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/menu_bar"
+                android:background="@drawable/nav_menu_bar"
                 android:scaleType="centerCrop" />
         </LinearLayout>
 
@@ -81,7 +81,7 @@
 
             <ImageView
                 android:contentDescription="@string/todo"
-                android:src="@drawable/train_sched_label"
+                android:src="@drawable/display_train_sched_header"
                 android:layout_width="330dp"
                 android:scaleType="fitCenter"
                 android:layout_height="65dp"/>
@@ -139,7 +139,7 @@
                 android:layout_height="70dp"
                 android:layout_gravity="end"
                 android:scaleType="fitCenter"
-                android:src="@drawable/legend" />
+                android:src="@drawable/display_crowd_legend" />
         </LinearLayout>
 
         <LinearLayout
@@ -154,7 +154,7 @@
                 android:layout_width="330dp"
                 android:layout_height="400dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/train_deets_default" />
+                android:src="@drawable/display_default_train_sched" />
         </LinearLayout>
 
         <LinearLayout

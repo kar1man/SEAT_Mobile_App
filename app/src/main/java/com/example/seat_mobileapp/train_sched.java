@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import java.util.ArrayList;
 
 public class train_sched extends BaseActivity {
 
@@ -23,7 +19,7 @@ public class train_sched extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_train_sched);
+        setContentView(R.layout.page_train_sched);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -47,28 +43,28 @@ public class train_sched extends BaseActivity {
                         Toast.makeText(getApplicationContext(),"Please select station you want to check!", Toast.LENGTH_SHORT).show();
                         break;
                     case "Abad Santos":
-                        stationView.setImageResource(R.drawable.abad_santos_deets);
+                        stationView.setImageResource(R.drawable.station_abad_santos);
                         break;
                     case "Blumentritt":
-                        stationView.setImageResource(R.drawable.blumentritt_deets);
+                        stationView.setImageResource(R.drawable.station_blumentritt);
                         break;
                     case "Tayuman":
-                        stationView.setImageResource(R.drawable.tayuman_deets);
+                        stationView.setImageResource(R.drawable.station_tayuman);
                         break;
                     case "Bambang":
-                        stationView.setImageResource(R.drawable.bambang_deets);
+                        stationView.setImageResource(R.drawable.station_bambang);
                         break;
                     case "Doroteo Jose":
-                        stationView.setImageResource(R.drawable.djose_deets );
+                        stationView.setImageResource(R.drawable.station_doroteo_jose);
                         break;
                     case "Carriedo":
-                        stationView.setImageResource(R.drawable.carriedo_deets);
+                        stationView.setImageResource(R.drawable.station_carriedo);
                         break;
                     case "Central Terminal":
-                        stationView.setImageResource(R.drawable.central_deets );
+                        stationView.setImageResource(R.drawable.station_central_terminal);
                         break;
                     case "United Nations":
-                        stationView.setImageResource(R.drawable.united_nations_deets );
+                        stationView.setImageResource(R.drawable.station_united_nations);
                         break;
                 }
             }
@@ -81,8 +77,8 @@ public class train_sched extends BaseActivity {
 
         String[] stationList = {"Select Station","Abad Santos", "Blumentritt", "Tayuman", "Bambang", "Doroteo Jose", "Carriedo", "Central Terminal", "United Nations"};
 
-        ArrayAdapter<String> stationAdapter = new ArrayAdapter<>(this, R.layout.custom_spinner, stationList);
-        stationAdapter.setDropDownViewResource(R.layout.custom_spinner);
+        ArrayAdapter<String> stationAdapter = new ArrayAdapter<>(this, R.layout.custom_station_dropdown, stationList);
+        stationAdapter.setDropDownViewResource(R.layout.custom_station_dropdown);
         stationMenu.setAdapter(stationAdapter);
     }
 

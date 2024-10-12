@@ -18,7 +18,7 @@ public class register_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_register_page);
+        setContentView(R.layout.page_register);
 
         createAcc = findViewById(R.id.create_acct);
         createAcc.setOnClickListener(new View.OnClickListener() {

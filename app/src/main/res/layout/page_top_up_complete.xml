@@ -21,7 +21,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/home"
+            android:background="@drawable/nav_home"
             android:scaleType="centerCrop" />
 
         <ImageButton
@@ -29,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/train"
+            android:background="@drawable/nav_schedule"
             android:scaleType="centerCrop" />
 
         <ImageButton
@@ -37,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/loc"
+            android:background="@drawable/nav_location"
             android:scaleType="fitCenter" />
 
         <ImageButton
@@ -45,7 +45,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/news"
+            android:background="@drawable/nav_news"
             android:scaleType="centerCrop" />
 
         <ImageButton
@@ -53,7 +53,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/money"
+            android:background="@drawable/nav_top_up"
             android:scaleType="centerCrop" />
 
         <ImageButton
@@ -61,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="@drawable/menu_bar"
+            android:background="@drawable/nav_menu_bar"
             android:scaleType="centerCrop" />
     </LinearLayout>
 
@@ -76,7 +76,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:scaleType="fitCenter"
-            android:background="@drawable/topup_comp"/>
+            android:background="@drawable/display_topup_complete"/>
     </LinearLayout>
 
     <LinearLayout
@@ -90,7 +90,7 @@
             android:layout_height="260dp"
             android:layout_marginTop="20dp"
             android:scaleType="fitCenter"
-            android:background="@drawable/purchase_summary"/>
+            android:background="@drawable/display_transac_receipt"/>
     </LinearLayout>
 
     <LinearLayout
@@ -105,7 +105,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="30dp"
             android:scaleType="fitCenter"
-            android:background="@drawable/back_to_dash"/>
+            android:background="@drawable/display_back_to_home"/>
     </LinearLayout>
 
 </LinearLayout>
