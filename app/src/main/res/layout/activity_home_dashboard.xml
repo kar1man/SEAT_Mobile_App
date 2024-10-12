@@ -23,12 +23,12 @@
             android:weightSum="6">
 
             <ImageButton
-                android:id="@+id/location"
+                android:id="@+id/home"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@drawable/loc"
-                android:scaleType="fitCenter" />
+                android:background="@drawable/home"
+                android:scaleType="centerCrop" />
 
             <ImageButton
                 android:id="@+id/sched"
@@ -37,6 +37,14 @@
                 android:layout_weight="1"
                 android:background="@drawable/train"
                 android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/loc"
+                android:scaleType="fitCenter" />
 
             <ImageButton
                 android:id="@+id/announce"
@@ -55,23 +63,12 @@
                 android:scaleType="centerCrop" />
 
             <ImageButton
-                android:id="@+id/home"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/home"
-                android:scaleType="centerCrop" />
-
-
-            <!--        Make this into a menu option or popup -->
-            <ImageButton
                 android:id="@+id/menu"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:background="@drawable/menu_bar"
                 android:scaleType="centerCrop" />
-
         </LinearLayout>
 
         <LinearLayout
