@@ -33,8 +33,8 @@ public class class_NavButtonsFunction extends AppCompatActivity {
         // Nav button's functionalities
         setupButton(loc, LocationTracker.class);
         setupButton(sched, TrainSched.class);
-//        setupButton(announce, announce_page.class); --> No page yet
-        setupButton(topUp, TopUp.class); // --> to be complete
+        setupButton(announce, News.class);
+        setupButton(topUp, TopUp.class);
         setupButton(home, HomeDashboard.class);
 
         profileMenu.setOnClickListener(new View.OnClickListener() {

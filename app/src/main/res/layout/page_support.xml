@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/default_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Support">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F7DD89"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_home"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/sched"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_schedule"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_location"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/announce"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_news"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/topup"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_top_up"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_menu_bar"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <!--    Temporary note (Remove na lang if maglalagay na ng elements)-->
+    <TextView
+        android:text="SUPPORT"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
