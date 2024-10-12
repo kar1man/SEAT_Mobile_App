@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_bg_color">#DAA600</color>
-    <color name="default_light">"#FFF3CE"</color>
-    <color name="default_darker_yellow">"#F7DD89"</color>
-    <color name="default_darkest_yellow">"#F7DD89"</color>
+    <color name="default_light">#FFF3CE</color>
+    <color name="default_darker_yellow">#F7DD89</color>
+    <color name="default_darkest_yellow">#F7DD89</color>
 </resources>

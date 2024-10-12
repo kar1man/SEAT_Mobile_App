@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class About extends AppCompatActivity {
+public class About extends class_NavButtonsFunction {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +20,7 @@ public class About extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        setUpNavBar(About.class);
     }
 }

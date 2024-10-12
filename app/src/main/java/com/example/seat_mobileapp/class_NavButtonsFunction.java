@@ -47,14 +47,16 @@ public class class_NavButtonsFunction extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         if (menuItem.getItemId() == R.id.about) {
-                            // redirect to about page
+                            Intent aboutIntent = new Intent(class_NavButtonsFunction.this, About.class);
+                            startActivity(aboutIntent);
                             return true;
                         } else if (menuItem.getItemId() == R.id.logout) {
                             Intent logoutIntent = new Intent(class_NavButtonsFunction.this, Login.class);
                             startActivity(logoutIntent);
                             return true;
                         } else if (menuItem.getItemId() == R.id.support) {
-                            // redirect to support
+                            Intent supportIntent = new Intent(class_NavButtonsFunction.this, Support.class);
+                            startActivity(supportIntent);
                             return true;
                         }
                         return false;
