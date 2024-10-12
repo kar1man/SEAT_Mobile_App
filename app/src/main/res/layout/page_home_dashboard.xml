@@ -144,7 +144,7 @@
                 android:layout_width="330dp"
                 android:layout_height="310dp"
                 android:contentDescription="@string/user_dashboard"
-                android:src="@drawable/mini_dash"
+                android:src="@drawable/display_dashboard"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
