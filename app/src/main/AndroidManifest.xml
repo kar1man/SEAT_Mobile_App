@@ -13,28 +13,28 @@
         android:theme="@style/Theme.SEATMobileApp"
         tools:targetApi="31">
         <activity
-            android:name=".current_loc"
+            android:name=".LocationTracker"
             android:exported="false" />
         <activity
-            android:name=".topup_page"
+            android:name=".TopUp"
             android:exported="false" />
         <activity
-            android:name=".topup_complete"
+            android:name=".TopUpComplete"
             android:exported="false" />
         <activity
-            android:name=".transac_history"
+            android:name=".TransacHistory"
             android:exported="false" />
         <activity
-            android:name=".train_sched"
+            android:name=".TrainSched"
             android:exported="false" />
         <activity
-            android:name=".home_dashboard"
+            android:name=".HomeDashboard"
             android:exported="false" />
         <activity
-            android:name=".register_page"
+            android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

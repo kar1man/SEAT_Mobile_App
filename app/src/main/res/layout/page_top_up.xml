@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="#FFF3CE"
-    tools:context=".topup_page">
+    tools:context=".TopUp">
 
     <LinearLayout
         android:layout_width="match_parent"

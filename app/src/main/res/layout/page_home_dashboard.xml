@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFF3CE"
     android:orientation="vertical"
-    tools:context=".home_dashboard">
+    tools:context=".HomeDashboard">
 
     <LinearLayout
         android:layout_width="match_parent"

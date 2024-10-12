@@ -8,7 +8,7 @@
     android:background="#DAA600"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <ImageView
         android:layout_width="330dp"

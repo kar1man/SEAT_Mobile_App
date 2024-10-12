@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class register_page extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     Button signInBtn, createAcc;
 
     @Override
@@ -24,7 +24,7 @@ public class register_page extends AppCompatActivity {
         createAcc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent createAct = new Intent(register_page.this, home_dashboard.class);
+                Intent createAct = new Intent(Register.this, HomeDashboard.class);
                 startActivity(createAct);
             }
         });
@@ -33,7 +33,7 @@ public class register_page extends AppCompatActivity {
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent signInIntent = new Intent(register_page.this, MainActivity.class);
+                Intent signInIntent = new Intent(Register.this, Login.class);
                 startActivity(signInIntent);
             }
         });

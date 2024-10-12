@@ -13,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class train_sched extends BaseActivity {
+public class TrainSched extends class_NavButtonsFunction {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class train_sched extends BaseActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(train_sched.class);
+        setUpNavBar(TrainSched.class);
         stationPicker();
     }
 

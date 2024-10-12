@@ -1,46 +1,38 @@
 package com.example.seat_mobileapp;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.widget.HorizontalScrollView;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class home_dashboard extends BaseActivity {
+public class TopUp extends class_NavButtonsFunction {
 
-    Button loanBtn, transcationBtn;
+    private HorizontalScrollView horizontalScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.page_home_dashboard);
+        setContentView(R.layout.page_top_up);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(home_dashboard.class);
 
-        onButtonListener();
-    }
+        setUpNavBar(TopUp.class);
 
-    private void onButtonListener() {
-        loanBtn = findViewById(R.id.loan);
-        // Not yet implemented
+        horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
 
-        transcationBtn = findViewById(R.id.otherTransac);
-        transcationBtn.setOnClickListener(new View.OnClickListener() {
+        horizontalScrollView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
             @Override
-            public void onClick(View view) {
-                Intent transactionIntent = new Intent(home_dashboard.this, transac_history.class);
-                startActivity(transactionIntent);
+            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
             }
         });
-
     }
 }

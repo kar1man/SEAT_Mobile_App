@@ -10,9 +10,7 @@ import android.widget.PopupMenu;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.seat_mobileapp.home_dashboard;
-
-public class BaseActivity extends AppCompatActivity {
+public class class_NavButtonsFunction extends AppCompatActivity {
     protected ImageButton loc, sched, announce, topUp, home, profileMenu;
     private Class<?> currentActivity;
 
@@ -33,16 +31,16 @@ public class BaseActivity extends AppCompatActivity {
         home = findViewById(R.id.home);
 
         // Nav button's functionalities
-        setupButton(loc, current_loc.class);
-        setupButton(sched, train_sched.class);
+        setupButton(loc, LocationTracker.class);
+        setupButton(sched, TrainSched.class);
 //        setupButton(announce, announce_page.class); --> No page yet
-        setupButton(topUp, topup_page.class); // --> to be complete
-        setupButton(home, home_dashboard.class);
+        setupButton(topUp, TopUp.class); // --> to be complete
+        setupButton(home, HomeDashboard.class);
 
         profileMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PopupMenu profilePopup = new PopupMenu(BaseActivity.this, profileMenu);
+                PopupMenu profilePopup = new PopupMenu(class_NavButtonsFunction.this, profileMenu);
                 profilePopup.getMenuInflater().inflate(R.menu.profile_menu, profilePopup.getMenu());
 
                 profilePopup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
@@ -52,7 +50,7 @@ public class BaseActivity extends AppCompatActivity {
                             // redirect to about page
                             return true;
                         } else if (menuItem.getItemId() == R.id.logout) {
-                            Intent logoutIntent = new Intent(BaseActivity.this, MainActivity.class);
+                            Intent logoutIntent = new Intent(class_NavButtonsFunction.this, Login.class);
                             startActivity(logoutIntent);
                             return true;
                         } else if (menuItem.getItemId() == R.id.support) {
@@ -76,7 +74,7 @@ public class BaseActivity extends AppCompatActivity {
         } else {
             button.setEnabled(true);
             button.setOnClickListener(view -> {
-                Intent redirectIntent = new Intent(BaseActivity.this, targetActivity);
+                Intent redirectIntent = new Intent(class_NavButtonsFunction.this, targetActivity);
                 startActivity(redirectIntent);
             });
         }
