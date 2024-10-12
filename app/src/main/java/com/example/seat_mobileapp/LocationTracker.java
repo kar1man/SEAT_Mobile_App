@@ -7,7 +7,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LocationTracker extends class_NavButtonsFunction {
+public class LocationTracker extends class_NavButtons {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

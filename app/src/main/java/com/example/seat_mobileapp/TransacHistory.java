@@ -7,7 +7,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TransacHistory extends class_NavButtonsFunction {
+public class TransacHistory extends class_NavButtons {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

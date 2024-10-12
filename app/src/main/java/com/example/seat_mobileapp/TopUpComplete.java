@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TopUpComplete extends class_NavButtonsFunction {
+public class TopUpComplete extends class_NavButtons {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,7 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TopUp extends class_NavButtonsFunction {
+public class TopUp extends class_NavButtons {
 
     private HorizontalScrollView horizontalScrollView;
 

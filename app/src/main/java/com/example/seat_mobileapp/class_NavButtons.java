@@ -10,7 +10,7 @@ import android.widget.PopupMenu;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class class_NavButtonsFunction extends AppCompatActivity {
+public class class_NavButtons extends AppCompatActivity {
     protected ImageButton loc, sched, announce, topUp, home, profileMenu;
     private Class<?> currentActivity;
 
@@ -40,22 +40,22 @@ public class class_NavButtonsFunction extends AppCompatActivity {
         profileMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PopupMenu profilePopup = new PopupMenu(class_NavButtonsFunction.this, profileMenu);
+                PopupMenu profilePopup = new PopupMenu(class_NavButtons.this, profileMenu);
                 profilePopup.getMenuInflater().inflate(R.menu.profile_menu, profilePopup.getMenu());
 
                 profilePopup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         if (menuItem.getItemId() == R.id.about) {
-                            Intent aboutIntent = new Intent(class_NavButtonsFunction.this, About.class);
+                            Intent aboutIntent = new Intent(class_NavButtons.this, About.class);
                             startActivity(aboutIntent);
                             return true;
                         } else if (menuItem.getItemId() == R.id.logout) {
-                            Intent logoutIntent = new Intent(class_NavButtonsFunction.this, Login.class);
+                            Intent logoutIntent = new Intent(class_NavButtons.this, Login.class);
                             startActivity(logoutIntent);
                             return true;
                         } else if (menuItem.getItemId() == R.id.support) {
-                            Intent supportIntent = new Intent(class_NavButtonsFunction.this, Support.class);
+                            Intent supportIntent = new Intent(class_NavButtons.this, Support.class);
                             startActivity(supportIntent);
                             return true;
                         }
@@ -76,7 +76,7 @@ public class class_NavButtonsFunction extends AppCompatActivity {
         } else {
             button.setEnabled(true);
             button.setOnClickListener(view -> {
-                Intent redirectIntent = new Intent(class_NavButtonsFunction.this, targetActivity);
+                Intent redirectIntent = new Intent(class_NavButtons.this, targetActivity);
                 startActivity(redirectIntent);
             });
         }
