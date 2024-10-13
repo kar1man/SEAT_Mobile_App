@@ -65,16 +65,282 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <!--    Temporary note (Remove na lang if maglalagay na ng elements)-->
-    <TextView
-        android:text="NEWS"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppins"
-        android:textSize="60sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="54dp"
         android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_round_corners_8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="115dp"
+            android:text="NEWS"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="142dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/news1"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFE9A2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_extrabold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:text="LRT-1 to suspend operations for 3 weekends this month"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="#FFE9A2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Juan Binangkal\nJanuary 2, 2025"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="144dp"
+        android:layout_gravity="center"
+        android:background="#FFE9A2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/inter"
+            android:text="Lorem ipsum dolor sit amet consectetur. Sed est tellus quis nibh vel non placerat lacinia semper. Turpis risus felis ullamcorper imperdiet ultricies. Mauris ac tellus sem enim vulputate ut.\n\n
+Apurus sed et enim. Sit nisl sit risus nunc. Velit dictum risus risus et turpis vitae. Ultrices ullamcorper feugiat commodo donec elit. Quis pharetra nulla tristique pellentesque habitant velit phasellus fringilla maecenas.\n\n
+Congue commodo tincidunt dui commodo ipsum blandit ipsum. Natoque vel cursus consequat sagittis consectetur adipiscing donec purus semper. Odio ut at nisl aliquam eu. Enim diam nisi sit porttitor consectetur integer leo odio justo. Id eu feugiat proin diam vestibulum. Elit eleifend id sed pulvinar ac fringilla magna turpis."
+            android:textColor="@color/black"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+    <!-- Add a horizontal line -->
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="55dp"
+        android:fontFamily="@font/inter_extrabold"
+        android:text="ADVISORIES\n"
         android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textSize="16dp" />
+
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Maintenance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maintenance"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nDue to ongoing maintenance on the Central Line, expect delays between 9:00 PM to 5:00 AM from September 21-23. Please plan your trip accordingly. Alternative routes via South Station are available."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Alert"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nHeavy rains are expected to affect transportation services starting from 3:00 PM today. Please anticipate possible delays or service disruptions , especially in flood-prone areas."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Add margin or padding between sections -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- Service Interruption -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Interruption"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nTrain services on the Eastbound Line will be temporarily suspended from 2:00 PM to 4:00 PM tomorrow due to emergency maintenance. Bus alternatives will be provided during this period."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Add margin or padding between sections -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- Route Adjustment -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Route Adjustment"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nDue to road repairs, Bus Route 12 will follow an alternate path. Please check the map for the new drop-off points along Park Avenue."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Add margin or padding between sections -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- Special Event Notice -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Event Notice"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nIn preparation for the City Parade on October 1, certain routes may experience delays or diversions. Use the app’s real-time tracker to stay updated on bus and train availability."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Add margin or padding between sections -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- Upgrade Notice -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade Notice"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nNew contactless payment systems will be installed across all stations starting next week! You can now link your card for faster check-ins and more convenient travel."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <!-- Add margin or padding between sections -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- Public Health Update -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public Health Update"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="\nFace masks are now required in all stations and onboard all public transport vehicles due to health and safety guidelines. Please follow the latest health advisories."
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
