@@ -3,66 +3,338 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
-    android:background="@color/default_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/default_light"
     tools:context=".About">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#F7DD89"
-        android:orientation="horizontal"
-        android:weightSum="6">
+        android:layout_height="wrap_content">
 
-        <ImageButton
-            android:id="@+id/home"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_home"
-            android:scaleType="centerCrop" />
+            android:background="#F7DD89"
+            android:orientation="horizontal"
+            android:weightSum="6">
 
-        <ImageButton
-            android:id="@+id/sched"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_schedule"
-            android:scaleType="centerCrop" />
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_home"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:id="@+id/location"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_location"
-            android:scaleType="fitCenter" />
+            <ImageButton
+                android:id="@+id/sched"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_schedule"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:id="@+id/announce"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_news"
-            android:scaleType="centerCrop" />
+            <ImageButton
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_location"
+                android:scaleType="fitCenter" />
 
-        <ImageButton
-            android:id="@+id/topup"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_top_up"
-            android:scaleType="centerCrop" />
+            <ImageButton
+                android:id="@+id/announce"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_news"
+                android:scaleType="centerCrop" />
 
-        <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/nav_menu_bar"
-            android:scaleType="centerCrop" />
+            <ImageButton
+                android:id="@+id/topup"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_top_up"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/nav_menu_bar"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="446dp"
+            android:layout_height="364dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/openabout" />
+
+        <View
+            android:layout_width="5000dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Our Vision\n"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="383dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/news_about"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="424dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/train_about" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="179dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_cash" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_cash"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_realtime" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_realtime"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_crowdness" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_crowdness"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_discounts" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_discounts"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_announcement" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_announcement"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_dropoff" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_droppoff"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/service_safety" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="103dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/service_loan"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="5000dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Why Choose Us?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="@string/service_chooseus"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="5000dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black" />
     </LinearLayout>
 
 </ScrollView>
