@@ -65,16 +65,19 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+
     <!--    Temporary note (Remove na lang if maglalagay na ng elements)-->
-    <TextView
-        android:text="SUPPORT"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppins"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 </LinearLayout>
