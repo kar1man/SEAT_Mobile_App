@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
@@ -12,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class HomeDashboard extends class_NavButtons {
 
+    ImageButton topUpBtn;
     Button loanBtn, transcationBtn;
 
     @Override
@@ -30,6 +32,16 @@ public class HomeDashboard extends class_NavButtons {
     }
 
     private void onButtonListener() {
+
+        topUpBtn = findViewById(R.id.topUpButton);
+        topUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent topUpIntent = new Intent(HomeDashboard.this, TopUp.class);
+                startActivity(topUpIntent);
+            }
+        });
+
         loanBtn = findViewById(R.id.loan);
         // Not yet implemented
 
