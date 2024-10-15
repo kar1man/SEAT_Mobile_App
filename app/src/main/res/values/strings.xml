@@ -37,4 +37,5 @@
     <string name="service_droppoff">Drop-off Station Notifications: Set reminders for your stop, so you’ll never miss your destination again.</string>
     <string name="service_loan">Loans for Transit Passes: We provide accessible loan options to help you manage your commute costs easily.</string>
     <string name="service_chooseus">Whether you are a daily commuter or an occasional traveler, SEAT is committed to providing a stress-free and reliable transit experience. Our cutting-edge platform is designed with you in mind, ensuring that getting from point A to point B is as easy and hassle-free as possible.</string>
+    <string name="our_vision">Our Vision</string>
 </resources>

@@ -70,14 +70,14 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="446dp"
-            android:layout_height="364dp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/openabout" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/openabout" />
 
         <View
-            android:layout_width="5000dp"
+            android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_gravity="center_horizontal"
             android:background="@color/black" />
@@ -91,33 +91,33 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="330dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:fontFamily="@font/inter_extrabold"
-                android:text="Our Vision\n"
+                android:text="@string/our_vision"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <TextView
-                android:layout_width="383dp"
-                android:layout_height="72dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/news_about"
                 android:textColor="@color/black"
-                android:textSize="11dp" />
+                android:textSize="11sp" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="424dp"
-            android:layout_height="220dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
             android:layout_gravity="center"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/train_about" />
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="179dp">
+            android:layout_height="170dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -134,18 +134,18 @@
                         android:id="@+id/imageView3"
                         android:layout_width="100dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         app:srcCompat="@drawable/service_cash" />
 
                     <TextView
                         android:layout_width="108dp"
                         android:layout_height="103dp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/service_cash"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -158,18 +158,18 @@
                         android:id="@+id/imageView4"
                         android:layout_width="100dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         app:srcCompat="@drawable/service_realtime" />
 
                     <TextView
                         android:layout_width="108dp"
                         android:layout_height="103dp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/service_realtime"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
 
@@ -183,18 +183,18 @@
                         android:id="@+id/imageView5"
                         android:layout_width="100dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         app:srcCompat="@drawable/service_crowdness" />
 
                     <TextView
                         android:layout_width="108dp"
                         android:layout_height="103dp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/service_crowdness"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
 
