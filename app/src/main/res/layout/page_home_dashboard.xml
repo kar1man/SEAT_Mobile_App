@@ -150,6 +150,7 @@
                 android:background="@drawable/shape_round_heading_15dp">
 
                 <ImageButton
+                    android:id="@+id/qrButton"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
