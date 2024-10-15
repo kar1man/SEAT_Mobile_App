@@ -10,4 +10,22 @@
     <string name="todo">TODO</string>
     <string name="register">register</string>
     <string name="loan">Loan</string>
+    <string name="news_filler">Lorem ipsum dolor sit amet consectetur. Sed est tellus quis nibh vel non placerat lacinia semper. Turpis risus felis ullamcorper imperdiet ultricies. Mauris ac tellus sem enim vulputate ut.\n\n Apurus sed et enim. Sit nisl sit risus nunc. Velit dictum risus risus et turpis vitae. Ultrices ullamcorper feugiat commodo donec elit. Quis pharetra nulla tristique pellentesque habitant velit phasellus fringilla maecenas.\n\n Congue commodo tincidunt dui commodo ipsum blandit ipsum. Natoque vel cursus consequat sagittis consectetur adipiscing donec purus semper. Odio ut at nisl aliquam eu. Enim diam nisi sit porttitor consectetur integer leo odio justo. Id eu feugiat proin diam vestibulum. Elit eleifend id sed pulvinar ac fringilla magna turpis.</string>
+    <string name="advisories">ADVISORIES</string>
+    <string name="public_health_filler">Face masks are now required in all stations and onboard all public transport vehicles due to health and safety guidelines. Please follow the latest health advisories.</string>
+    <string name="public_health_update">Public Health Update</string>
+    <string name="upgrade_notice_filler">New contactless payment systems will be installed across all stations starting next week! You can now link your card for faster check-ins and more convenient travel.</string>
+    <string name="upgrade_notice">Upgrade Notice</string>
+    <string name="special_event_filler">In preparation for the City Parade on October 1, certain routes may experience delays or diversions. Use the app’s real-time tracker to stay updated on bus and train availability.</string>
+    <string name="special_event_notice">Special Event Notice</string>
+    <string name="route_adj_filler">Due to road repairs, Bus Route 12 will follow an alternate path. Please check the map for the new drop-off points along Park Avenue.</string>
+    <string name="route_adjustment">Route Adjustment</string>
+    <string name="serv_interrupt_filler">Train services on the Eastbound Line will be temporarily suspended from 2:00 PM to 4:00 PM tomorrow due to emergency maintenance. Bus alternatives will be provided during this period.</string>
+    <string name="service_interruption">Service Interruption</string>
+    <string name="weather_alert_filler">Heavy rains are expected to affect transportation services starting from 3:00 PM today. Please anticipate possible delays or service disruptions , especially in flood-prone areas.</string>
+    <string name="weather_alert">Weather Alert</string>
+    <string name="maintenance_filler">Due to ongoing maintenance on the Central Line, expect delays between 9:00 PM to 5:00 AM from September 21-23. Please plan your trip accordingly. Alternative routes via South Station are available.</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="news_head_title">LRT-1 to suspend operations for 3 weekends this month</string>
+    <string name="available_balance">AVAILABLE BALANCE</string>
 </resources>
