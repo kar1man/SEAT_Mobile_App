@@ -150,6 +150,7 @@
                 android:background="@drawable/shape_round_heading_15dp">
 
                 <ImageButton
+                    android:id="@+id/qrButton"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
@@ -196,7 +197,7 @@
                 </LinearLayout>
 
                 <ImageButton
-                    android:id="@+id/topUpBtn"
+                    android:id="@+id/topUpButton"
                     android:background="@drawable/dashboard_topup_btn"
                     android:layout_marginStart="5dp"
                     android:layout_gravity="center"

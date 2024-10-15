@@ -65,16 +65,22 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <!--    Temporary note (Remove na lang if maglalagay na ng elements)-->
-    <TextView
-        android:text="SUPPORT"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppins"
-        android:textSize="60sp"
-        android:textStyle="bold"
+    <View
+        android:layout_marginTop="30dp"
+        android:background="@drawable/support_main_head"
         android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="90dp">
+    </View>
+
+    <TextView
+        android:text="FAQs"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/black"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -27,5 +27,15 @@
     <string name="maintenance_filler">Due to ongoing maintenance on the Central Line, expect delays between 9:00 PM to 5:00 AM from September 21-23. Please plan your trip accordingly. Alternative routes via South Station are available.</string>
     <string name="maintenance">Maintenance</string>
     <string name="news_head_title">LRT-1 to suspend operations for 3 weekends this month</string>
+    <string name="news_about">We envision a future where transportation is accessible and efficient. By harnessing the latest technology, we aim to simplify your daily commute, improve urban mobility, and help reduce congestion. We believe that through innovative tools like real-time arrival trackers and transit pass management, we can build smarter cities for everyone.</string>
     <string name="available_balance">AVAILABLE BALANCE</string>
+    <string name="service_cash">Cash-in Options: Easily top-up your transportation cards from the convenience of your device.</string>
+    <string name="service_realtime">Real-Time Arrival Tracker: Stay updated on bus and train arrival times, ensuring you never miss a ride.</string>
+    <string name="service_crowdness">Crowdedness Tracker: Know how busy your train or bus will be before boarding.</string>
+    <string name="service_discounts">Transportation Discounts: Access exclusive discounts with transit access passes, saving you money on every ride.</string>
+    <string name="service_announcement">Announcements: Stay updated on delays, route changes, and important notices in real-time.</string>
+    <string name="service_droppoff">Drop-off Station Notifications: Set reminders for your stop, so you’ll never miss your destination again.</string>
+    <string name="service_loan">Loans for Transit Passes: We provide accessible loan options to help you manage your commute costs easily.</string>
+    <string name="service_chooseus">Whether you are a daily commuter or an occasional traveler, SEAT is committed to providing a stress-free and reliable transit experience. Our cutting-edge platform is designed with you in mind, ensuring that getting from point A to point B is as easy and hassle-free as possible.</string>
+    <string name="our_vision">Our Vision</string>
 </resources>
