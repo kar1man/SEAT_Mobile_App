@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -65,16 +65,4 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-<!--    Temporary note (Remove na lang if maglalagay na ng elements)-->
-    <TextView
-        android:text="ABOUT"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppins"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</ScrollView>
