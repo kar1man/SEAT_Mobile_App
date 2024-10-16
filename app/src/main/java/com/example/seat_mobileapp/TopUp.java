@@ -14,10 +14,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class TopUp extends class_NavButtons {
 
-    private HorizontalScrollView horizontalScrollView;
     private Button gcashButton, mayaButton, bdoButton, visaButton, grabPayButton, sevenElevenButton;
     private Button amount1000, amount500, amount250, amount100, amount50, amount20;
-        private Button selectedPaymentMethod = null;
+    private Button selectedPaymentMethod = null;
     private Button selectedAmountButton = null;
 
     @Override
@@ -34,7 +33,7 @@ public class TopUp extends class_NavButtons {
 
         setUpNavBar(TopUp.class);
 
-        horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
+        HorizontalScrollView horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
 
         gcashButton = findViewById(R.id.gcash_button);
         mayaButton = findViewById(R.id.maya_button);
@@ -89,9 +88,13 @@ public class TopUp extends class_NavButtons {
         sevenElevenButton.setBackgroundTintList(colorStateList);
     }
 
-    public void onPurchaseNowClicked(View view) {
-        Intent intent = new Intent(this, TopUpComplete.class);
-        startActivity(intent);
+
+    private void selectAmount(Button amountButton) {
+        if (selectedAmountButton != null) {
+            selectedAmountButton.setSelected(false);
+        }
+        selectedAmountButton = amountButton;
+        selectedAmountButton.setSelected(true);
     }
 
     private void selectPaymentMethod(Button paymentButton) {
@@ -102,13 +105,11 @@ public class TopUp extends class_NavButtons {
         selectedPaymentMethod.setSelected(true);
     }
 
-    private void selectAmount(Button amountButton) {
-        if (selectedAmountButton != null) {
-            selectedAmountButton.setSelected(false);
-        }
-        selectedAmountButton = amountButton;
-        selectedAmountButton.setSelected(true);
+    public void onPurchaseNowClicked(View view) {
+        Intent intent = new Intent(this, TopUpComplete.class);
+        startActivity(intent);
     }
+
 
     @Override
     protected void onResume() {
