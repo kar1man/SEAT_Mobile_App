@@ -17,7 +17,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class TopUp extends class_NavButtons {
 
-    private ToggleButton customToggleBtn;
     private LinearLayout customContainer;
     private View customAmountView;
 
@@ -99,7 +98,7 @@ public class TopUp extends class_NavButtons {
 
     // Handling the custom amount :>
     private void customAmount() {
-        customToggleBtn = findViewById(R.id.customToggle);
+        ToggleButton customToggleBtn = findViewById(R.id.customToggle);
         customContainer = findViewById(R.id.custom_amount_container);
 
         customToggleBtn.setOnCheckedChangeListener((buttonView, isChecked) -> {

@@ -70,4 +70,14 @@
     <string name="seat_acc_header">Enter SEAT Account Number</string>
     <string name="username">Juan Dela Cruz</string>
     <string name="reach_message">You will reach Carriedo in approximately 3 mins</string>
+    <string name="faq1">Where can I buy the SEAT Card?</string>
+    <string name="faq_1">Where can I buy the SEAT Card?          ˄</string>
+    <string name="faq_11">Where can I buy the SEAT Card?          ˅</string>
+    <string name="faq2">Can I top up using my bank?                ˅</string>
+    <string name="faq22">Can I top up using my bank?                ˄</string>
+    <string name="faq3">What happens if I lose the card?          ˄</string>
+    <string name="faq33">What happens if I lose the card?          ˅</string>
+    <string name="faq1_answer">You can purchase the SEAT Card at train stations, subject to availability. It is also available at select convenience stores and malls for your convenience.</string>
+    <string name="faq2_answer">Yes, you can link your SEAT Card to your bank account or mobile wallet for easy top-ups and payments.</string>
+    <string name="faq3_answer">If you lose your SEAT Card, please report it immediately through the app or contact customer support. Your card will be deactivated to prevent unauthorized use, and you can request a replacement card to restore access to your balance and services.</string>
 </resources>

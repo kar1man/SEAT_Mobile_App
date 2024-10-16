@@ -1,6 +1,10 @@
 package com.example.seat_mobileapp;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ToggleButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
@@ -8,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Support extends class_NavButtons {
+    private LinearLayout faq1Container, faq2Container, faq3Container;
+    private View faq1View, faq2View, faq3View;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +27,62 @@ public class Support extends class_NavButtons {
         });
 
         setUpNavBar(Support.class);
+        faqDropdown();
+    }
+
+    private void faqDropdown() {
+        ToggleButton faq1Toggle, faq2Toggle, faq3Toggle;
+
+        faq1Toggle = findViewById(R.id.faq1);
+        faq1Container = findViewById(R.id.faq1_container);
+
+        faq1Toggle.setOnCheckedChangeListener((buttonView, isTicked) -> {
+            if (isTicked) {
+                if (faq1View == null) {
+                    faq1View = LayoutInflater.from(this).inflate(R.layout.popup_faq1, faq1Container, false);
+                    faq1Container.addView(faq1View);
+                }
+                faq1View.setVisibility(View.VISIBLE);
+            } else {
+                if (faq1View != null) {
+                    faq1View.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        faq2Toggle = findViewById(R.id.faq2);
+        faq2Container = findViewById(R.id.faq2_container);
+
+        faq2Toggle.setOnCheckedChangeListener((buttonView, isTicked2) -> {
+            if (isTicked2) {
+                if (faq2View == null) {
+                    faq2View = LayoutInflater.from(this).inflate(R.layout.popup_faq2, faq2Container, false);
+                    faq2Container.addView(faq2View);
+                }
+                faq2View.setVisibility(View.VISIBLE);
+            } else {
+                if(faq2View !=null) {
+                    faq2View.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        faq3Toggle = findViewById(R.id.faq3);
+        faq3Container = findViewById(R.id.faq3_container);
+
+        faq3Toggle.setOnCheckedChangeListener((buttonView, isTicked3) -> {
+            if(isTicked3) {
+                if(faq3View == null) {
+                    faq3View = LayoutInflater.from(this).inflate(R.layout.popup_faq3, faq3Container, false);
+                    faq3Container.addView(faq3View);
+                }
+                faq3View.setVisibility(View.VISIBLE);
+            } else {
+                if(faq3View != null){
+                    faq3View.setVisibility(View.GONE);
+                }
+            }
+        });
+
     }
 }
