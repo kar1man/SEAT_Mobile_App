@@ -12,6 +12,7 @@
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:padding="20dp"
+        android:elevation="10dp"
         android:text="@string/faq1_answer"
         android:layout_gravity="center"
         android:backgroundTint="#FFE697"

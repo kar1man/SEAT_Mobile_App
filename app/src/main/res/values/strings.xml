@@ -80,4 +80,9 @@
     <string name="faq1_answer">You can purchase the SEAT Card at train stations, subject to availability. It is also available at select convenience stores and malls for your convenience.</string>
     <string name="faq2_answer">Yes, you can link your SEAT Card to your bank account or mobile wallet for easy top-ups and payments.</string>
     <string name="faq3_answer">If you lose your SEAT Card, please report it immediately through the app or contact customer support. Your card will be deactivated to prevent unauthorized use, and you can request a replacement card to restore access to your balance and services.</string>
+    <string name="concern_field">Type your concerns here...</string>
+    <string name="mess_confirm_head">We\'ve Got Your Message!</string>
+    <string name="message_confirm_ms">Thank you for reaching out! We\'ve received your concern and are reviewing it. Our team will get back to you as soon as possible.</string>
+    <string name="home_btn">Back to home</string>
+    <string name="tell_head">Tell Us Your Concerns:</string>
 </resources>

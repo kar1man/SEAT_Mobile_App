@@ -1,8 +1,11 @@
 package com.example.seat_mobileapp;
 
+import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ToggleButton;
 
@@ -14,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Support extends class_NavButtons {
     private LinearLayout faq1Container, faq2Container, faq3Container;
     private View faq1View, faq2View, faq3View;
+    private Button concernBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,10 @@ public class Support extends class_NavButtons {
 
         setUpNavBar(Support.class);
         faqDropdown();
+        personalizedConcern();
     }
+
+
 
     private void faqDropdown() {
         ToggleButton faq1Toggle, faq2Toggle, faq3Toggle;
@@ -83,6 +90,23 @@ public class Support extends class_NavButtons {
                 }
             }
         });
+
+    }
+
+    private void personalizedConcern() {
+        // Color and concern handler
+        ColorStateList btnColor = getResources().getColorStateList(R.color.button_color_state);
+        concernBtn = findViewById(R.id.sendConcernBtn);
+        concernBtn.setBackgroundTintList(btnColor);
+
+        concernBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent concernIntent = new Intent(Support.this, ConcernReceived.class);
+                startActivity(concernIntent);
+            }
+        });
+
 
     }
 }
