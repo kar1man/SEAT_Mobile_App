@@ -1,6 +1,8 @@
 package com.example.seat_mobileapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -25,15 +27,14 @@ public class TopUpComplete extends class_NavButtons {
         setUpNavBar(TopUpComplete.class); // for navigation buttons
 
 
-        // To be implemented once topup ui was completed
-//        dashboardBtn = findViewById(R.id.dashboard);
-//        dashboardBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent backToDashBoard = new Intent(topup_complete.this, home_dashboard.class);
-//                startActivity(backToDashBoard);
-//            }
-//        });
+        dashboardBtn = findViewById(R.id.dashboard);
+        dashboardBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent backToDashBoard = new Intent(TopUpComplete.this, HomeDashboard.class);
+                startActivity(backToDashBoard);
+            }
+        });
 
     }
 }
