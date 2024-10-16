@@ -55,7 +55,6 @@
     <string name="_7_eleven">7-Eleven</string>
     <string name="account_details">Account Details</string>
     <string name="confirm_transaction">Confirm Transaction</string>
-    <string name="optional_enter_your_email_for_the_official_receipt">OPTIONAL: Enter your email for the official receipt</string>
     <string name="php_100_total">Php 100</string>
     <string name="total_amount_display">Php 100</string>
     <string name="total_amount_txt">Total Amount:</string>
@@ -63,4 +62,11 @@
     <string name="php">Php:</string>
     <string name="_00_00">00.00</string>
     <string name="peso_amount">₱</string>
+    <string name="optional_message">OPTIONAL: Enter your email for the official receipt</string>
+    <string name="account_format">0000-000-0000</string>
+    <string name="hide_custom_txt">Hide Custom</string>
+    <string name="custom_amount_txt">Custom Amount</string>
+    <string name="acc_num_format">0000-0000</string>
+    <string name="seat_acc_header">Enter SEAT Account Number</string>
+    <string name="username">Juan Dela Cruz</string>
 </resources>

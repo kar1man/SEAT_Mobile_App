@@ -3,9 +3,12 @@ package com.example.seat_mobileapp;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ToggleButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
@@ -13,6 +16,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TopUp extends class_NavButtons {
+
+    private ToggleButton customToggleBtn;
+    private LinearLayout customContainer;
+    private View customAmountView;
 
     private Button gcashButton, mayaButton, bdoButton, visaButton, grabPayButton, sevenElevenButton;
     private Button amount1000, amount500, amount250, amount100, amount50, amount20;
@@ -32,6 +39,8 @@ public class TopUp extends class_NavButtons {
         });
 
         setUpNavBar(TopUp.class);
+        customAmount();
+
 
         HorizontalScrollView horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
 
@@ -86,6 +95,29 @@ public class TopUp extends class_NavButtons {
         visaButton.setBackgroundTintList(colorStateList);
         grabPayButton.setBackgroundTintList(colorStateList);
         sevenElevenButton.setBackgroundTintList(colorStateList);
+    }
+
+    private void customAmount() {
+        customToggleBtn = findViewById(R.id.customToggle);
+        customContainer = findViewById(R.id.custom_amount_container);
+
+        customToggleBtn.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                // Inflate the custom amount view if it's not already added
+                if(customAmountView == null){
+                    customAmountView = LayoutInflater.from(this).inflate(R.layout.popup_custom_amount, customContainer, false);
+                    customContainer.addView(customAmountView);
+                }
+                customAmountView.setVisibility(View.VISIBLE);
+            } else {
+                // Hide the custom amount view
+                if (customAmountView != null) {
+                    customAmountView.setVisibility(View.GONE);
+                }
+            }
+        });
+
+
     }
 
 

@@ -85,7 +85,7 @@
                 android:fontFamily="@font/inter_extrabold"
                 android:gravity="center"
                 android:letterSpacing="-0.02"
-                android:text="Enter SEAT Account Number"
+                android:text="@string/seat_acc_header"
                 android:textColor="#393013"
                 android:textSize="12sp" />
 
@@ -111,6 +111,7 @@
                     android:letterSpacing="-0.02"
                     android:maxLength="12"
                     android:padding="0dp"
+                    android:hint="@string/acc_num_format"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
                     android:textAlignment="center"
@@ -230,86 +231,32 @@
             </HorizontalScrollView>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:elevation="10dp"
-            android:gravity="center"
-            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/custom_amount_container"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:backgroundTint="#FFE697"
+        android:background="@drawable/shape_round_corners_15dp"
+        android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/shape_round_corners_43dp"
-                android:clipToPadding="false"
-                android:elevation="10dp"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="5dp">
+        <ToggleButton
+            android:id="@+id/customToggle"
+            android:layout_width="138.92dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:background="@drawable/shape_round_xdp"
+            android:fontFamily="@font/inter_extrabold"
+            android:textColor="#393013"
+            android:textAllCaps="false"
+            android:textOff="@string/custom_amount_txt"
+            android:textOn="@string/hide_custom_txt" />
+
+    </LinearLayout>
 
 
-                <LinearLayout
-                    android:layout_width="138.92dp"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="-5dp"
-                    android:background="@drawable/shape_round_stroke_43"
-                    android:elevation="5dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_extrabold"
-                        android:gravity="center"
-                        android:lineSpacingExtra="0px"
-                        android:text="@string/custom_amount"
-                        android:textColor="#393013"
-                        android:textSize="14sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="167dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="10dp"
-                    android:background="@drawable/shape_round_corners_43dp"
-                    android:backgroundTint="#FFE697"
-                    android:gravity="center">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        android:fontFamily="@font/inter_extrabold"
-                        android:lineSpacingExtra="0px"
-                        android:padding="0dp"
-                        android:paddingStart="15dp"
-                        android:paddingEnd="5dp"
-                        android:text="@string/peso_amount"
-                        android:textColor="#61542D"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/custom_amount_input"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        android:fontFamily="@font/inter_extrabold"
-                        android:inputType="numberDecimal"
-                        android:lineSpacingExtra="0px"
-                        android:maxLength="10"
-                        android:padding="0dp"
-                        android:hint="@string/_00_00"
-                        android:textColor="#61542D"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="325dp"
@@ -484,7 +431,7 @@
                         android:fontFamily="@font/inter_extrabold"
                         android:inputType="number"
                         android:textAlignment="center"
-                        android:hint="0000-000-0000"
+                        android:hint="@string/account_format"
                         android:lineSpacingExtra="0px"
                         android:maxLength="14"
                         android:padding="0dp"
@@ -524,7 +471,7 @@
                 android:layout_gravity="start"
                 android:fontFamily="@font/inter"
                 android:letterSpacing="-0.02"
-                android:text="@string/optional_enter_your_email_for_the_official_receipt"
+                android:text="@string/optional_message"
                 android:textColor="#393013"
                 android:textSize="11sp" />
 
@@ -569,7 +516,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_extrabold"
                     android:letterSpacing="-0.02"
-                    android:text="@string/total_amount_txt"
+                    android:text="Total Amount"
                     android:textColor="#393013"
                     android:textSize="14sp" />
 

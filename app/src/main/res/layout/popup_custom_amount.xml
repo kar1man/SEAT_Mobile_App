@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_round_corners_43dp"
+            android:clipToPadding="false"
+            android:elevation="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="138.92dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="-5dp"
+                android:background="@drawable/shape_round_stroke_43"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="0px"
+                    android:text="Enter Amount"
+                    android:textColor="#393013"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="153dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_round_corners_43dp"
+                android:backgroundTint="#FFE697"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:lineSpacingExtra="0px"
+                    android:padding="0dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/peso_amount"
+                    android:textColor="#61542D"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/custom_amount_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:inputType="numberDecimal"
+                    android:lineSpacingExtra="0px"
+                    android:maxLength="10"
+                    android:padding="0dp"
+                    android:hint="00.00"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#61542D"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
