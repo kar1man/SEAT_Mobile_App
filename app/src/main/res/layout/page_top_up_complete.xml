@@ -65,47 +65,40 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="330dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="30dp"
-            android:scaleType="fitCenter"
-            android:background="@drawable/display_topup_complete"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="330dp"
-            android:layout_height="260dp"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="325dp"
             android:layout_marginTop="20dp"
-            android:scaleType="fitCenter"
-            android:background="@drawable/display_transac_receipt"/>
-    </LinearLayout>
+            android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/display_topup_complete"/>
 
-        <ImageButton
-            android:id="@+id/dashboard"
-            android:layout_width="330dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="30dp"
-            android:scaleType="fitCenter"
-            android:background="@drawable/display_back_to_home"/>
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/display_transac_receipt"/>
+
+            <ImageButton
+                android:id="@+id/dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/display_back_to_home"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

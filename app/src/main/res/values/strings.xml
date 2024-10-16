@@ -69,4 +69,5 @@
     <string name="acc_num_format">0000-0000</string>
     <string name="seat_acc_header">Enter SEAT Account Number</string>
     <string name="username">Juan Dela Cruz</string>
+    <string name="reach_message">You will reach Carriedo in approximately 3 mins</string>
 </resources>

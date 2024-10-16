@@ -65,150 +65,159 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <ImageView
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/display_current_station"
-        android:scaleType="fitCenter"
-        android:layout_width="330dp"
-        android:layout_height="50dp"/>
-
-    <ImageView
-        android:layout_marginTop="7dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/display_next_station"
-        android:scaleType="fitCenter"
-        android:layout_width="330dp"
-        android:layout_height="50dp"/>
-
-    <ImageView
-        android:layout_marginTop="7dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/display_end_station"
-        android:scaleType="fitCenter"
-        android:layout_width="330dp"
-        android:layout_height="50dp"/>
-
-<!--    Add another linear here para magtabi yung label-->
-
-    <!--    end ng linear-->
-
-    <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="15dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/display_tracker_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:fontFamily="@font/poppins"
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/display_current_station" />
+
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/display_next_station" />
+
+            <ImageView
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/display_end_station" />
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Abad Santos"
-                android:textColor="#121212"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/display_tracker_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Abad Santos"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Blumentritt"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Tayuman"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Bambang"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Doroteo Jose"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Carriedo"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="Central Terminal"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="United Nations"
+                        android:textColor="#121212"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="325dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Blumentritt"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Tayuman"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Bambang"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Doroteo Jose"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Carriedo"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="Central Terminal"
-                android:textColor="#121212"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:fontFamily="@font/poppins"
-                android:gravity="center"
-                android:text="United Nations"
+                android:text="@string/reach_message"
                 android:textColor="#121212"
                 android:textSize="12sp" />
 
         </LinearLayout>
 
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_marginTop="15dp"
-        android:textSize="12sp"
-        android:text="You will reach Carriedo in approximately 3 mins"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/poppins"
-        android:textColor="#121212"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    </ScrollView>
 
 
 </LinearLayout>

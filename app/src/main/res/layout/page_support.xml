@@ -65,22 +65,36 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <View
-        android:layout_marginTop="30dp"
-        android:background="@drawable/support_main_head"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="90dp">
-    </View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:text="FAQs"
-        android:textSize="22sp"
-        android:fontFamily="@font/poppins_semibold"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_marginTop="30dp"
+                android:background="@drawable/support_main_head"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="90dp">
+            </View>
+
+            <TextView
+                android:text="FAQs"
+                android:textSize="22sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>

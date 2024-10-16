@@ -5,226 +5,171 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="#DAA600"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Register">
 
     <LinearLayout
-        android:layout_width="330dp"
+        android:layout_width="325dp"
         android:layout_height="530dp"
-        android:orientation="vertical"
-        android:background="@drawable/shape_login_rec">
+        android:background="@drawable/shape_login_rec"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_extrabold"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="#121212"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:text="Username/Email"
+            android:textColor="#121212" />
+
+
+        <EditText
+            android:id="@+id/reg_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_input_field"
+            android:fontFamily="@font/inter"
+            android:paddingStart="15dp"
+            android:hint="Enter Username or Email"
+            android:inputType="textEmailAddress"
+            android:paddingTop="3dp"
+            android:textColor="#121212"
+            android:textColorHint="#66121212"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Phone number"
+            android:textColor="#121212" />
+
+
+        <EditText
+            android:id="@+id/reg_phone_num"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_input_field"
+            android:fontFamily="@font/poppins"
+            android:hint="09XX-XXXX-XXX"
+            android:inputType="number"
+            android:paddingStart="15dp"
+            android:paddingTop="3dp"
+            android:textColor="#121212"
+            android:textColorHint="#66121212"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="#121212" />
+
+
+        <EditText
+            android:id="@+id/reg_pw"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_input_field"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingTop="3dp"
+            android:textColor="#121212"
+            android:textColorHint="#66121212"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Confirm Password"
+            android:textColor="#121212" />
+
+        <EditText
+            android:id="@+id/reg_confirm_pw"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_input_field"
+            android:fontFamily="@font/poppins"
+            android:hint="Password Confirmation"
+            android:paddingStart="15dp"
+            android:inputType="textPassword"
+            android:paddingTop="3dp"
+            android:textColor="#121212"
+            android:textColorHint="#66121212"
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/poppins_extrabold"
-                android:text="Register"
-                android:textAlignment="center"
-                android:textColor="#121212"
-                android:textSize="22sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/inter"
-                android:text="Username/Email"
-                android:textColor="#121212" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/reg_username"
-                android:layout_marginStart="15dp"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:textColorHint="#66121212"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp"
-                android:textSize="12sp"
-                android:layout_gravity="center"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/shape_input_field"
-                android:hint="Enter Username or Email"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:text="Phone number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/reg_phone_num"
-                android:layout_marginStart="15dp"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:textColorHint="#66121212"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp"
-                android:textSize="12sp"
-                android:layout_gravity="center"
-                android:inputType="number"
-                android:background="@drawable/shape_input_field"
-                android:hint="09XX-XXXX-XXX"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:text="Password" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/reg_pw"
-                android:layout_marginStart="15dp"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:textColorHint="#66121212"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp"
-                android:textSize="12sp"
-                android:layout_gravity="center"
-                android:inputType="textPassword"
-                android:background="@drawable/shape_input_field"
-                android:hint="Enter Password"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:text="Confirm Password" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/reg_confirm_pw"
-                android:layout_marginStart="15dp"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
-                android:textColor="#121212"
-                android:textColorHint="#66121212"
-                android:paddingStart="15dp"
-                android:paddingTop="3dp"
-                android:textSize="12sp"
-                android:layout_gravity="center"
-                android:inputType="textPassword"
-                android:background="@drawable/shape_input_field"
-                android:hint="Password Confirmation"/>
-        </LinearLayout>
-
-        <LinearLayout
             android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <CheckBox
-                android:layout_marginStart="20dp"
-                android:background="@color/white"
                 android:layout_width="10dp"
-                android:layout_height="10dp"/>
+                android:layout_height="10dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/white" />
 
             <TextView
-                android:layout_marginStart="7dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:text="I accept the terms and conditions"
-                android:textSize="10sp"
-                android:textColor="#121212" />
+                android:textColor="#121212"
+                android:textSize="10sp" />
         </LinearLayout>
+
+
+        <Button
+            android:id="@+id/create_acct"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#121212"
+            android:fontFamily="@font/inter"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:layout_gravity="center_vertical"
             android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/create_acct"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/inter"
-                android:text="Create Account"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:backgroundTint="#121212" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_vertical">
 
             <TextView
                 android:layout_width="180dp"
@@ -243,11 +188,11 @@
                 android:layout_marginEnd="15dp"
                 android:background="#00FFFFFF"
                 android:fontFamily="@font/poppins_extrabold"
+                android:paddingStart="5dp"
+                android:paddingTop="0dp"
                 android:text="Sign in"
                 android:textAlignment="textStart"
                 android:textColor="#121212"
-                android:paddingStart="5dp"
-                android:paddingTop="0dp"
                 android:textSize="12sp" />
         </LinearLayout>
 

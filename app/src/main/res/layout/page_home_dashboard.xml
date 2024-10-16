@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,302 +11,306 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF3CE"
-        android:orientation="vertical">
+        android:layout_height="60dp"
+        android:background="#F7DD89"
+        android:orientation="horizontal"
+        android:weightSum="6">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:background="#F7DD89"
-            android:orientation="horizontal"
-            android:weightSum="6">
+            android:layout_weight="1"
+            android:background="@drawable/nav_home"
+            android:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_home"
-                android:scaleType="centerCrop" />
+        <ImageButton
+            android:id="@+id/sched"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_schedule"
+            android:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/sched"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_schedule"
-                android:scaleType="centerCrop" />
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_location"
+            android:scaleType="fitCenter" />
 
-            <ImageButton
-                android:id="@+id/location"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_location"
-                android:scaleType="fitCenter" />
+        <ImageButton
+            android:id="@+id/announce"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_news"
+            android:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/announce"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_news"
-                android:scaleType="centerCrop" />
+        <ImageButton
+            android:id="@+id/topup"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_top_up"
+            android:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/topup"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_top_up"
-                android:scaleType="centerCrop" />
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/nav_menu_bar"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/menu"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:background="@drawable/nav_menu_bar"
-                android:scaleType="centerCrop" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="325dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:contentDescription="@string/seat_logo"
-                android:scaleType="fitCenter"
-                android:src="@drawable/display_seat_square_logo" />
-
-            <LinearLayout
-                android:layout_marginStart="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:paddingBottom="0dp"
-                    android:text="Hello!"
-                    android:textColor="#121212"
-                    android:textSize="18sp"
-                    tools:ignore="HardcodedText" />
-
-                <TextView
-                    android:id="@+id/user_name"
-                    android:layout_width="172dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:letterSpacing="-0.05"
-                    android:paddingTop="0dp"
-                    android:text="@string/username"
-                    android:textColor="#121212"
-                    android:textSize="28sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="330dp"
-                android:layout_height="2dp"
-                android:background="#121212" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="325dp"
-            android:layout_height="290dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/shape_round_corners_43dp"
-            android:backgroundTint="@color/default_darker_yellow"
-            android:gravity="center_horizontal"
+            android:background="#FFF3CE"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
-                android:background="@drawable/shape_round_heading_15dp">
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/qrButton"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
-                    android:background="@drawable/dashboard_qr"
-                    android:scaleType="fitCenter" />
-
-                <View
-                    android:layout_width="2dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="10dp"
-                    android:background="#B565541C" />
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/seat_logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/display_seat_square_logo" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:fontFamily="@font/inter"
-                        android:text="AVAILABLE BALANCE:"
-                        android:textColor="@color/default_light"
-                        android:textSize="11sp"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/poppins"
+                        android:paddingBottom="0dp"
+                        android:text="Hello!"
+                        android:textColor="#121212"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:id="@+id/dashboard_bal"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/user_name"
+                        android:layout_width="172dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:fontFamily="@font/inter_extrabold"
-                        android:text="Php 103.03"
-                        android:textColor="@color/default_light"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="-0.05"
+                        android:paddingTop="0dp"
+                        android:text="@string/username"
+                        android:textColor="#121212"
+                        android:textSize="28sp" />
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="2dp"
+                    android:background="#121212" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="290dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_round_corners_43dp"
+                android:backgroundTint="@color/default_darker_yellow"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="@drawable/shape_round_heading_15dp">
+
+                    <ImageButton
+                        android:id="@+id/qrButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/dashboard_qr"
+                        android:scaleType="fitCenter" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:background="#B565541C" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/inter"
+                            android:text="AVAILABLE BALANCE:"
+                            android:textColor="@color/default_light"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dashboard_bal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/inter_extrabold"
+                            android:text="Php 103.03"
+                            android:textColor="@color/default_light"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/topUpButton"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:background="@drawable/dashboard_topup_btn"
+                        android:scaleType="fitCenter" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Recent Transactions"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
                 <ImageButton
-                    android:id="@+id/topUpButton"
-                    android:background="@drawable/dashboard_topup_btn"
-                    android:layout_marginStart="25dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitCenter"
-                    android:layout_width="80dp"
-                    android:layout_height="25dp"/>
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/dashboard_recent_transac"
+                    android:scaleType="fitCenter" />
 
 
             </LinearLayout>
 
-            <TextView
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/poppins"
-                android:text="Recent Transactions" />
-
-            <ImageButton
-                android:background="@drawable/dashboard_recent_transac"
-                android:scaleType="fitCenter"
-                android:layout_width="300dp"
-                android:layout_height="150dp"/>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <View
-                android:layout_width="320dp"
-                android:layout_height="2dp"
-                android:background="#121212" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="325dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/poppins"
-                android:paddingBottom="0dp"
-                android:text="@string/how_can_we_help_today"
-                android:padding="0dp"
-                android:textColor="#121212"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="325dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
-
-            <Button
-                android:id="@+id/loan"
-                android:layout_margin="0dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="0dp"
-                android:textStyle="bold"
-                android:paddingTop="8dp"
-                android:textColor="@color/white"
-                android:backgroundTint="#393013"
-                android:text="@string/loan" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/otherTransac"
-                android:layout_width="250dp"
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="2dp"
+                    android:background="#121212" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="325dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="0dp"
-                android:layout_marginBottom="0dp"
-                android:backgroundTint="#9B8F66"
+                android:layout_gravity="center"
                 android:gravity="center_horizontal"
-                android:paddingTop="8dp"
-                android:text="@string/other_transactions"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:padding="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="@string/how_can_we_help_today"
+                    android:textColor="#121212"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/loan"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:backgroundTint="#393013"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="@string/loan"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/otherTransac"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:backgroundTint="#9B8F66"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="@string/other_transactions"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <!--            footer space -->
+            </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp">
-<!--            footer space -->
-        </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
 
-
-
-</ScrollView>
+</LinearLayout>

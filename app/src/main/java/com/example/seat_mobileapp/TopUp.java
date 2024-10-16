@@ -97,6 +97,7 @@ public class TopUp extends class_NavButtons {
         sevenElevenButton.setBackgroundTintList(colorStateList);
     }
 
+    // Handling the custom amount :>
     private void customAmount() {
         customToggleBtn = findViewById(R.id.customToggle);
         customContainer = findViewById(R.id.custom_amount_container);

@@ -86,6 +86,7 @@
                     android:paddingStart="0dp"
                     android:paddingEnd="10dp"
                     android:textColor="#61542D"
+                    android:textColorHint="#6661542D"
                     android:textSize="12sp"
                     tools:ignore="HardcodedText" />
             </LinearLayout>
