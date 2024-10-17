@@ -43,7 +43,13 @@ public class HomeDashboard extends class_NavButtons {
         });
 
         loanBtn = findViewById(R.id.loan);
-        // Not yet implemented
+        loanBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent loanIntent = new Intent(HomeDashboard.this, Loan.class);
+                startActivity(loanIntent);
+            }
+        });
 
         transcationBtn = findViewById(R.id.otherTransac);
         transcationBtn.setOnClickListener(new View.OnClickListener() {
