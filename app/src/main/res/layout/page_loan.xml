@@ -80,21 +80,21 @@
             android:layout_width="325dp"
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/shape_round_corners_15dp"
-            android:elevation="10dp"
+            android:elevation="15dp"
+            android:background="@drawable/shape_round_corners_15dp2"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="15dp">
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
                 android:fontFamily="@font/inter_extrabold"
                 android:gravity="center"
-                android:letterSpacing="-0.02"
+                android:letterSpacing="0.02"
                 android:text="LOAN"
-                android:textColor="#393013"
-                android:textSize="12sp" />
+                android:textColor="#FDEDBA"
+                android:textSize="25dp"
+                android:elevation="15dp"/>
         </LinearLayout>
             <LinearLayout
                 android:layout_width="325dp"
@@ -266,7 +266,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/shape_round_corners_15dp"
-                android:backgroundTint="#FFE697"
+                android:backgroundTint="#61542D"
                 android:elevation="10dp"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -282,130 +282,6 @@
                     android:textColor="#393013"
                     android:textOff="@string/custom_amount_txt"
                     android:textOn="@string/hide_custom_txt" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="325dp"
-                android:layout_height="93dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/shape_round_corners_15dp"
-                android:elevation="10dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="162dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:fontFamily="@font/inter_extrabold"
-                    android:letterSpacing="-0.02"
-                    android:text="@string/select_payment_method"
-                    android:textColor="#393013"
-                    android:textSize="14sp" />
-
-                <HorizontalScrollView
-                    android:id="@+id/horizontal_scroll_view2"
-                    android:layout_width="match_parent"
-                    android:layout_height="39dp"
-                    android:layout_marginTop="5dp"
-                    android:clipToPadding="true">
-
-                    <LinearLayout
-                        android:layout_width="311dp"
-                        android:layout_height="39dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/gcash_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/gcash"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-
-                        <Button
-                            android:id="@+id/bdo_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/maya"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-
-                        <Button
-                            android:id="@+id/visa_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/bdo"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-
-                        <Button
-                            android:id="@+id/grabpay_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/visa"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-
-                        <Button
-                            android:id="@+id/seven_eleven_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/grabpay"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-
-                        <Button
-                            android:id="@+id/maya_button"
-                            android:layout_width="137dp"
-                            android:layout_height="39dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:gravity="center"
-                            android:letterSpacing="-0.02"
-                            android:text="@string/_7_eleven"
-                            android:textColor="#FDEDBA"
-                            android:textSize="12sp"
-                            android:tint="@color/button_color_state" />
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="325dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:elevation="10dp"
-                android:gravity="center"
-                android:orientation="vertical">
 
             </LinearLayout>
 
@@ -627,7 +503,7 @@
                 android:gravity="center"
                 android:lineSpacingExtra="0px"
                 android:padding="5dp"
-                android:text="@string/purchase_now"
+                android:text="Proceed with transaction"
                 android:textColor="#FDEDBA"
                 android:textSize="14sp"/>
 
