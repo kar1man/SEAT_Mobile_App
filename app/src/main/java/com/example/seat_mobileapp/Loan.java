@@ -15,21 +15,19 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TopUp extends class_NavButtons {
+public class Loan extends class_NavButtons {
 
     private LinearLayout customContainer;
     private View customAmountView;
 
-    private Button gcashButton, mayaButton, bdoButton, visaButton, grabPayButton, sevenElevenButton;
     private Button amount1000, amount500, amount250, amount100, amount50, amount20;
-    private Button selectedPaymentMethod = null;
     private Button selectedAmountButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.page_top_up);
+        setContentView(R.layout.page_loan);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -37,18 +35,10 @@ public class TopUp extends class_NavButtons {
             return insets;
         });
 
-        setUpNavBar(TopUp.class);
+        setUpNavBar(Loan.class);
         customAmount();
 
-
         HorizontalScrollView horizontalScrollView = findViewById(R.id.horizontal_scroll_view);
-
-        gcashButton = findViewById(R.id.gcash_button);
-        mayaButton = findViewById(R.id.maya_button);
-        bdoButton = findViewById(R.id.bdo_button);
-        visaButton = findViewById(R.id.visa_button);
-        grabPayButton = findViewById(R.id.grabpay_button);
-        sevenElevenButton = findViewById(R.id.seven_eleven_button);
 
         amount1000 = findViewById(R.id.amount_1000);
         amount500 = findViewById(R.id.amount_500);
@@ -56,16 +46,9 @@ public class TopUp extends class_NavButtons {
         amount100 = findViewById(R.id.amount_100);
         amount50 = findViewById(R.id.amount_50);
         amount20 = findViewById(R.id.amount_20);
-        
+
         Button purchaseButton = findViewById(R.id.purchase_button);
         purchaseButton.setOnClickListener(this::onPurchaseNowClicked);
-
-        gcashButton.setOnClickListener(view -> selectPaymentMethod(gcashButton));
-        mayaButton.setOnClickListener(view -> selectPaymentMethod(mayaButton));
-        bdoButton.setOnClickListener(view -> selectPaymentMethod(bdoButton));
-        visaButton.setOnClickListener(view -> selectPaymentMethod(visaButton));
-        grabPayButton.setOnClickListener(view -> selectPaymentMethod(grabPayButton));
-        sevenElevenButton.setOnClickListener(view -> selectPaymentMethod(sevenElevenButton));
 
         amount1000.setOnClickListener(view -> selectAmount(amount1000));
         amount500.setOnClickListener(view -> selectAmount(amount500));
@@ -87,35 +70,27 @@ public class TopUp extends class_NavButtons {
         amount100.setBackgroundTintList(colorStateList);
         amount50.setBackgroundTintList(colorStateList);
         amount20.setBackgroundTintList(colorStateList);
-
-        gcashButton.setBackgroundTintList(colorStateList);
-        mayaButton.setBackgroundTintList(colorStateList);
-        bdoButton.setBackgroundTintList(colorStateList);
-        visaButton.setBackgroundTintList(colorStateList);
-        grabPayButton.setBackgroundTintList(colorStateList);
-        sevenElevenButton.setBackgroundTintList(colorStateList);
     }
 
-    // Handling the custom amount :>
     private void customAmount() {
         ToggleButton customToggleBtn = findViewById(R.id.customToggle);
         customContainer = findViewById(R.id.custom_amount_container);
 
         customToggleBtn.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
-                // Inflate the custom amount view if it's not already added
                 if(customAmountView == null){
                     customAmountView = LayoutInflater.from(this).inflate(R.layout.popup_custom_amount, customContainer, false);
                     customContainer.addView(customAmountView);
                 }
                 customAmountView.setVisibility(View.VISIBLE);
             } else {
-                // Hide the custom amount view
                 if (customAmountView != null) {
                     customAmountView.setVisibility(View.GONE);
                 }
             }
         });
+
+
     }
 
 
@@ -127,14 +102,6 @@ public class TopUp extends class_NavButtons {
         selectedAmountButton.setSelected(true);
     }
 
-    private void selectPaymentMethod(Button paymentButton) {
-        if (selectedPaymentMethod != null) {
-            selectedPaymentMethod.setSelected(false);
-        }
-        selectedPaymentMethod = paymentButton;
-        selectedPaymentMethod.setSelected(true);
-    }
-
     public void onPurchaseNowClicked(View view) {
         Intent intent = new Intent(this, TopUpComplete.class);
         startActivity(intent);
@@ -144,10 +111,6 @@ public class TopUp extends class_NavButtons {
     @Override
     protected void onResume() {
         super.onResume();
-        if (selectedPaymentMethod != null) {
-            selectedPaymentMethod.setSelected(false);
-            selectedPaymentMethod = null;
-        }
         if (selectedAmountButton != null) {
             selectedAmountButton.setSelected(false);
             selectedAmountButton = null;
