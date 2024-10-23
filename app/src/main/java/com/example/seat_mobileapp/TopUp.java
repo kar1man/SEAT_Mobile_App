@@ -116,8 +116,6 @@ public class TopUp extends class_NavButtons {
                 }
             }
         });
-
-
     }
 
 
