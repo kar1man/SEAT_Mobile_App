@@ -65,20 +65,54 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/main_banner_blur"
+    android:gravity="center"
+    android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:letterSpacing="0.37"
+        android:text="SEAT"
+        android:textColor="@color/default_light"
+        android:textSize="50dp"
+        android:shadowColor="@color/default_color"
+        android:shadowRadius="4"
+        android:shadowDx="-20"
+        android:shadowDy="20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:letterSpacing="0.11"
+        android:text="Station Information Page"
+        android:textColor="@color/default_light"
+        android:textSize="16.67dp"
+        android:shadowColor="@color/default_color"
+        android:shadowRadius="4"
+        android:shadowDx="-10"
+        android:shadowDy="10" />
+
+</LinearLayout>
+    
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="480dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal">
 
         <LinearLayout
-            android:layout_width="140dp"
-            android:layout_height="480dp"
-            android:layout_marginEnd="20dp"
+            android:layout_width="180dp"
+            android:layout_height="510dp"
+            android:gravity="center"
             android:orientation="vertical">
-
-
 
             <LinearLayout
                 android:layout_width="140dp"
@@ -111,7 +145,7 @@
                     android:layout_width="140dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/inter"
+                    android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
                     android:letterSpacing="0"
                     android:text="Abad Santos"
@@ -152,7 +186,7 @@
                     android:layout_width="140dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/inter"
+                    android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
                     android:letterSpacing="0"
                     android:text="Blumentritt"
@@ -193,10 +227,10 @@
                     android:layout_width="140dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/inter"
+                    android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
                     android:letterSpacing="0"
-                    android:text="Abad Santos"
+                    android:text="Edsa"
                     android:textColor="#393013"
                     android:textSize="12sp" />
 
@@ -234,7 +268,7 @@
                     android:layout_width="140dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/inter"
+                    android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
                     android:letterSpacing="0"
                     android:text="42 Minutes"
@@ -275,7 +309,7 @@
                     android:layout_width="140dp"
                     android:layout_height="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/inter"
+                    android:fontFamily="@font/inter_semibold"
                     android:gravity="center"
                     android:letterSpacing="0"
                     android:text="Light Rain"
@@ -290,15 +324,20 @@
 
         <LinearLayout
             android:layout_width="1dp"
-            android:layout_height="match_parent"
+            android:layout_height="500dp"
             android:background="@color/black"
-            android:layout_marginEnd="20dp">
+            android:layout_marginEnd="10dp">
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center">
+
         <ScrollView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center">
 
             <LinearLayout
@@ -308,7 +347,7 @@
                 android:layout_gravity="center_horizontal">
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:orientation="vertical">
@@ -495,29 +534,30 @@
                         android:gravity="top">
 
                         <LinearLayout
-                            android:layout_width="29dp"
+                            android:layout_width="150dp"
                             android:layout_height="29dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
+                            android:gravity="left|center"
                             android:layout_marginEnd="7dp">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
+                                android:layout_marginStart="3dp"
                                 android:background="@drawable/shape_ellipse2">
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <TextView
+                                android:layout_width="115dp"
+                                android:layout_height="21dp"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:letterSpacing="-0.02"
+                                android:layout_marginStart="10dp"
+                                android:text="Abad Santos"
+                                android:textColor="#393013"
+                                android:textSize="14sp"/>
 
-                        <TextView
-                            android:layout_width="115dp"
-                            android:layout_height="21dp"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:letterSpacing="-0.02"
-                            android:text="Abad Santos"
-                            android:textColor="#393013"
-                            android:textSize="14sp"/>
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -924,29 +964,30 @@
                         android:gravity="top">
 
                         <LinearLayout
-                            android:layout_width="29dp"
+                            android:layout_width="150dp"
                             android:layout_height="29dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
+                            android:gravity="left|center"
                             android:layout_marginEnd="7dp">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
+                                android:layout_marginStart="3dp"
                                 android:background="@drawable/shape_ellipse2">
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <TextView
+                                android:layout_width="115dp"
+                                android:layout_height="21dp"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:letterSpacing="-0.02"
+                                android:layout_marginStart="10dp"
+                                android:text="Edsa"
+                                android:textColor="#393013"
+                                android:textSize="14sp"/>
 
-                        <TextView
-                            android:layout_width="115dp"
-                            android:layout_height="21dp"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/inter_extrabold"
-                            android:letterSpacing="-0.02"
-                            android:text="Edsa"
-                            android:textColor="#393013"
-                            android:textSize="14sp"/>
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -989,6 +1030,7 @@
             </LinearLayout>
 
         </ScrollView>
+        </LinearLayout>
 
     </LinearLayout>
 
