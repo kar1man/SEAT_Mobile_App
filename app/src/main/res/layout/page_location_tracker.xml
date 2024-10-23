@@ -404,15 +404,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -424,7 +423,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Balintawak"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -437,15 +436,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -457,7 +455,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Monumento"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -470,15 +468,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -490,7 +487,7 @@
                             android:letterSpacing="-0.02"
                             android:text="5th Avenue"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -503,15 +500,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -523,7 +519,7 @@
                             android:letterSpacing="-0.02"
                             android:text="R. Papa"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -536,26 +532,25 @@
                         <LinearLayout
                             android:layout_width="150dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="left|center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="left|center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
                                 android:layout_marginStart="3dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             <TextView
                                 android:layout_width="115dp"
                                 android:layout_height="21dp"
+                                android:layout_marginStart="10dp"
                                 android:fontFamily="@font/inter_extrabold"
                                 android:letterSpacing="-0.02"
-                                android:layout_marginStart="10dp"
                                 android:text="Abad Santos"
                                 android:textColor="#393013"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -570,15 +565,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -590,7 +584,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Blumentritt"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -603,15 +597,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -623,7 +616,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Tayuman"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -636,15 +629,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -656,7 +648,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Bambang"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -669,15 +661,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -689,7 +680,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Doroteo Jose"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -702,15 +693,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -722,7 +712,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Carriedo"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -735,15 +725,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -755,7 +744,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Central"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -768,15 +757,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -788,7 +776,7 @@
                             android:letterSpacing="-0.02"
                             android:text="United Nations"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -801,15 +789,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -821,7 +808,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Pedro Gil"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -834,15 +821,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -854,7 +840,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Quirino"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -867,15 +853,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -887,7 +872,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Vito Cruz"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -900,15 +885,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -920,7 +904,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Gil Puyat"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -933,15 +917,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -953,7 +936,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Libertad"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -966,26 +949,25 @@
                         <LinearLayout
                             android:layout_width="150dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="left|center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="left|center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
                                 android:layout_marginStart="3dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             <TextView
                                 android:layout_width="115dp"
                                 android:layout_height="21dp"
+                                android:layout_marginStart="10dp"
                                 android:fontFamily="@font/inter_extrabold"
                                 android:letterSpacing="-0.02"
-                                android:layout_marginStart="10dp"
                                 android:text="Edsa"
                                 android:textColor="#393013"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp" />
 
                         </LinearLayout>
 
@@ -1000,15 +982,14 @@
                         <LinearLayout
                             android:layout_width="29dp"
                             android:layout_height="29dp"
+                            android:layout_marginEnd="7dp"
                             android:background="@drawable/shape_ellipse"
-                            android:gravity="center"
-                            android:layout_marginEnd="7dp">
+                            android:gravity="center">
 
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2">
-                            </LinearLayout>
+                                android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                         </LinearLayout>
 
@@ -1020,7 +1001,7 @@
                             android:letterSpacing="-0.02"
                             android:text="Baclaran"
                             android:textColor="#393013"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 

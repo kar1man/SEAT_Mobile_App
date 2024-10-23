@@ -65,98 +65,902 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp"
+        android:background="@drawable/main_banner_blur"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:letterSpacing="0.37"
+            android:text="SEAT"
+            android:textColor="@color/default_light"
+            android:textSize="50dp"
+            android:shadowColor="@color/default_color"
+            android:shadowRadius="4"
+            android:shadowDx="-20"
+            android:shadowDy="20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:letterSpacing="0.11"
+            android:text="Train Schedules Page"
+            android:textColor="@color/default_light"
+            android:textSize="16.67dp"
+            android:shadowColor="@color/default_color"
+            android:shadowRadius="4"
+            android:shadowDx="-10"
+            android:shadowDy="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="180dp"
+            android:layout_height="500dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
-            <ImageView
-                android:contentDescription="@string/todo"
+            <ToggleButton
+                android:id="@+id/toggleDirection"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textOff="Southbound"
+                android:textOn="Northbound"
+                android:textColor="#393013"
+                android:background="@drawable/shape_round_corners_43dp"
+                android:fontFamily="@font/inter_extrabold"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/display_train_sched_header"
-                android:layout_width="325dp"
-                android:scaleType="fitCenter"
-                android:layout_height="65dp"/>
+                android:elevation="10dp"/>
 
 
-            <LinearLayout
-                android:layout_width="325dp"
-                android:layout_height="wrap_content"
+            <ScrollView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:gravity="start"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp">
 
-                <Spinner
-                    android:id="@+id/station_dropdown"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:background="#FEF2CD" />
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="11dp"
+                            android:layout_height="1389dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:gravity="center_horizontal"
+                            android:layout_marginStart="9dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="-1389dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/roosevelt"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Roosevelt"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/balintawak"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Balintawak"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/monumento"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Monumento"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/fifthAve"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="5th Avenue"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/rpapa"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="R. Papa"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/abadSantos"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Abad Santos"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/blumentritt"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Blumentritt"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/tayuman"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Tayuman"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/bambang"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Bambang"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/doroteoJose"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Doroteo Jose"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/carriedo"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Carriedo"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/central"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Central"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/unitedNations"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="United Nations"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/pedroGil"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Pedro Gil"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/quirino"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Quirino"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/vitoCruz"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Vito Cruz"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/gilPuyat"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Gil Puyat"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/libertad"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Libertad"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/edsa"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Edsa"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="31dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginEnd="7dp">
+
+                                <LinearLayout
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/baclaran"
+                                android:backgroundTint="#FFCD2F"
+                                android:gravity="center"
+                                android:layout_width="115dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_semibold"
+                                android:letterSpacing="-0.02"
+                                android:text="Baclaran"
+                                android:textColor="#393013"
+                                android:textSize="13sp"
+                                android:padding="0dp"
+                                android:textAllCaps="false"
+                                android:focusable="true"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
 
-                <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="70dp"
-                    android:layout_marginEnd="10dp">
+                </LinearLayout>
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Northbound"
-                        android:textColor="#121212" />
+            </ScrollView>
+        </LinearLayout>
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Southbound"
-                        android:textColor="#121212" />
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="325dp"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="96dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="end"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/display_crowd_legend" />
-            </LinearLayout>
-
-
-
-            <ImageView
-                android:id="@+id/train_deets"
-                android:layout_gravity="center"
-                android:layout_width="330dp"
-                android:layout_height="400dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/display_default_train_sched" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp">
-                <!--            footer space -->
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="500dp"
+            android:background="@color/black"
+            android:layout_marginEnd="10dp">
 
         </LinearLayout>
 
-    </ScrollView>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="500dp"
+            android:background="@color/black"
+            android:layout_marginEnd="10dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
