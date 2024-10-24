@@ -99,8 +99,127 @@ public class TrainSched extends class_NavButtons {
             }
         });
 
+        btnFifthAve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotFifthAve);
+            }
+        });
+
+        btnRpapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotRpapa);
+            }
+        });
+
+        btnAbadSantos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotAbadSantos);
+            }
+        });
+
+        btnBlumentritt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBlumentritt);
+            }
+        });
+
+        btnTayuman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotTayuman);
+            }
+        });
+
+        btnBambang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBambang);
+            }
+        });
+
+        btnDJose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotDJose);
+            }
+        });
+
+        btnCarriedo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotCarriedo);
+            }
+        });
+
+        btnCentral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotCentral);
+            }
+        });
+
+        btnUNations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotUNations);
+            }
+        });
+
+        btnPGil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotPGil);
+            }
+        });
+
+        btnQuirino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotQuirino);
+            }
+        });
+
+        btnVCruz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotVCruz);
+            }
+        });
+
+        btnGilPuyat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotGilPuyat);
+            }
+        });
+
+        btnLibertad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotLibertad);
+            }
+        });
+
+        btnEdsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotEdsa);
+            }
+        });
+
+        btnBaclaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBaclaran);
+            }
+        });
 
     }
+
 
     private void changeColor(LinearLayout layout) {
         if (lastClickedLayout != null) {
