@@ -122,7 +122,8 @@
                 android:layout_height="40dp"
                 android:textOff="Southbound"
                 android:textOn="Northbound"
-                android:textColor="#393013"
+                android:textColor="@color/default_light"
+                android:backgroundTint="#393013"
                 android:background="@drawable/shape_round_corners_43dp"
                 android:fontFamily="@font/inter_extrabold"
                 android:layout_gravity="center"
@@ -142,9 +143,9 @@
                     android:layout_gravity="center_horizontal">
 
                     <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="1389dp"
-                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="1400dp"
+                        android:gravity="end"
                         android:orientation="vertical">
 
                         <LinearLayout
@@ -153,6 +154,7 @@
                             android:background="@drawable/shape_round_corners_43dp"
                             android:gravity="center_horizontal"
                             android:layout_marginStart="9dp"
+                            android:layout_marginEnd="9dp"
                             android:orientation="vertical">
 
                         </LinearLayout>
@@ -162,22 +164,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="-1389dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/roosevelt_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/roosevelt"
@@ -195,6 +181,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/roosevelt_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -202,22 +204,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/balintawak_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/balintawak"
@@ -235,6 +221,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/balintawak_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -242,22 +244,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/monumento_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/monumento"
@@ -275,6 +261,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/monumento_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -282,22 +284,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/fiftAve_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/fifthAve"
@@ -315,6 +301,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/fiftAve_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -322,22 +324,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/rPapa_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/rPapa"
@@ -355,6 +341,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/rPapa_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -362,22 +364,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/abadSantos_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/abadSantos"
@@ -395,6 +381,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/abadSantos_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -402,22 +404,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/blumentritt_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/blumentritt"
@@ -435,6 +421,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/blumentritt_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -442,22 +444,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/tayuman_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/tayuman"
@@ -475,6 +461,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/tayuman_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -482,22 +484,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/bambang_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/bambang"
@@ -515,6 +501,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/bambang_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -522,22 +524,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/doroteoJose_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/doroteoJose"
@@ -555,6 +541,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/doroteoJose_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -562,22 +564,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/carriedo_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/carriedo"
@@ -595,6 +581,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/carriedo_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -602,22 +604,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/central_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/central"
@@ -635,6 +621,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/central_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -642,22 +644,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/unitedNations_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/unitedNations"
@@ -675,6 +661,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/unitedNations_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -682,22 +684,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/pedroGil_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/pedroGil"
@@ -715,6 +701,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/pedroGil_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -722,22 +724,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/quirino_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/quirino"
@@ -755,6 +741,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/quirino_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -762,22 +764,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/vitoCruz_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/vitoCruz"
@@ -795,6 +781,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/vitoCruz_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -802,22 +804,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/gilPuyat_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/gilPuyat"
@@ -835,6 +821,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/gilPuyat_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -842,22 +844,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/libertad_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/libertad"
@@ -875,6 +861,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/libertad_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -882,22 +884,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/edsa_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/edsa"
@@ -915,6 +901,22 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/edsa_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -922,22 +924,6 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="31dp"
                             android:gravity="center">
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginEnd="7dp">
-
-                                <LinearLayout
-                                    android:id="@+id/baclaran_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
-
-                            </LinearLayout>
 
                             <Button
                                 android:id="@+id/baclaran"
@@ -955,13 +941,28 @@
                                 android:focusable="true"
                                 android:clickable="true"/>
 
+                            <LinearLayout
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:background="@drawable/shape_ellipse"
+                                android:gravity="center"
+                                android:layout_marginStart="7dp">
+
+                                <LinearLayout
+                                    android:id="@+id/baclaran_dot"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/shape_ellipse2">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                     </LinearLayout>
 
 
                 </LinearLayout>
-
             </ScrollView>
         </LinearLayout>
 
@@ -975,7 +976,7 @@
 
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_height="500dp"
+            android:layout_height="match_parent"
             android:background="@color/black"
             android:layout_marginEnd="10dp">
 
