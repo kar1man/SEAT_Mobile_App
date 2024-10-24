@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#FFF3CE"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF3CE"
+    android:orientation="vertical"
     tools:context=".TrainSched">
 
     <LinearLayout
@@ -17,10 +17,10 @@
         android:weightSum="6">
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/home"
@@ -32,80 +32,79 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/sched"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/nav_schedule"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/location"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/nav_location"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/announce"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/nav_news"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/topup"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/nav_top_up"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/menu"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 android:background="@drawable/nav_menu_bar"
                 android:scaleType="fitCenter" />
         </LinearLayout>
-
 
 
     </LinearLayout>
@@ -123,13 +122,13 @@
             android:fontFamily="@font/inter_bold"
             android:gravity="center"
             android:letterSpacing="0.37"
+            android:shadowColor="@color/default_color"
+            android:shadowDx="-20"
+            android:shadowDy="20"
+            android:shadowRadius="4"
             android:text="SEAT"
             android:textColor="@color/default_light"
-            android:textSize="50dp"
-            android:shadowColor="@color/default_color"
-            android:shadowRadius="4"
-            android:shadowDx="-20"
-            android:shadowDy="20" />
+            android:textSize="50dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -137,43 +136,42 @@
             android:fontFamily="@font/inter_bold"
             android:gravity="center"
             android:letterSpacing="0.11"
+            android:shadowColor="@color/default_color"
+            android:shadowDx="-10"
+            android:shadowDy="10"
+            android:shadowRadius="4"
             android:text="Train Schedules Page"
             android:textColor="@color/default_light"
-            android:textSize="16.67dp"
-            android:shadowColor="@color/default_color"
-            android:shadowRadius="4"
-            android:shadowDx="-10"
-            android:shadowDy="10" />
+            android:textSize="16.67dp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="500dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="180dp"
             android:layout_height="500dp"
-            android:gravity="center"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ToggleButton
                 android:id="@+id/toggleDirection"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:textOff="Southbound"
-                android:textOn="Northbound"
-                android:textColor="@color/default_light"
-                android:backgroundTint="#393013"
-                android:background="@drawable/shape_round_corners_43dp"
-                android:fontFamily="@font/inter_extrabold"
                 android:layout_gravity="center"
-                android:elevation="10dp"/>
-
+                android:background="@drawable/shape_round_corners_43dp"
+                android:backgroundTint="#393013"
+                android:elevation="10dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:textColor="@color/default_light"
+                android:textOff="Southbound"
+                android:textOn="Northbound" />
 
             <ScrollView
                 android:layout_width="150dp"
@@ -184,8 +182,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_horizontal">
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -196,10 +194,10 @@
                         <LinearLayout
                             android:layout_width="11dp"
                             android:layout_height="1389dp"
-                            android:background="@drawable/shape_round_corners_43dp"
-                            android:gravity="center_horizontal"
                             android:layout_marginStart="9dp"
                             android:layout_marginEnd="9dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:gravity="center_horizontal"
                             android:orientation="vertical">
 
                         </LinearLayout>
@@ -212,33 +210,32 @@
 
                             <Button
                                 android:id="@+id/roosevelt"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Roosevelt"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Roosevelt"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/roosevelt_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -252,33 +249,32 @@
 
                             <Button
                                 android:id="@+id/balintawak"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Balintawak"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Balintawak"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/balintawak_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -292,33 +288,32 @@
 
                             <Button
                                 android:id="@+id/monumento"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Monumento"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Monumento"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/monumento_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -332,33 +327,32 @@
 
                             <Button
                                 android:id="@+id/fifthAve"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="5th Avenue"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="5th Avenue"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/fiftAve_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -372,33 +366,32 @@
 
                             <Button
                                 android:id="@+id/rPapa"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="R. Papa"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="R. Papa"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/rPapa_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -412,33 +405,32 @@
 
                             <Button
                                 android:id="@+id/abadSantos"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Abad Santos"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Abad Santos"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/abadSantos_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -452,33 +444,32 @@
 
                             <Button
                                 android:id="@+id/blumentritt"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Blumentritt"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Blumentritt"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/blumentritt_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -492,33 +483,32 @@
 
                             <Button
                                 android:id="@+id/tayuman"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Tayuman"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Tayuman"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/tayuman_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -532,33 +522,32 @@
 
                             <Button
                                 android:id="@+id/bambang"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Bambang"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Bambang"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/bambang_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -572,33 +561,32 @@
 
                             <Button
                                 android:id="@+id/doroteoJose"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Doroteo Jose"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Doroteo Jose"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/doroteoJose_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -612,33 +600,32 @@
 
                             <Button
                                 android:id="@+id/carriedo"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Carriedo"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Carriedo"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/carriedo_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -652,33 +639,32 @@
 
                             <Button
                                 android:id="@+id/central"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Central"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Central"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/central_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -692,33 +678,32 @@
 
                             <Button
                                 android:id="@+id/unitedNations"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="United Nations"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="United Nations"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/unitedNations_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -732,33 +717,32 @@
 
                             <Button
                                 android:id="@+id/pedroGil"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Pedro Gil"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Pedro Gil"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/pedroGil_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -772,33 +756,32 @@
 
                             <Button
                                 android:id="@+id/quirino"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Quirino"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Quirino"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/quirino_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -812,33 +795,32 @@
 
                             <Button
                                 android:id="@+id/vitoCruz"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Vito Cruz"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Vito Cruz"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/vitoCruz_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -852,33 +834,32 @@
 
                             <Button
                                 android:id="@+id/gilPuyat"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Gil Puyat"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Gil Puyat"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/gilPuyat_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -892,33 +873,32 @@
 
                             <Button
                                 android:id="@+id/libertad"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Libertad"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Libertad"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/libertad_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -932,33 +912,32 @@
 
                             <Button
                                 android:id="@+id/edsa"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="EDSA"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="EDSA"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/edsa_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -972,33 +951,32 @@
 
                             <Button
                                 android:id="@+id/baclaran"
-                                android:backgroundTint="#FFCD2F"
-                                android:gravity="center"
                                 android:layout_width="115dp"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_semibold"
-                                android:letterSpacing="-0.02"
-                                android:text="Baclaran"
-                                android:textColor="#393013"
-                                android:textSize="13sp"
-                                android:padding="0dp"
-                                android:textAllCaps="false"
+                                android:backgroundTint="#FFCD2F"
+                                android:clickable="true"
                                 android:focusable="true"
-                                android:clickable="true"/>
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:letterSpacing="-0.02"
+                                android:padding="0dp"
+                                android:text="Baclaran"
+                                android:textAllCaps="false"
+                                android:textColor="#393013"
+                                android:textSize="13sp" />
 
                             <LinearLayout
                                 android:layout_width="29dp"
                                 android:layout_height="29dp"
+                                android:layout_marginStart="7dp"
                                 android:background="@drawable/shape_ellipse"
-                                android:gravity="center"
-                                android:layout_marginStart="7dp">
+                                android:gravity="center">
 
                                 <LinearLayout
                                     android:id="@+id/baclaran_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2">
-                                </LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
 
                             </LinearLayout>
 
@@ -1014,16 +992,721 @@
         <LinearLayout
             android:layout_width="1dp"
             android:layout_height="500dp"
-            android:background="@color/black"
-            android:layout_marginEnd="10dp">
+            android:layout_marginEnd="10dp"
+            android:background="@color/black">
 
         </LinearLayout>
 
+
+        <!-- Schedule Data -->
         <LinearLayout
             android:layout_width="150dp"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:layout_marginEnd="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#FF639A"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_round_corners_43dp"
+                android:backgroundTint="#393013"
+                android:elevation="10dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:gravity="center"
+                android:text="Station Schedule"
+                android:textColor="@color/default_light" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 001"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 002"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 003"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 004"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 005"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_corners_21dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/shape_round_corners_43dp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Train 006"
+                            android:textColor="#393013"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="vertical"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Arrival:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Departure:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Congestion:"
+                                    android:textColor="#393013"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/arrival_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/departure_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="00:00"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/congestion_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:letterSpacing="0.2"
+                                        android:text="XXX"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
 
         </LinearLayout>
 

@@ -13,8 +13,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TrainSched extends class_NavButtons {
-
     private LinearLayout lastClickedLayout = null;
+
+    private LinearLayout dotRoosevelt, dotBalintawak, dotMonumento, dotFifthAve, dotRpapa, dotAbadSantos, dotBlumentritt, dotTayuman, dotBambang, dotDJose, dotCarriedo, dotCentral, dotUNations, dotPGil, dotQuirino, dotVCruz, dotGilPuyat, dotLibertad, dotEdsa, dotBaclaran;
+    private Button btnRoosevelt, btnBalintawak, btnMonumento, btnFifthAve, btnRpapa, btnAbadSantos, btnBlumentritt, btnTayuman, btnBambang, btnDJose, btnCarriedo, btnCentral, btnUNations, btnPGil, btnQuirino, btnVCruz, btnGilPuyat, btnLibertad, btnEdsa, btnBaclaran;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,51 +34,198 @@ public class TrainSched extends class_NavButtons {
     }
 
     private void stationClickEventHandler() {
-        // Arrays to store station buttons
-        Button[] stationButtons = {
-                findViewById(R.id.roosevelt), findViewById(R.id.balintawak),
-                findViewById(R.id.monumento), findViewById(R.id.fifthAve),
-                findViewById(R.id.rPapa), findViewById(R.id.abadSantos),
-                findViewById(R.id.blumentritt), findViewById(R.id.tayuman),
-                findViewById(R.id.bambang), findViewById(R.id.doroteoJose),
-                findViewById(R.id.carriedo), findViewById(R.id.central),
-                findViewById(R.id.unitedNations), findViewById(R.id.pedroGil),
-                findViewById(R.id.quirino), findViewById(R.id.vitoCruz),
-                findViewById(R.id.gilPuyat), findViewById(R.id.libertad),
-                findViewById(R.id.edsa), findViewById(R.id.baclaran)
-        };
+        // Circular color
+        dotRoosevelt = findViewById(R.id.roosevelt_dot);
+        dotBalintawak = findViewById(R.id.balintawak_dot);
+        dotMonumento = findViewById(R.id.monumento_dot);
+        dotFifthAve = findViewById(R.id.fiftAve_dot);
+        dotRpapa = findViewById(R.id.rPapa_dot);
+        dotAbadSantos = findViewById(R.id.abadSantos_dot);
+        dotBlumentritt = findViewById(R.id.blumentritt_dot);
+        dotTayuman = findViewById(R.id.tayuman_dot);
+        dotBambang = findViewById(R.id.bambang_dot);
+        dotDJose = findViewById(R.id.doroteoJose_dot);
+        dotCarriedo = findViewById(R.id.carriedo_dot);
+        dotCentral = findViewById(R.id.central_dot);
+        dotUNations = findViewById(R.id.unitedNations_dot);
+        dotPGil = findViewById(R.id.pedroGil_dot);
+        dotQuirino = findViewById(R.id.quirino_dot);
+        dotVCruz = findViewById(R.id.vitoCruz_dot);
+        dotGilPuyat = findViewById(R.id.gilPuyat_dot);
+        dotLibertad = findViewById(R.id.libertad_dot);
+        dotEdsa = findViewById(R.id.edsa_dot);
+        dotBaclaran = findViewById(R.id.baclaran_dot);
 
-        // Arrays to store station buttons
-        View[] stationDots = {
-                findViewById(R.id.roosevelt_dot), findViewById(R.id.balintawak_dot),
-                findViewById(R.id.monumento_dot), findViewById(R.id.fiftAve_dot),
-                findViewById(R.id.rPapa_dot), findViewById(R.id.abadSantos_dot),
-                findViewById(R.id.blumentritt_dot), findViewById(R.id.tayuman_dot),
-                findViewById(R.id.bambang_dot), findViewById(R.id.doroteoJose_dot),
-                findViewById(R.id.carriedo_dot), findViewById(R.id.central_dot),
-                findViewById(R.id.unitedNations_dot), findViewById(R.id.pedroGil_dot),
-                findViewById(R.id.quirino_dot), findViewById(R.id.vitoCruz_dot),
-                findViewById(R.id.gilPuyat_dot), findViewById(R.id.libertad_dot),
-                findViewById(R.id.edsa_dot), findViewById(R.id.baclaran_dot)
-        };
+        // Station buttons
+        btnRoosevelt = findViewById(R.id.roosevelt);
+        btnBalintawak = findViewById(R.id.balintawak);
+        btnMonumento = findViewById(R.id.monumento);
+        btnFifthAve = findViewById(R.id.fifthAve);
+        btnRpapa = findViewById(R.id.rPapa);
+        btnAbadSantos = findViewById(R.id.abadSantos);
+        btnBlumentritt = findViewById(R.id.blumentritt);
+        btnTayuman = findViewById(R.id.tayuman);
+        btnBambang = findViewById(R.id.bambang);
+        btnDJose = findViewById(R.id.doroteoJose);
+        btnCarriedo = findViewById(R.id.carriedo);
+        btnCentral = findViewById(R.id.central);
+        btnUNations = findViewById(R.id.unitedNations);
+        btnPGil = findViewById(R.id.pedroGil);
+        btnQuirino = findViewById(R.id.quirino);
+        btnVCruz = findViewById(R.id.vitoCruz);
+        btnGilPuyat = findViewById(R.id.gilPuyat);
+        btnLibertad = findViewById(R.id.libertad);
+        btnEdsa = findViewById(R.id.edsa);
+        btnBaclaran = findViewById(R.id.baclaran);
 
-        // Set click listeners using a loop
-        for (int i = 0; i < stationButtons.length; i++) {
-            final View dot = stationDots[i];  // Final reference for lambda
-            stationButtons[i].setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    changeColor((LinearLayout) dot);
-                }
-            });
-        }
+        btnRoosevelt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeColor(dotRoosevelt);
+            }
+        });
+
+        btnBalintawak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeColor(dotBalintawak);
+            }
+        });
+
+        btnMonumento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotMonumento);
+            }
+        });
+
+        btnFifthAve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotFifthAve);
+            }
+        });
+
+        btnRpapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotRpapa);
+            }
+        });
+
+        btnAbadSantos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotAbadSantos);
+            }
+        });
+
+        btnBlumentritt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBlumentritt);
+            }
+        });
+
+        btnTayuman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotTayuman);
+            }
+        });
+
+        btnBambang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBambang);
+            }
+        });
+
+        btnDJose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotDJose);
+            }
+        });
+
+        btnCarriedo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotCarriedo);
+            }
+        });
+
+        btnCentral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotCentral);
+            }
+        });
+
+        btnUNations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotUNations);
+            }
+        });
+
+        btnPGil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotPGil);
+            }
+        });
+
+        btnQuirino.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotQuirino);
+            }
+        });
+
+        btnVCruz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotVCruz);
+            }
+        });
+
+        btnGilPuyat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotGilPuyat);
+            }
+        });
+
+        btnLibertad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotLibertad);
+            }
+        });
+
+        btnEdsa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotEdsa);
+            }
+        });
+
+        btnBaclaran.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeColor(dotBaclaran);
+            }
+        });
+
     }
+
 
     private void changeColor(LinearLayout layout) {
         if (lastClickedLayout != null) {
             lastClickedLayout.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FFF3CE")));
         }
-        layout.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#61542D")));
+        layout.setBackgroundTintList(ColorStateList.valueOf(Color.BLACK));
         lastClickedLayout = layout;
     }
 
