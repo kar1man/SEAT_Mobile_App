@@ -411,7 +411,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -443,7 +443,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -475,7 +475,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -507,7 +507,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -540,7 +540,7 @@
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
                                 android:layout_marginStart="3dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                             <TextView
                                 android:layout_width="115dp"
@@ -572,7 +572,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -604,7 +604,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -636,7 +636,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -668,7 +668,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -700,7 +700,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -732,7 +732,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -764,7 +764,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -796,7 +796,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -828,7 +828,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -860,7 +860,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -892,7 +892,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -924,7 +924,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
@@ -957,7 +957,7 @@
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
                                 android:layout_marginStart="3dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                             <TextView
                                 android:layout_width="115dp"
@@ -989,7 +989,7 @@
                             <LinearLayout
                                 android:layout_width="23dp"
                                 android:layout_height="23dp"
-                                android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                android:background="@drawable/shape_ellipse2"/>
 
                         </LinearLayout>
 
