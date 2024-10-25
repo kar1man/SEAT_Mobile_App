@@ -121,14 +121,14 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
-        
+
             <LinearLayout
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:layout_gravity="center"
+                android:gravity="center_vertical"
                 android:orientation="vertical">
-    
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -142,13 +142,13 @@
                     android:text="Hi, Juan!"
                     android:textColor="#FAFAFA"
                     android:textSize="28dp" />
-                
+
                 <LinearLayout
                     android:layout_width="117dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="-5dp">
-    
+                    android:layout_marginTop="-5dp"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="18dp"
@@ -162,21 +162,20 @@
                         android:text="Your Location"
                         android:textColor="#fafafa"
                         android:textSize="10dp" />
-    
+
                     <LinearLayout
                         android:layout_width="117dp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
+                        android:layout_marginTop="-7dp"
                         android:gravity="center_vertical"
-                        android:layout_marginTop="-7dp">
-    
+                        android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="7dp"
                             android:layout_height="10dp"
-                            android:background="@color/default_light"
-                            android:layout_marginStart="20dp">
-                        </LinearLayout>
-    
+                            android:layout_marginStart="20dp"
+                            android:background="@color/default_light"></LinearLayout>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="18dp"
@@ -190,11 +189,11 @@
                             android:text="Tondo, Manila"
                             android:textColor="#fafafa"
                             android:textSize="10dp" />
-                        
+
                     </LinearLayout>
-    
+
                 </LinearLayout>
-                
+
             </LinearLayout>
 
             <LinearLayout
@@ -202,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingEnd="20dp">
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -240,20 +239,18 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginTop="-10dp"
                     android:gravity="center|end"
-                    android:layout_marginTop="-10dp">
+                    android:orientation="horizontal">
 
                     <Button
                         android:layout_width="60dp"
                         android:layout_height="26dp"
-                        android:layout_marginEnd="3dp">
-                    </Button>
+                        android:layout_marginEnd="3dp"></Button>
 
                     <Button
                         android:layout_width="90dp"
-                        android:layout_height="34dp">
-                    </Button>
+                        android:layout_height="34dp"></Button>
 
                 </LinearLayout>
 
@@ -264,25 +261,50 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="310dp"
+        android:layout_width="330dp"
         android:layout_height="255dp"
         android:layout_gravity="center_horizontal"
-        android:background="@color/default_light"
         android:layout_marginTop="-41dp"
+        android:background="@color/default_light"
         android:orientation="vertical">
 
-        <ToggleButton
-            android:id="@+id/toggleDirection"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/shape_round_stroke_43"
-            android:elevation="10dp"
-            android:fontFamily="@font/inter_extrabold"
-            android:textColor="#393013"
-            android:textOff="Southbound"
-            android:textOn="Northbound" />
-        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleDirection"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shape_round_stroke_43"
+                android:elevation="10dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:textColor="#393013"
+                android:textOff="Southbound"
+                android:textOn="Northbound" />
+
+            <TextView
+                android:layout_marginStart="40dp"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_round_corners_43dp"
+                android:backgroundTint="#393013"
+                android:elevation="10dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:gravity="center"
+                android:text="Station Schedule"
+                android:textColor="@color/default_light"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -324,8 +346,8 @@
                             <LinearLayout
                                 android:layout_width="14dp"
                                 android:layout_height="1389dp"
-                                android:layout_marginEnd="14dp"
                                 android:layout_marginStart="9dp"
+                                android:layout_marginEnd="14dp"
                                 android:background="@drawable/shape_round_corners_15dp2"
                                 android:gravity="center_horizontal"
                                 android:orientation="vertical">
@@ -335,8 +357,8 @@
                             <LinearLayout
                                 android:layout_width="11dp"
                                 android:layout_height="1389dp"
-                                android:layout_marginEnd="9dp"
                                 android:layout_marginStart="9dp"
+                                android:layout_marginEnd="9dp"
                                 android:background="@drawable/shape_round_corners_43dp"
                                 android:gravity="center_horizontal"
                                 android:orientation="vertical">
@@ -344,6 +366,7 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <LinearLayout
                             android:layout_width="150dp"
                             android:layout_height="40dp"
@@ -377,7 +400,7 @@
                                     android:id="@+id/roosevelt_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"/>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -416,7 +439,7 @@
                                     android:id="@+id/balintawak_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -455,7 +478,7 @@
                                     android:id="@+id/monumento_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -494,7 +517,7 @@
                                     android:id="@+id/fiftAve_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -533,7 +556,7 @@
                                     android:id="@+id/rPapa_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -572,7 +595,7 @@
                                     android:id="@+id/abadSantos_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -611,8 +634,7 @@
                                     android:id="@+id/blumentritt_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
-
+                                    android:background="@drawable/shape_ellipse2" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -650,7 +672,7 @@
                                     android:id="@+id/tayuman_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -689,7 +711,7 @@
                                     android:id="@+id/bambang_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -728,7 +750,7 @@
                                     android:id="@+id/doroteoJose_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -767,7 +789,7 @@
                                     android:id="@+id/carriedo_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -806,7 +828,7 @@
                                     android:id="@+id/central_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -845,7 +867,7 @@
                                     android:id="@+id/unitedNations_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -884,7 +906,7 @@
                                     android:id="@+id/pedroGil_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -923,7 +945,7 @@
                                     android:id="@+id/quirino_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -962,8 +984,7 @@
                                     android:id="@+id/vitoCruz_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
-
+                                    android:background="@drawable/shape_ellipse2" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -1001,7 +1022,7 @@
                                     android:id="@+id/gilPuyat_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -1040,8 +1061,7 @@
                                     android:id="@+id/libertad_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
-
+                                    android:background="@drawable/shape_ellipse2" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -1079,7 +1099,7 @@
                                     android:id="@+id/edsa_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -1118,7 +1138,7 @@
                                     android:id="@+id/baclaran_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2" />
 
                             </LinearLayout>
 
@@ -1130,13 +1150,701 @@
                 </LinearLayout>
             </ScrollView>
 
+
             <LinearLayout
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="10dp"
-                android:background="@color/black">
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
 
-                fgjdfghjdhgfj
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/shape_round_corners_21dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/train_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/shape_round_corners_43dp"
+                                android:elevation="10dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="center"
+                                android:text="Train ----"
+                                android:textColor="#FFF3CE"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="70dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginStart="5dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Arrival:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Departure:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:text="Congestion:"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="50dp"
+                                        android:layout_height="65dp"
+                                        android:layout_marginStart="5dp"
+                                        android:orientation="vertical"
+                                        android:weightSum="3">
+
+                                        <TextView
+                                            android:id="@+id/arrival_6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/departure_6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:text="__:__"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/congestion_6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:letterSpacing="0.2"
+                                            android:text="___"
+                                            android:textColor="#393013"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
 
             </LinearLayout>
 
@@ -1145,3 +1853,4 @@
     </LinearLayout>
 
 </LinearLayout>
+

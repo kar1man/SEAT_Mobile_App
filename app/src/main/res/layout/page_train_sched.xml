@@ -975,7 +975,7 @@
                                     android:id="@+id/baclaran_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"/>
 
                             </LinearLayout>
 
