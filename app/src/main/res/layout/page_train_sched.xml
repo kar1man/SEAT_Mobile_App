@@ -235,7 +235,7 @@
                                     android:id="@+id/roosevelt_dot"
                                     android:layout_width="23dp"
                                     android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2"></LinearLayout>
+                                    android:background="@drawable/shape_ellipse2"/>
 
                             </LinearLayout>
 
@@ -1004,7 +1004,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:background="#FF639A"
             android:orientation="vertical">
 
             <TextView
@@ -1045,8 +1044,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 001"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1107,7 +1106,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1116,7 +1115,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1126,7 +1125,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1157,8 +1156,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 002"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1219,7 +1218,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1228,7 +1227,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1238,7 +1237,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1269,8 +1268,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 003"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1331,7 +1330,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1340,7 +1339,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1350,7 +1349,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1381,8 +1380,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 004"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1443,7 +1442,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1452,7 +1451,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1462,7 +1461,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1493,8 +1492,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 005"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1555,7 +1554,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1564,7 +1563,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1574,7 +1573,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1606,8 +1605,8 @@
                             android:elevation="10dp"
                             android:fontFamily="@font/inter_semibold"
                             android:gravity="center"
-                            android:text="Train 006"
-                            android:textColor="#393013"
+                            android:text="Train ----"
+                            android:textColor="#FFF3CE"
                             android:textSize="16sp" />
 
                         <LinearLayout
@@ -1668,7 +1667,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1677,7 +1676,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
-                                        android:text="00:00"
+                                        android:text="__:__"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
@@ -1687,7 +1686,7 @@
                                         android:layout_height="0dp"
                                         android:layout_weight="1"
                                         android:letterSpacing="0.2"
-                                        android:text="XXX"
+                                        android:text="___"
                                         android:textColor="#393013"
                                         android:textSize="13sp" />
 
