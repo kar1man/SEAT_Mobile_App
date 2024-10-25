@@ -165,11 +165,10 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:background="@drawable/shape_round_corners_43dp"
-                android:backgroundTint="#393013"
+                android:background="@drawable/shape_round_stroke_43"
                 android:elevation="10dp"
                 android:fontFamily="@font/inter_extrabold"
-                android:textColor="@color/default_light"
+                android:textColor="#393013"
                 android:textOff="Southbound"
                 android:textOn="Northbound" />
 

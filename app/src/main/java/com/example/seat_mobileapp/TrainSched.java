@@ -1,5 +1,7 @@
 package com.example.seat_mobileapp;
 
+import static com.example.seat_mobileapp.R.drawable.shape_round_stroke_43black;
+
 import com.example.seat_mobileapp.Train;
 
 import android.content.res.ColorStateList;
@@ -93,10 +95,12 @@ public class TrainSched extends class_NavButtons {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // Change the tint color for the checked state
-                    trainDirection.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50"))); // Green
+                    trainDirection.setBackgroundResource(shape_round_stroke_43black);
+                    trainDirection.setTextColor(ColorStateList.valueOf(Color.parseColor("#FFF3CE")));
                 } else {
                     // Change the tint color for the unchecked state
-                    trainDirection.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#F44336"))); // Red
+                    trainDirection.setBackgroundResource(R.drawable.shape_round_stroke_43dp);
+                    trainDirection.setTextColor(ColorStateList.valueOf(Color.parseColor("#393013")));
                 }
             }
         });
@@ -110,17 +114,17 @@ public class TrainSched extends class_NavButtons {
                 Station rooseveltStation = new Station("Roosevelt");
 
                 if (trainDirection.isChecked()) { // Northbound data
-                    rooseveltStation.addTrain(new Train("Train N131", "12:00", "12:05", "XXX"));
-                    rooseveltStation.addTrain(new Train("Train N322", "12:07", "12:10", "XX"));
+                    rooseveltStation.addTrain(new Train("Train N131", "12:00", "12:05", "X"));
+                    rooseveltStation.addTrain(new Train("Train N322", "12:07", "12:10", "X"));
                     rooseveltStation.addTrain(new Train("Train N233", "12:12", "12:15", "X"));
-                    rooseveltStation.addTrain(new Train("Train N234", "12:18", "12:23", "XXX"));
-                    rooseveltStation.addTrain(new Train("Train N595", "12:30", "12:35", "XX"));
+                    rooseveltStation.addTrain(new Train("Train N234", "12:18", "12:23", "X"));
+                    rooseveltStation.addTrain(new Train("Train N595", "12:30", "12:35", "X"));
                     rooseveltStation.addTrain(new Train("Train N126", "12:40", "12:43", "X"));
                 } else { // Southbound data
                     rooseveltStation.addTrain(new Train("Train S231", "12:00", "12:05", "X"));
-                    rooseveltStation.addTrain(new Train("Train S492", "12:07", "12:10", "XXX"));
-                    rooseveltStation.addTrain(new Train("Train S133", "12:12", "12:15", "XXX"));
-                    rooseveltStation.addTrain(new Train("Train S044", "12:18", "12:23", "XX"));
+                    rooseveltStation.addTrain(new Train("Train S492", "12:07", "12:10", "X"));
+                    rooseveltStation.addTrain(new Train("Train S133", "12:12", "12:15", "X"));
+                    rooseveltStation.addTrain(new Train("Train S044", "12:18", "12:23", "X"));
                     rooseveltStation.addTrain(new Train("Train S235", "12:30", "12:35", "X"));
                     rooseveltStation.addTrain(new Train("Train S326", "12:40", "12:43", "X"));
                 }
@@ -624,7 +628,7 @@ public class TrainSched extends class_NavButtons {
                     baclaranStation.addTrain(new Train("Train N236", "12:20", "12:25", "X"));
                     baclaranStation.addTrain(new Train("Train N384", "12:30", "12:35", "X"));
                     baclaranStation.addTrain(new Train("Train N429", "12:40", "12:45", "X"));
-                    baclaranStation.addTrain(new Train("Train N502", "12:50", "12:55", "XX"));
+                    baclaranStation.addTrain(new Train("Train N502", "12:50", "12:55", "X"));
                     baclaranStation.addTrain(new Train("Train N615", "12:55", "13:00", "X"));
                     baclaranStation.addTrain(new Train("Train N732", "13:05", "13:10", "X"));
                 } else { // Southbound data
