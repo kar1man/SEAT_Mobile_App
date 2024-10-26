@@ -21,12 +21,10 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/home"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
                 android:background="@drawable/nav_home"
                 android:scaleType="fitCenter" />
         </LinearLayout>
@@ -36,10 +34,8 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/sched"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/nav_schedule"
@@ -51,10 +47,8 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/location"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/nav_location"
@@ -67,10 +61,8 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/announce"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/nav_news"
@@ -82,10 +74,8 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/topup"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/nav_top_up"
@@ -97,18 +87,13 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent">
-
             <ImageButton
                 android:id="@+id/menu"
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/nav_menu_bar"
                 android:scaleType="fitCenter" />
         </LinearLayout>
-
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -119,7 +104,6 @@
         android:gravity="center"
         android:background="@drawable/shape_round_corners_8dp"
         android:orientation="horizontal">
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -131,6 +115,41 @@
             android:fontFamily="@font/inter_extrabold"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <ViewFlipper
+        android:layout_width="349dp"
+        android:layout_gravity="center"
+        android:layout_height="242dp"
+        android:flipInterval="2000"
+        android:autoStart="true"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/news_head_image" />
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/train_pic" />
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/news_head_image" />
+    </ViewFlipper>
+
 
     <ImageView
         android:layout_width="325dp"
