@@ -110,6 +110,15 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -1853,6 +1862,47 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:elevation="20dp">
+
+        <ImageView
+            android:layout_width="209dp"
+            android:layout_height="341.08dp"
+            android:layout_marginStart="-20dp"
+            android:background="@drawable/robot_wave"
+            android:elevation="30dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="166dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-16dp"
+            android:background="@drawable/shape_round_corners_16dp"
+            android:orientation="vertical"
+            android:elevation="20dp">
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/display_wave"
+        android:orientation="vertical"
+        android:elevation="20dp">
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
 
