@@ -110,1769 +110,1761 @@
 
     </LinearLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/main_banner_dark"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
             <LinearLayout
-                android:layout_width="164dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/main_banner_dark"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_black"
-                    android:gravity="left"
-                    android:paddingLeft="20dp"
-                    android:shadowColor="#000000"
-                    android:shadowDx="-20"
-                    android:shadowDy="20"
-                    android:shadowRadius="4"
-                    android:text="Hi, Juan!"
-                    android:textColor="#FAFAFA"
-                    android:textSize="30dp" />
-
                 <LinearLayout
-                    android:layout_width="117dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-5dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="18dp"
-                        android:fontFamily="@font/inter_medium"
-                        android:gravity="left|center"
-                        android:paddingLeft="20dp"
-                        android:shadowColor="@color/black"
-                        android:shadowDx="-10"
-                        android:shadowDy="10"
-                        android:shadowRadius="4"
-                        android:text="Your Location"
-                        android:textColor="#fafafa"
-                        android:textSize="10dp" />
-
-                    <LinearLayout
-                        android:layout_width="117dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-7dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="7dp"
-                            android:layout_height="10dp"
-                            android:layout_marginStart="20dp"
-                            android:background="@color/default_light"></LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="18dp"
-                            android:fontFamily="@font/inter_semibold"
-                            android:gravity="left|center"
-                            android:paddingLeft="2dp"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="-10"
-                            android:shadowDy="10"
-                            android:shadowRadius="4"
-                            android:text="Tondo, Manila"
-                            android:textColor="#fafafa"
-                            android:textSize="10dp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="186dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingEnd="20dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="16dp"
-                        android:fontFamily="@font/inter_semibold"
-                        android:gravity="right"
-                        android:shadowColor="@color/black"
-                        android:shadowDx="-10"
-                        android:shadowDy="10"
-                        android:shadowRadius="4"
-                        android:text="AVAILABLE BALANCE"
-                        android:textColor="#fafafa"
-                        android:textSize="10dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-15dp"
-                        android:fontFamily="@font/inter_black"
-                        android:gravity="right|center"
-                        android:shadowColor="@color/black"
-                        android:shadowDx="-10"
-                        android:shadowDy="10"
-                        android:shadowRadius="4"
-                        android:text="₱404.24"
-                        android:textColor="#fafafa"
-                        android:textSize="30dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-10dp"
-                    android:gravity="center|end"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:layout_width="60dp"
-                        android:layout_height="26dp"
-                        android:layout_marginEnd="3dp"></Button>
-
-                    <Button
-                        android:layout_width="90dp"
-                        android:layout_height="34dp"></Button>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="255dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-41dp"
-        android:background="@drawable/shape_round_corners_16dp"
-        android:orientation="vertical"
-        android:elevation="20dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <ToggleButton
-                android:id="@+id/toggleDirection"
-                android:layout_width="150dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/shape_round_stroke_43"
-                android:elevation="10dp"
-                android:fontFamily="@font/inter_extrabold"
-                android:textColor="#393013"
-                android:textOff="Southbound"
-                android:textOn="Northbound" />
-
-            <TextView
-                android:layout_marginStart="20dp"
-                android:layout_width="140dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/shape_round_corners_43dp"
-                android:backgroundTint="#393013"
-                android:elevation="10dp"
-                android:fontFamily="@font/inter_extrabold"
-                android:gravity="center"
-                android:text="Station Schedule"
-                android:textColor="@color/default_light"
-                android:textSize="12sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ScrollView
-                android:layout_width="150dp"
-                android:layout_height="185dp"
-                android:layout_marginStart="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:orientation="vertical">
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="1400dp"
-                        android:gravity="end"
+                        android:layout_width="164dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_black"
+                            android:gravity="left"
+                            android:paddingLeft="20dp"
+                            android:shadowColor="#000000"
+                            android:shadowDx="-20"
+                            android:shadowDy="20"
+                            android:shadowRadius="4"
+                            android:text="Hi, Juan!"
+                            android:textColor="#FAFAFA"
+                            android:textSize="30dp" />
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:fontFamily="@font/inter_medium"
+                                android:gravity="left|center"
+                                android:paddingLeft="20dp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="-10"
+                                android:shadowDy="10"
+                                android:shadowRadius="4"
+                                android:text="Your Location"
+                                android:textColor="#fafafa"
+                                android:textSize="10dp" />
+
+                            <LinearLayout
+                                android:layout_width="117dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-7dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="7dp"
+                                    android:layout_height="10dp"
+                                    android:layout_marginStart="20dp"
+                                    android:background="@color/default_light"></LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="18dp"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:gravity="left|center"
+                                    android:paddingLeft="2dp"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="-10"
+                                    android:shadowDy="10"
+                                    android:shadowRadius="4"
+                                    android:text="Tondo, Manila"
+                                    android:textColor="#fafafa"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="186dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingEnd="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="16dp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:gravity="right"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="-10"
+                                android:shadowDy="10"
+                                android:shadowRadius="4"
+                                android:text="AVAILABLE BALANCE"
+                                android:textColor="#fafafa"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-15dp"
+                                android:fontFamily="@font/inter_black"
+                                android:gravity="right|center"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="-10"
+                                android:shadowDy="10"
+                                android:shadowRadius="4"
+                                android:text="₱404.24"
+                                android:textColor="#fafafa"
+                                android:textSize="30dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:gravity="center|end"
                             android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="14dp"
-                                android:layout_height="1389dp"
-                                android:layout_marginEnd="60dp"
-                                android:background="@drawable/shape_round_corners_15dp2"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="14dp"
-                                android:layout_height="1389dp"
-                                android:layout_marginStart="9dp"
-                                android:layout_marginEnd="14dp"
-                                android:background="@drawable/shape_round_corners_15dp2"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="11dp"
-                                android:layout_height="1389dp"
-                                android:layout_marginStart="9dp"
-                                android:layout_marginEnd="9dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:gravity="center_horizontal"
-                                android:orientation="vertical">
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="-1389dp"
-                            android:gravity="center">
+                            <Button
+                                android:layout_width="60dp"
+                                android:layout_height="26dp"
+                                android:layout_marginEnd="3dp"></Button>
 
                             <Button
-                                android:id="@+id/roosevelt"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Roosevelt"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/roosevelt_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/balintawak"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Balintawak"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/balintawak_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/monumento"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Monumento"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/monumento_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/fifthAve"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="5th Avenue"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/fiftAve_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/rPapa"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="R. Papa"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/rPapa_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/abadSantos"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Abad Santos"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/abadSantos_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/blumentritt"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Blumentritt"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/blumentritt_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/tayuman"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Tayuman"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/tayuman_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/bambang"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Bambang"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/bambang_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/doroteoJose"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Doroteo Jose"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/doroteoJose_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/carriedo"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Carriedo"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/carriedo_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/central"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Central"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/central_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/unitedNations"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="United Nations"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/unitedNations_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/pedroGil"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Pedro Gil"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/pedroGil_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/quirino"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Quirino"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/quirino_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/vitoCruz"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Vito Cruz"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/vitoCruz_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/gilPuyat"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Gil Puyat"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/gilPuyat_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/libertad"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Libertad"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/libertad_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/edsa"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="EDSA"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/edsa_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="31dp"
-                            android:gravity="center">
-
-                            <Button
-                                android:id="@+id/baclaran"
-                                android:layout_width="115dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFCD2F"
-                                android:clickable="true"
-                                android:focusable="true"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:letterSpacing="-0.02"
-                                android:padding="0dp"
-                                android:text="Baclaran"
-                                android:textAllCaps="false"
-                                android:textColor="#393013"
-                                android:textSize="13sp" />
-
-                            <LinearLayout
-                                android:layout_width="29dp"
-                                android:layout_height="29dp"
-                                android:layout_marginStart="7dp"
-                                android:background="@drawable/shape_ellipse"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:id="@+id/baclaran_dot"
-                                    android:layout_width="23dp"
-                                    android:layout_height="23dp"
-                                    android:background="@drawable/shape_ellipse2" />
-
-                            </LinearLayout>
+                                android:layout_width="90dp"
+                                android:layout_height="34dp"></Button>
 
                         </LinearLayout>
 
                     </LinearLayout>
-
 
                 </LinearLayout>
-            </ScrollView>
-
-
-            <LinearLayout
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:orientation="vertical">
-
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_1"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_1"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_1"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_1"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_2"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_2"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_2"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_3"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_3"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_3"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_3"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_4"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_4"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_4"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_4"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_5"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_5"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_5"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_5"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="115dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginBottom="30dp"
-                            android:background="@drawable/shape_round_corners_21dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/train_6"
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:background="@drawable/shape_round_corners_43dp"
-                                android:elevation="10dp"
-                                android:fontFamily="@font/inter_semibold"
-                                android:gravity="center"
-                                android:text="Train ----"
-                                android:textColor="#FFF3CE"
-                                android:textSize="16sp" />
-
-                            <LinearLayout
-                                android:layout_width="130dp"
-                                android:layout_height="65dp"
-                                android:layout_gravity="center"
-                                android:layout_marginTop="5dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="70dp"
-                                    android:layout_height="65dp"
-                                    android:layout_marginStart="5dp"
-                                    android:orientation="vertical"
-                                    android:weightSum="3">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Arrival:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Departure:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="0dp"
-                                        android:layout_weight="1"
-                                        android:text="Congestion:"
-                                        android:textColor="#393013"
-                                        android:textSize="13sp" />
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="50dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
-
-                                    <LinearLayout
-                                        android:layout_width="50dp"
-                                        android:layout_height="65dp"
-                                        android:layout_marginStart="5dp"
-                                        android:orientation="vertical"
-                                        android:weightSum="3">
-
-                                        <TextView
-                                            android:id="@+id/arrival_6"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/departure_6"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:text="__:__"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                        <TextView
-                                            android:id="@+id/congestion_6"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="0dp"
-                                            android:layout_weight="1"
-                                            android:letterSpacing="0.2"
-                                            android:text="___"
-                                            android:textColor="#393013"
-                                            android:textSize="13sp" />
-
-                                    </LinearLayout>
-
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                </ScrollView>
 
             </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-41dp"
+                android:background="@drawable/shape_round_corners_16dp"
+                android:orientation="vertical"
+                android:elevation="20dp">
 
-    </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="223dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="5dp"
-        android:elevation="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="180dp"
-            android:layout_height="300dp"
+                    <ToggleButton
+                        android:id="@+id/toggleDirection"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/shape_round_stroke_43"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:textColor="#393013"
+                        android:textOff="Southbound"
+                        android:textOn="Northbound" />
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shape_round_corners_43dp"
+                        android:backgroundTint="#393013"
+                        android:elevation="10dp"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:gravity="center"
+                        android:text="Station Schedule"
+                        android:textColor="@color/default_light"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ScrollView
+                        android:layout_width="150dp"
+                        android:layout_height="185dp"
+                        android:layout_marginStart="10dp"
+                        android:elevation="50dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1400dp"
+                                android:gravity="end"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="14dp"
+                                        android:layout_height="1389dp"
+                                        android:layout_marginEnd="60dp"
+                                        android:background="@drawable/shape_round_corners_15dp2"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="14dp"
+                                        android:layout_height="1389dp"
+                                        android:layout_marginStart="9dp"
+                                        android:layout_marginEnd="14dp"
+                                        android:background="@drawable/shape_round_corners_15dp2"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="11dp"
+                                        android:layout_height="1389dp"
+                                        android:layout_marginStart="9dp"
+                                        android:layout_marginEnd="9dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="-1389dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/roosevelt"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Roosevelt"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/roosevelt_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/balintawak"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Balintawak"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/balintawak_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/monumento"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Monumento"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/monumento_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/fifthAve"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="5th Avenue"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/fiftAve_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/rPapa"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="R. Papa"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/rPapa_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/abadSantos"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Abad Santos"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/abadSantos_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/blumentritt"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Blumentritt"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/blumentritt_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/tayuman"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Tayuman"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/tayuman_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/bambang"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Bambang"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/bambang_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/doroteoJose"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Doroteo Jose"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/doroteoJose_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/carriedo"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Carriedo"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/carriedo_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/central"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Central"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/central_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/unitedNations"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="United Nations"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/unitedNations_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/pedroGil"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Pedro Gil"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/pedroGil_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/quirino"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Quirino"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/quirino_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/vitoCruz"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Vito Cruz"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/vitoCruz_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/gilPuyat"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Gil Puyat"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/gilPuyat_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/libertad"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Libertad"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/libertad_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/edsa"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="EDSA"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/edsa_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="31dp"
+                                    android:gravity="center">
+
+                                    <Button
+                                        android:id="@+id/baclaran"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#FFCD2F"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:letterSpacing="-0.02"
+                                        android:padding="0dp"
+                                        android:text="Baclaran"
+                                        android:textAllCaps="false"
+                                        android:textColor="#393013"
+                                        android:textSize="13sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="29dp"
+                                        android:layout_height="29dp"
+                                        android:layout_marginStart="7dp"
+                                        android:background="@drawable/shape_ellipse"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:id="@+id/baclaran_dot"
+                                            android:layout_width="23dp"
+                                            android:layout_height="23dp"
+                                            android:background="@drawable/shape_ellipse2" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="115dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:background="@drawable/shape_round_corners_21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/train_6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/shape_round_corners_43dp"
+                                        android:elevation="10dp"
+                                        android:fontFamily="@font/inter_semibold"
+                                        android:gravity="center"
+                                        android:text="Train ----"
+                                        android:textColor="#FFF3CE"
+                                        android:textSize="16sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="130dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="70dp"
+                                            android:layout_height="65dp"
+                                            android:layout_marginStart="5dp"
+                                            android:orientation="vertical"
+                                            android:weightSum="3">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Arrival:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Departure:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="1"
+                                                android:text="Congestion:"
+                                                android:textColor="#393013"
+                                                android:textSize="13sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <LinearLayout
+                                                android:layout_width="50dp"
+                                                android:layout_height="65dp"
+                                                android:layout_marginStart="5dp"
+                                                android:orientation="vertical"
+                                                android:weightSum="3">
+
+                                                <TextView
+                                                    android:id="@+id/arrival_6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/departure_6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:text="__:__"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                                <TextView
+                                                    android:id="@+id/congestion_6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1"
+                                                    android:letterSpacing="0.2"
+                                                    android:text="___"
+                                                    android:textColor="#393013"
+                                                    android:textSize="13sp" />
+
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="223dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:elevation="20dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="-20dp"
             android:background="@drawable/robot_wave"
@@ -1887,7 +1879,7 @@
             android:background="@drawable/shape_round_corners_16dp"
             android:orientation="vertical"
             android:elevation="20dp">
-            
+
             <TextView
                 android:text="Station Information"
                 android:layout_marginTop="10dp"
@@ -1931,23 +1923,21 @@
                     android:layout_height="100dp"/>
 
             </ViewFlipper>
-            
-        </LinearLayout>
-
-    </FrameLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="-30dp"
-        android:background="@drawable/display_wave"
-        android:orientation="vertical"
-        android:elevation="20dp">
-    </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/display_wave"
+                android:orientation="vertical"
+                android:elevation="20dp">
+
+            </LinearLayout>
 
 </LinearLayout>
 
