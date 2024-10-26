@@ -117,9 +117,10 @@
     </LinearLayout>
 
     <ViewFlipper
-        android:layout_width="349dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="325dp"
         android:layout_gravity="center"
-        android:layout_height="242dp"
+        android:layout_height="150dp"
         android:flipInterval="2000"
         android:autoStart="true"
         android:inAnimation="@android:anim/slide_in_left"
@@ -130,7 +131,6 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
-            android:layout_marginTop="15dp"
             android:background="@drawable/news_head_image" />
 
         <ImageView
