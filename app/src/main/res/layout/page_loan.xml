@@ -131,7 +131,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_extrabold"
                 android:gravity="center"
                 android:letterSpacing="0.02"

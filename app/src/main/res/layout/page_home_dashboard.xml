@@ -171,11 +171,16 @@
                             android:gravity="center_vertical"
                             android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="7dp"
-                                android:layout_height="10dp"
+                            <ImageView
+                                android:layout_marginTop="1dp"
+                                android:padding="0dp"
+                                android:elevation="10dp"
+                                android:layout_gravity="center"
+                                android:layout_width="9dp"
+                                android:layout_height="17dp"
+                                android:scaleType="fitCenter"
                                 android:layout_marginStart="20dp"
-                                android:background="@color/default_light"/>
+                                android:src="@drawable/display_loc_pin"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -248,6 +253,7 @@
                         android:orientation="horizontal">
 
                         <Button
+                            android:id="@+id/loanButton"
                             android:layout_width="60dp"
                             android:layout_height="30dp"
                             android:layout_marginEnd="3dp"
@@ -258,6 +264,7 @@
                             android:textSize="9sp" />
 
                         <Button
+                            android:id="@+id/topupButton"
                             android:layout_width="90dp"
                             android:layout_height="40dp"
                             android:layout_gravity="center"

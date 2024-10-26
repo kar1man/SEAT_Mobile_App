@@ -6,11 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DAA600"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Register">
 
+    <ImageView
+        android:elevation="10dp"
+        android:paddingBottom="-5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/display_banner"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
     <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
         android:layout_width="325dp"
         android:layout_height="530dp"
         android:background="@drawable/shape_login_rec"
@@ -42,6 +54,7 @@
 
         <EditText
             android:id="@+id/reg_username"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -68,6 +81,7 @@
 
         <EditText
             android:id="@+id/reg_phone_num"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -94,6 +108,7 @@
 
         <EditText
             android:id="@+id/reg_pw"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -101,6 +116,7 @@
             android:fontFamily="@font/poppins"
             android:hint="Enter Password"
             android:inputType="textPassword"
+            android:paddingStart="15dp"
             android:paddingTop="3dp"
             android:textColor="#121212"
             android:textColorHint="#66121212"
@@ -118,6 +134,7 @@
 
         <EditText
             android:id="@+id/reg_confirm_pw"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -156,6 +173,7 @@
 
         <Button
             android:id="@+id/create_acct"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
