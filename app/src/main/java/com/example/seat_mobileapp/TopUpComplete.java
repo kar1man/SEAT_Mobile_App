@@ -25,8 +25,6 @@ public class TopUpComplete extends class_NavButtons {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        setUpNavBar(TopUpComplete.class); // for navigation buttons
-
 
         dashboardBtn = findViewById(R.id.backHomeButton);
         dashboardBtn.setOnClickListener(v -> {

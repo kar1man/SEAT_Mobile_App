@@ -74,10 +74,7 @@ public class TopUp extends class_NavButtons {
         amount50.setOnClickListener(view -> selectAmount(amount50));
         amount20.setOnClickListener(view -> selectAmount(amount20));
 
-        horizontalScrollView.setOnScrollChangeListener(new View.OnScrollChangeListener() {
-            @Override
-            public void onScrollChange(View v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-            }
+        horizontalScrollView.setOnScrollChangeListener((v, scrollX, scrollY, oldScrollX, oldScrollY) -> {
         });
 
         ColorStateList colorStateList = getResources().getColorStateList(R.color.button_color_state);
