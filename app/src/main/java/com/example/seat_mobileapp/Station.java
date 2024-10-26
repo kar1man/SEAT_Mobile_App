@@ -15,9 +15,10 @@ public class Station {
         if (trains.size() < 6) {
             trains.add(train);
         } else {
-            System.out.println("Sobra na ya!");
+            System.out.print("Sobra na ya!");
         }
     }
+
 
     public ArrayList<Train> getTrains() {
         return trains;

@@ -664,7 +664,7 @@ public class TrainSched extends class_NavButtons {
             trainTextView.setText(train.getTrainNumber());
             arrivalTextView.setText(train.getArrivalTime());
             departureTextView.setText(train.getDepartureTime());
-            congestionTextView.setText(String.valueOf(train.getCongestionLevel()));
+            congestionTextView.setText(train.getCongestionLevel());
 
             String congestionLevel = train.getCongestionLevel();
             if ("XXX".equals(congestionLevel)) {
