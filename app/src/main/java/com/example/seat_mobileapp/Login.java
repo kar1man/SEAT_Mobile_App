@@ -36,25 +36,14 @@ public class Login extends AppCompatActivity {
         loginBtn = findViewById(R.id.login);
         registerBtn = findViewById(R.id.register);
 
-        registerBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent registerIntent = new Intent(Login.this, Register.class);
-                startActivity(registerIntent);
-            }
+        loginBtn.setOnClickListener(view -> {
+            Intent loginIntent = new Intent(Login.this, HomeDashboard.class);
+            startActivity(loginIntent);
         });
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent loginIntent = new Intent(Login.this, HomeDashboard.class);
-                startActivity(loginIntent);
-            }
-
+        registerBtn.setOnClickListener(view -> {
+            Intent registerIntent = new Intent(Login.this, Register.class);
+            startActivity(registerIntent);
         });
-
-
-
-
     }
 }

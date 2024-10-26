@@ -102,6 +102,7 @@ public class HomeDashboard extends class_NavButtons {
             }
         });
 
+
         btnRoosevelt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -660,7 +661,7 @@ public class HomeDashboard extends class_NavButtons {
             trainTextView.setText(train.getTrainNumber());
             arrivalTextView.setText(train.getArrivalTime());
             departureTextView.setText(train.getDepartureTime());
-            congestionTextView.setText(String.valueOf(train.getCongestionLevel()));
+            congestionTextView.setText(train.getCongestionLevel());
 
             String congestionLevel = train.getCongestionLevel();
             if ("XXX".equals(congestionLevel)) {
