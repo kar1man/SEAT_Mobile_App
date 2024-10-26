@@ -31,7 +31,7 @@
         android:elevation="10dp"
         android:layout_gravity="center"
         android:layout_width="325dp"
-        android:layout_height="360dp"
+        android:layout_height="350dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_login_rec"
         android:orientation="vertical">
@@ -126,7 +126,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#393013"
+            android:backgroundTint="#121212"
             android:fontFamily="@font/inter"
             android:text="Log in"
             android:textColor="@color/white"
