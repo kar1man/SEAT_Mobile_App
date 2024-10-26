@@ -85,4 +85,6 @@
     <string name="message_confirm_ms">Thank you for reaching out! We\'ve received your concern and are reviewing it. Our team will get back to you as soon as possible.</string>
     <string name="home_btn">Back to home</string>
     <string name="tell_head">Tell Us Your Concerns:</string>
+    <string name="typuchase">Thank you for your purchase!</string>
+    <string name="recent_msg">The recent order has been credited to your SEAT balance. \nCheck your account for more details.</string>
 </resources>
