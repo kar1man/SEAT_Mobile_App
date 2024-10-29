@@ -318,13 +318,11 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_round_corners_43dp"
-                    android:backgroundTint="#393013"
                     android:elevation="10dp"
                     android:fontFamily="@font/inter_extrabold"
                     android:gravity="center"
                     android:text="Station Schedule"
-                    android:textColor="@color/default_light"
+                    android:textColor="@color/default_dark"
                     android:textSize="12sp" />
 
             </LinearLayout>
