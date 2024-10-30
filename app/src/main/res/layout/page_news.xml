@@ -1,272 +1,697 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/default_light"
     tools:context=".News">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#F7DD89"
-        android:orientation="horizontal"
-        android:weightSum="6">
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_home"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/sched"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_schedule"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/location"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_location"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:background="#D6C17A"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/announce"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_news"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/topup"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_top_up"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent">
-            <ImageButton
-                android:id="@+id/menu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/nav_menu_bar"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="325dp"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:background="@drawable/shape_round_corners_8dp"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="NEWS"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:fontFamily="@font/inter_extrabold"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <ViewFlipper
-        android:layout_width="349dp"
-        android:layout_gravity="center"
-        android:layout_height="242dp"
-        android:flipInterval="2000"
-        android:autoStart="true"
-        android:inAnimation="@android:anim/slide_in_left"
-        android:outAnimation="@android:anim/slide_out_right">
-
-        <ImageView
-            android:layout_width="325dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/news_head_image" />
-
-        <ImageView
-            android:layout_width="325dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/train_pic" />
-
-        <ImageView
-            android:layout_width="325dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/news_head_image" />
-    </ViewFlipper>
-
-
-    <ImageView
-        android:layout_width="325dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/news_head_image"
-        android:orientation="horizontal">
-    </ImageView>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
+        android:id="@+id/main"
         android:orientation="vertical"
-        android:background="#FFE9A2"
-        android:layout_width="325dp"
-        android:layout_height="260dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="#FFE9A2"
-            android:orientation="horizontal">
+            android:layout_height="45dp"
+            android:background="#F7DD89"
+            android:orientation="horizontal"
+            android:weightSum="6">
 
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_home"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/sched"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_schedule"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_location"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#D6C17A"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/announce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_news"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/topup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_top_up"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nav_menu_bar"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/shape_round_corners_8dp"
+            android:orientation="horizontal">
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:text="NEWS"
+                android:textColor="@color/white"
+                android:textSize="30sp"
                 android:fontFamily="@font/inter_extrabold"
-                android:text="@string/news_head_title"
-                android:textAlignment="center"
-                android:textColor="@color/black"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <LinearLayout
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:orientation="horizontal">
+
+                <!-- First Image and LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_una" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 25, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="Juan Binangkal"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Second Image and LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/news_second" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title2"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 26, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="John Doe"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:src="@drawable/news_three"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title3"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 27, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="Jane Doe"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Fourth Image and LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:src="@drawable/news_fourth"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title4"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 28, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="John Smith"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Fifth Image and LinearLayout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:src="@drawable/news_fifth"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title5"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 29, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="Jane Smith"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Sixth Image and LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/news_head_image"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#FFE9A2"
+                        android:layout_width="325dp"
+                        android:layout_height="260dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:text="@string/news_head_title"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="January 30, 2024"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:text="John Doe"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#FFE9A2"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/inter"
+                                android:text="@string/news_filler"
+                                android:textColor="@color/black"
+                                android:textSize="9sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="1dp"
             android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="January 25, 2024"
-                android:textColor="@color/black"
-                android:textSize="9sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:textStyle="bold"
-                android:text="Juan Binangkal"
-                android:textColor="@color/black"
-                android:textSize="9sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#FFE9A2"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:fontFamily="@font/inter"
-                android:text="@string/news_filler"
-                android:textColor="@color/black"
-                android:textSize="9sp" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <!-- Add a horizontal line -->
-
-    <View
-        android:layout_width="330dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/black" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/inter_extrabold"
-        android:text="@string/advisories"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
-
-
-    <ScrollView
-        android:layout_width="325dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:text="@string/advisories"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <!-- Maintenance -->
@@ -279,9 +704,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/maintenance_filler"
                 android:textColor="@color/black"
@@ -301,9 +726,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/weather_alert_filler"
                 android:textColor="@color/black"
@@ -323,9 +748,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/serv_interrupt_filler"
                 android:textColor="@color/black"
@@ -345,9 +770,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/route_adj_filler"
                 android:textColor="@color/black"
@@ -367,9 +792,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/special_event_filler"
                 android:textColor="@color/black"
@@ -389,9 +814,9 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/upgrade_notice_filler"
                 android:textColor="@color/black"
@@ -411,20 +836,14 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="3dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:fontFamily="@font/inter"
                 android:text="@string/public_health_filler"
                 android:textColor="@color/black"
                 android:textSize="9sp" />
 
         </LinearLayout>
-
-    </ScrollView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
