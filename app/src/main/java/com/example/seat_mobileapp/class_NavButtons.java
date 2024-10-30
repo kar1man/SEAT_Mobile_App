@@ -27,7 +27,7 @@ public class class_NavButtons extends AppCompatActivity {
         loc = findViewById(R.id.location);
         sched = findViewById(R.id.sched);
         announce = findViewById(R.id.announce);
-        topUp = findViewById(R.id.topup);
+        topUp = findViewById(R.id.my_wallet);
         home = findViewById(R.id.home);
 
         // Nav button's functionalities
