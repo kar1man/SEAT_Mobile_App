@@ -6,19 +6,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DAA600"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Login">
 
     <ImageView
+        android:elevation="10dp"
+        android:paddingBottom="-5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/display_banner"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <ImageView
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
         android:layout_width="325dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
+        android:layout_marginTop="-70dp"
         android:src="@drawable/display_random_data_analysis" />
 
     <LinearLayout
+        android:elevation="10dp"
+        android:layout_gravity="center"
         android:layout_width="325dp"
-        android:layout_height="360dp"
+        android:layout_height="350dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_login_rec"
         android:orientation="vertical">
@@ -27,6 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:elevation="10dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
@@ -50,6 +65,7 @@
         <EditText
             android:id="@+id/username"
             android:layout_width="300dp"
+            android:elevation="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/shape_input_field"
@@ -75,6 +91,7 @@
 
         <EditText
             android:id="@+id/password"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -106,6 +123,7 @@
 
         <Button
             android:id="@+id/login"
+            android:elevation="10dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -148,6 +166,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>

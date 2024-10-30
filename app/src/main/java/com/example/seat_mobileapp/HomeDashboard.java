@@ -2,6 +2,7 @@ package com.example.seat_mobileapp;
 
 import static com.example.seat_mobileapp.R.drawable.shape_round_stroke_43black;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -38,7 +39,25 @@ public class HomeDashboard extends class_NavButtons {
         });
         setUpNavBar(HomeDashboard.class);
         stationClickEventHandler();
+        topupOrLoanHandler();
     }
+
+    private void topupOrLoanHandler() {
+        Button topupBtn = findViewById(R.id.topupButton);
+        Button loanBtn = findViewById(R.id.loanButton);
+
+        topupBtn.setOnClickListener(v -> {
+            Intent topupIntent = new Intent(this, TopUp.class);
+            startActivity(topupIntent);
+        });
+
+        loanBtn.setOnClickListener(v -> {
+            Intent loanIntent = new Intent(this, Loan.class);
+            startActivity(loanIntent);
+        });
+
+    }
+
 
     private void stationClickEventHandler() {
         // Circular color
@@ -682,4 +701,6 @@ public class HomeDashboard extends class_NavButtons {
         layout.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#393013")));
         lastClickedLayout = layout;
     }
+
+
 }
