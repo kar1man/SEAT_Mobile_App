@@ -27,6 +27,10 @@
     <string name="maintenance_filler">Due to ongoing maintenance on the Central Line, expect delays between 9:00 PM to 5:00 AM from September 21-23. Please plan your trip accordingly. Alternative routes via South Station are available.</string>
     <string name="maintenance">Maintenance</string>
     <string name="news_head_title">LRT-1 to suspend operations for 3 weekends this month</string>
+    <string name="news_head_title2">MRT TOP GEAR PHILIPPINES</string>
+    <string name="news_head_title3">FREE MRT RIDE THIS FOR GOVERNMENT WORKERS</string>
+    <string name="news_head_title4">MINIMUM FARE HIKE IN MRT 3</string>
+    <string name="news_head_title5">MRT 3 Revenue Drop</string>
     <string name="news_about">We envision a future where transportation is accessible and efficient. By harnessing the latest technology, we aim to simplify your daily commute, improve urban mobility, and help reduce congestion. We believe that through innovative tools like real-time arrival trackers and transit pass management, we can build smarter cities for everyone.</string>
     <string name="available_balance">AVAILABLE BALANCE</string>
     <string name="service_cash">Cash-in Options: Easily top-up your transportation cards from the convenience of your device.</string>
