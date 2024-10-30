@@ -34,7 +34,7 @@ public class class_NavButtons extends AppCompatActivity {
         setupButton(loc, LocationTracker.class);
         setupButton(sched, TrainSched.class);
         setupButton(announce, News.class);
-        setupButton(topUp, TopUp.class);
+        setupButton(topUp, TransacHistory.class);
         setupButton(home, HomeDashboard.class);
 
         profileMenu.setOnClickListener(new View.OnClickListener() {
