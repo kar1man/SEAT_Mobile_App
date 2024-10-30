@@ -214,18 +214,18 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:layout_marginBottom="5dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="16dp"
-                            android:fontFamily="@font/inter_semibold"
-                            android:gravity="right"
-                            android:shadowColor="@color/black"
-                            android:shadowDx="-10"
-                            android:shadowDy="10"
-                            android:shadowRadius="4"
-                            android:text="AVAILABLE BALANCE"
-                            android:textColor="#fafafa"
-                            android:textSize="10dp" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:gravity="right"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="-10"
+                        android:shadowDy="10"
+                        android:shadowRadius="4"
+                        android:text="AVAILABLE BALANCE"
+                        android:textColor="#fafafa"
+                        android:textSize="10dp" />
 
                         <TextView
                             android:id="@+id/currentBalance"
@@ -1891,10 +1891,11 @@
 
             <LinearLayout
                 android:layout_width="274dp"
-                android:layout_height="166dp"
+                android:layout_height="161dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="-16dp"
+                android:gravity="center"
                 android:background="@drawable/shape_round_corners_16dp"
                 android:elevation="20dp"
                 android:orientation="vertical">
@@ -1902,8 +1903,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:elevation="10dp"
+                    android:layout_marginTop="-5dp"
                     android:fontFamily="@font/inter_semibold"
                     android:gravity="center_horizontal"
                     android:text="Station Information"
@@ -1917,8 +1918,8 @@
                     android:layout_marginTop="8dp"
                     android:autoStart="true"
                     android:flipInterval="4000"
-                    android:inAnimation="@anim/slide_in"
-                    android:outAnimation="@anim/slide_out">
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
 
                     <ImageView
                         android:layout_width="201dp"
@@ -1958,7 +1959,49 @@
             android:elevation="20dp"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
 
+                <TextView
+                    android:layout_width="147.5dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="left"
+                    android:text="SEAT News"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="157.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="right"
+                    android:text="Show More"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="32dp"
+                    android:layout_height="35dp">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/black"
+                android:layout_gravity="center">
+
+            </LinearLayout>
         </LinearLayout>
 
 

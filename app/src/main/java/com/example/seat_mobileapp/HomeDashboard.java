@@ -47,7 +47,7 @@ public class HomeDashboard extends class_NavButtons {
         Button loanBtn = findViewById(R.id.loanButton);
 
         topupBtn.setOnClickListener(v -> {
-            Intent topupIntent = new Intent(this, TopUp.class);
+            Intent topupIntent = new Intent(this, TransacHistory.class);
             startActivity(topupIntent);
         });
 
