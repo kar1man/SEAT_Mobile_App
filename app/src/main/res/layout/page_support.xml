@@ -83,11 +83,11 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/topup"
+                android:id="@+id/my_wallet"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/nav_top_up"
+                android:background="@drawable/nav_wallet"
                 android:scaleType="fitCenter" />
         </LinearLayout>
 
