@@ -3,6 +3,7 @@ package com.example.seat_mobileapp;
 import static com.example.seat_mobileapp.R.drawable.shape_round_stroke_43black;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -45,7 +46,67 @@ public class HomeDashboard extends class_NavButtons {
         newsButtonHandler();
         balanceUpdate();
 
+
+//        resetData();
     }
+
+//    private void resetData() {
+//        SharedPreferences prefs = getSharedPreferences("appData", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = prefs.edit();
+//        editor.clear(); // Clears all data
+//        editor.apply(); // Apply changes
+//
+//        // Optionally, reset the displayed balance to the default
+//        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+//        currentBalanceView.setText("₱0.00"); // Set to default display
+//    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Always load the balance to display it correctly
+        loadBalance();
+        // Handle any new top-up if present
+        balanceUpdate();
+    }
+
+    private void loadBalance() {
+        // Retrieve the current balance from SharedPreferences
+        SharedPreferences prefs = getSharedPreferences("appData", MODE_PRIVATE);
+        float currentBalance = prefs.getFloat("currentBalance", 0.0f);
+
+        // Update the TextView to display the current balance
+        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+        currentBalanceView.setText("₱" + String.format("%.2f", currentBalance));
+    }
+
+    private void balanceUpdate() {
+        // Retrieve the added balance from the intent
+        Intent backToDashboard = getIntent();
+        String addedBalanceString = backToDashboard.getStringExtra("addedBalance");
+
+        if (addedBalanceString != null) {
+            // Get current balance from SharedPreferences
+            SharedPreferences prefs = getSharedPreferences("appData", MODE_PRIVATE);
+            float currentBalance = prefs.getFloat("currentBalance", 0.0f);
+
+            // Parse and add the new top-up balance
+            float addBalance = Float.parseFloat(addedBalanceString.replace(" SEAT Credits", "").trim());
+            float newBalance = currentBalance + addBalance;
+
+            // Save the updated balance back to SharedPreferences
+            prefs.edit().putFloat("currentBalance", newBalance).apply();
+
+            // Display the new balance
+            TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+            currentBalanceView.setText("₱" + String.format("%.2f", newBalance));
+
+            // Clear the intent data after processing
+            backToDashboard.removeExtra("addedBalance");
+        }
+    }
+
+
 
     private void newsButtonHandler() {
         Button newsBtn = findViewById(R.id.newsButton);
@@ -57,44 +118,6 @@ public class HomeDashboard extends class_NavButtons {
             }
         });
 
-    }
-
-    private void balanceUpdate() {
-        Intent backToDashboard = getIntent();
-
-        String addedBalanceString = backToDashboard.getStringExtra("addedBalance");
-//        String addedBalanceString = backToDashboard != null ? backToDashboard.getStringExtra("addedBalance") : null;
-
-        if (addedBalanceString != null) {
-            TextView currentBalanceView = findViewById(R.id.balanceDisplay);
-
-            Float currentBal = Float.parseFloat(currentBalanceView.getText().toString().replace("₱", "").trim());
-            Float addBalance = Float.parseFloat(addedBalanceString.replace(" SEAT Credits", "").trim());
-            Float newBalance = currentBal + addBalance;
-
-            getSharedPreferences("appData", MODE_PRIVATE).edit()
-                    .putFloat("currentBalance", newBalance)
-                    .apply();
-
-            currentBalanceView.setText("₱" + String.format("%.2f", newBalance));
-        }
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        updateBalance();
-    }
-
-    private void updateBalance() {
-        // Retrieve the updated balance from SharedPreferences
-        float updatedBalance = getSharedPreferences("appData", MODE_PRIVATE)
-                .getFloat("currentBalance", 0.0f);
-
-        // Update the TextView to display the new balance
-        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
-        currentBalanceView.setText("₱" + String.format("%.2f", updatedBalance));
     }
 
     private void topupOrLoanHandler() {
