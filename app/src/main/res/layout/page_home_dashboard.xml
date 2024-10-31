@@ -234,12 +234,12 @@
                         android:layout_marginTop="-15dp"
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/inter_black"
-                        android:gravity="right|center"
+                        android:gravity="end|center"
                         android:shadowColor="@color/black"
                         android:shadowDx="-10"
                         android:shadowDy="10"
                         android:shadowRadius="4"
-                        android:text="₱404.24"
+                        android:text="₱00.00"
                         android:textColor="#fafafa"
                         android:textSize="30dp" />
 

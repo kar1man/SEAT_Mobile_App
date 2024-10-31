@@ -69,6 +69,22 @@ public class HomeDashboard extends class_NavButtons {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateBalance();
+    }
+
+    private void updateBalance() {
+        // Retrieve the updated balance from SharedPreferences
+        float updatedBalance = getSharedPreferences("appData", MODE_PRIVATE)
+                .getFloat("currentBalance", 0.0f);
+
+        // Update the TextView to display the new balance
+        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+        currentBalanceView.setText("₱" + String.format("%.2f", updatedBalance));
+    }
+
     private void topupOrLoanHandler() {
         Button topupBtn = findViewById(R.id.topupButton);
         Button loanBtn = findViewById(R.id.loanButton);
@@ -636,6 +652,5 @@ public class HomeDashboard extends class_NavButtons {
         layout.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#393013")));
         lastClickedLayout = layout;
     }
-
 
 }

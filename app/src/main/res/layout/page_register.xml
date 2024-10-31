@@ -177,7 +177,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#121212"
+            android:backgroundTint="#1E1A00"
             android:fontFamily="@font/inter"
             android:text="Create Account"
             android:textColor="@color/white"
