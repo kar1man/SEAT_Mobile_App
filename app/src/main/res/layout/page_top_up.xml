@@ -159,7 +159,6 @@
                         android:background="@android:color/transparent"
                         android:cursorVisible="true"
                         android:digits="0123456789-"
-                        android:textColorHint="#6661542D"
                         android:fontFamily="@font/inter_extrabold"
                         android:hint="@string/acc_num_format"
                         android:inputType="number"
@@ -170,6 +169,7 @@
                         android:paddingEnd="10dp"
                         android:textAlignment="center"
                         android:textColor="#61542D"
+                        android:textColorHint="#6661542D"
                         android:textSize="12sp" />
 
                 </LinearLayout>

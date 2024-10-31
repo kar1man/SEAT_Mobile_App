@@ -244,13 +244,12 @@
 
             <ImageView
                 android:layout_width="360dp"
-                android:layout_height="1174dp"
+                android:layout_height="1129dp"
                 android:layout_gravity="center"
                 android:background="@drawable/wallet_tranhist"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:scaleType="centerCrop">
-
             </ImageView>
 
         </LinearLayout>

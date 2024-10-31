@@ -5,19 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DAA600"
+    android:background="@drawable/login_bg"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".Register">
-
-    <ImageView
-        android:elevation="10dp"
-        android:paddingBottom="-5dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/display_banner"
-        android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"/>
 
     <LinearLayout
         android:layout_marginTop="20dp"
