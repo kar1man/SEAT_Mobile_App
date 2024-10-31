@@ -572,12 +572,24 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/inter_extrabold"
                         android:letterSpacing="-0.02"
-                        android:text="Total Amount"
+                        android:text="Total Amount:"
                         android:textColor="#393013"
                         android:textSize="14sp" />
 
 
                     <!--            Ito yung iseset yung amount base on whatever amount the user selects-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/inter"
+                        android:letterSpacing="-0.02"
+                        android:text="Php"
+                        android:textColor="#393013"
+                        android:textSize="14sp" />
+
                     <TextView
                         android:id="@+id/total_amount"
                         android:layout_width="146.1dp"

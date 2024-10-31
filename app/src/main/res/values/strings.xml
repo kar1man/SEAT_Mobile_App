@@ -60,7 +60,7 @@
     <string name="account_details">Account Details</string>
     <string name="confirm_transaction">Confirm Transaction</string>
     <string name="php_100_total">Php 100</string>
-    <string name="total_amount_display">Php 100</string>
+    <string name="total_amount_display">---</string>
     <string name="total_amount_txt">Total Amount:</string>
     <string name="purchase_now">Purchase Now</string>
     <string name="php">Php:</string>

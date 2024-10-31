@@ -1,6 +1,9 @@
 package com.example.seat_mobileapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
@@ -20,6 +23,34 @@ public class TransacHistory extends class_NavButtons {
             return insets;
         });
         setUpNavBar(TransacHistory.class);
+        topupOrLoanHandler();
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Float updatedBalance = getSharedPreferences("appData", MODE_PRIVATE)
+                .getFloat("currentBalance", 0.0f);
+
+        TextView currentBalanceView = findViewById(R.id.currentBalance);
+        currentBalanceView.setText("₱" + String.format("%.2f", updatedBalance));
+    }
+
+    private void topupOrLoanHandler() {
+        Button topupBtn = findViewById(R.id.topupButton);
+        Button loanBtn = findViewById(R.id.loanButton);
+
+        topupBtn.setOnClickListener(v -> {
+            Intent topupIntent = new Intent(this, TopUp.class);
+            startActivity(topupIntent);
+        });
+
+        loanBtn.setOnClickListener(v -> {
+            Intent loanIntent = new Intent(this, Loan.class);
+            startActivity(loanIntent);
+        });
+
+    }
+
 }

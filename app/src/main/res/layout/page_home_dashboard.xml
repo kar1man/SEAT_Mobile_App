@@ -228,7 +228,7 @@
                         android:textSize="10dp" />
 
                         <TextView
-                            android:id="@+id/currentBalance"
+                            android:id="@+id/balanceDisplay"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-15dp"

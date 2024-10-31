@@ -18,6 +18,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class HomeDashboard extends class_NavButtons {
@@ -40,6 +42,31 @@ public class HomeDashboard extends class_NavButtons {
         setUpNavBar(HomeDashboard.class);
         stationClickEventHandler();
         topupOrLoanHandler();
+
+        balanceUpdate();
+
+    }
+
+    private void balanceUpdate() {
+        Intent backToDashboard = getIntent();
+
+        String addedBalanceString = backToDashboard.getStringExtra("addedBalance");
+//        String addedBalanceString = backToDashboard != null ? backToDashboard.getStringExtra("addedBalance") : null;
+
+        if (addedBalanceString != null) {
+            TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+
+            Float currentBal = Float.parseFloat(currentBalanceView.getText().toString().replace("₱", "").trim());
+            Float addBalance = Float.parseFloat(addedBalanceString.replace(" SEAT Credits", "").trim());
+            Float newBalance = currentBal + addBalance;
+
+            getSharedPreferences("appData", MODE_PRIVATE).edit()
+                    .putFloat("currentBalance", newBalance)
+                    .apply();
+
+            currentBalanceView.setText("₱" + String.format("%.2f", newBalance));
+        }
+
     }
 
     private void topupOrLoanHandler() {
