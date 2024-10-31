@@ -42,8 +42,20 @@ public class HomeDashboard extends class_NavButtons {
         setUpNavBar(HomeDashboard.class);
         stationClickEventHandler();
         topupOrLoanHandler();
-
+        newsButtonHandler();
         balanceUpdate();
+
+    }
+
+    private void newsButtonHandler() {
+        Button newsBtn = findViewById(R.id.newsButton);
+        newsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent newsIntent = new Intent(HomeDashboard.this, News.class);
+                startActivity(newsIntent);
+            }
+        });
 
     }
 

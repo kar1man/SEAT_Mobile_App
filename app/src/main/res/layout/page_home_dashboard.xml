@@ -1651,6 +1651,7 @@
                 android:textSize="15sp" />
 
             <Button
+                android:id="@+id/newsButton"
                 android:layout_width="32dp"
                 android:layout_height="35dp"
                 android:backgroundTint="#FFE697"
