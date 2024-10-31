@@ -1010,13 +1010,11 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/shape_round_corners_43dp"
-                android:backgroundTint="#393013"
                 android:elevation="10dp"
                 android:fontFamily="@font/inter_extrabold"
                 android:gravity="center"
-                android:text="Station Schedule"
-                android:textColor="@color/default_light" />
+                android:text="Incoming Trains"
+                android:textColor="#393013" />
 
             <ScrollView
                 android:layout_width="match_parent"

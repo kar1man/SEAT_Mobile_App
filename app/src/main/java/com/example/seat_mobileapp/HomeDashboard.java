@@ -160,16 +160,12 @@ public class HomeDashboard extends class_NavButtons {
                     rooseveltStation.addTrain(new Train("Train N131", "12:00", "12:05", "X"));
                     rooseveltStation.addTrain(new Train("Train N322", "12:07", "12:10", "X"));
                     rooseveltStation.addTrain(new Train("Train N233", "12:12", "12:15", "X"));
-                    rooseveltStation.addTrain(new Train("Train N234", "12:18", "12:23", "X"));
-                    rooseveltStation.addTrain(new Train("Train N595", "12:30", "12:35", "X"));
-                    rooseveltStation.addTrain(new Train("Train N126", "12:40", "12:43", "X"));
+
                 } else { // Southbound data
                     rooseveltStation.addTrain(new Train("Train S231", "12:00", "12:05", "X"));
                     rooseveltStation.addTrain(new Train("Train S492", "12:07", "12:10", "X"));
                     rooseveltStation.addTrain(new Train("Train S133", "12:12", "12:15", "X"));
-                    rooseveltStation.addTrain(new Train("Train S044", "12:18", "12:23", "X"));
-                    rooseveltStation.addTrain(new Train("Train S235", "12:30", "12:35", "X"));
-                    rooseveltStation.addTrain(new Train("Train S326", "12:40", "12:43", "X"));
+
                 }
 
                 displayTrainDetails(rooseveltStation);
@@ -187,16 +183,11 @@ public class HomeDashboard extends class_NavButtons {
                     balintawakStation.addTrain(new Train("Train N231", "12:02", "12:07", "XX"));
                     balintawakStation.addTrain(new Train("Train N422", "12:09", "12:13", "XXX"));
                     balintawakStation.addTrain(new Train("Train N343", "12:15", "12:18", "XX"));
-                    balintawakStation.addTrain(new Train("Train N254", "12:20", "12:24", "X"));
-                    balintawakStation.addTrain(new Train("Train N605", "12:32", "12:37", "XX"));
-                    balintawakStation.addTrain(new Train("Train N146", "12:42", "12:46", "X"));
+
                 } else { // Southbound data
                     balintawakStation.addTrain(new Train("Train S331", "12:03", "12:08", "X"));
                     balintawakStation.addTrain(new Train("Train S592", "12:10", "12:14", "XXX"));
                     balintawakStation.addTrain(new Train("Train S143", "12:16", "12:19", "XX"));
-                    balintawakStation.addTrain(new Train("Train S154", "12:22", "12:26", "X"));
-                    balintawakStation.addTrain(new Train("Train S325", "12:34", "12:38", "XX"));
-                    balintawakStation.addTrain(new Train("Train S426", "12:44", "12:48", "X"));
                 }
 
                 displayTrainDetails(balintawakStation);
@@ -214,9 +205,7 @@ public class HomeDashboard extends class_NavButtons {
                     monumentoStation.addTrain(new Train("Train N331", "12:05", "12:10", "XXX"));
                     monumentoStation.addTrain(new Train("Train N512", "12:13", "12:17", "X"));
                     monumentoStation.addTrain(new Train("Train N433", "12:19", "12:22", "XX"));
-                    monumentoStation.addTrain(new Train("Train N344", "12:25", "12:29", "XXX"));
-                    monumentoStation.addTrain(new Train("Train N715", "12:37", "12:42", "X"));
-                    monumentoStation.addTrain(new Train("Train N226", "12:47", "12:51", "XX"));
+
                 } else { // Southbound data
                     monumentoStation.addTrain(new Train("Train S431", "12:06", "12:11", "X"));
                     monumentoStation.addTrain(new Train("Train S692", "12:14", "12:18", "XXX"));
@@ -241,16 +230,11 @@ public class HomeDashboard extends class_NavButtons {
                     fifthAveStation.addTrain(new Train("Train N431", "12:08", "12:13", "X"));
                     fifthAveStation.addTrain(new Train("Train N612", "12:16", "12:20", "XXX"));
                     fifthAveStation.addTrain(new Train("Train N533", "12:22", "12:25", "XX"));
-                    fifthAveStation.addTrain(new Train("Train N444", "12:28", "12:32", "X"));
-                    fifthAveStation.addTrain(new Train("Train N815", "12:40", "12:45", "XX"));
-                    fifthAveStation.addTrain(new Train("Train N326", "12:50", "12:54", "XXX"));
+
                 } else { // Southbound data
                     fifthAveStation.addTrain(new Train("Train S531", "12:09", "12:14", "XX"));
                     fifthAveStation.addTrain(new Train("Train S792", "12:17", "12:21", "XXX"));
                     fifthAveStation.addTrain(new Train("Train S353", "12:23", "12:26", "X"));
-                    fifthAveStation.addTrain(new Train("Train S464", "12:29", "12:33", "XXX"));
-                    fifthAveStation.addTrain(new Train("Train S535", "12:42", "12:46", "XX"));
-                    fifthAveStation.addTrain(new Train("Train S626", "12:49", "12:53", "X"));
                 }
 
                 displayTrainDetails(fifthAveStation);
@@ -268,16 +252,12 @@ public class HomeDashboard extends class_NavButtons {
                     rpapaStation.addTrain(new Train("Train N151", "12:12", "12:15", "XX"));
                     rpapaStation.addTrain(new Train("Train N263", "12:18", "12:21", "XXX"));
                     rpapaStation.addTrain(new Train("Train N304", "12:24", "12:27", "XX"));
-                    rpapaStation.addTrain(new Train("Train N450", "12:28", "12:29", "X"));
-                    rpapaStation.addTrain(new Train("Train N374", "12:30", "12:27", "X"));
-                    rpapaStation.addTrain(new Train("Train N485", "12:35", "12:37", "XX"));
+
                 } else { // Southbound data
                     rpapaStation.addTrain(new Train("Train S251", "12:11", "12:14", "X"));
                     rpapaStation.addTrain(new Train("Train S362", "12:17", "12:20", "XX"));
                     rpapaStation.addTrain(new Train("Train S473", "12:23", "12:26", "X"));
-                    rpapaStation.addTrain(new Train("Train S584", "12:29", "12:33", "XX"));
-                    rpapaStation.addTrain(new Train("Train S484", "12:35", "12:38", "XXX"));
-                    rpapaStation.addTrain(new Train("Train S584", "12:39", "12:44", "XXX"));
+
                 }
 
                 displayTrainDetails(rpapaStation);
@@ -295,16 +275,11 @@ public class HomeDashboard extends class_NavButtons {
                     abadSantosStation.addTrain(new Train("Train N162", "12:17", "12:20", "X"));
                     abadSantosStation.addTrain(new Train("Train N273", "12:23", "12:26", "X"));
                     abadSantosStation.addTrain(new Train("Train N384", "12:29", "12:32", "X"));
-                    abadSantosStation.addTrain(new Train("Train N495", "12:35", "12:38", "XX"));
-                    abadSantosStation.addTrain(new Train("Train N495", "12:35", "12:38", "XX"));
-                    abadSantosStation.addTrain(new Train("Train N495", "12:35", "12:38", "XX"));
+
                 } else { // Southbound data
                     abadSantosStation.addTrain(new Train("Train S262", "12:16", "12:19", "X"));
                     abadSantosStation.addTrain(new Train("Train S373", "12:22", "12:25", "XX"));
                     abadSantosStation.addTrain(new Train("Train S484", "12:28", "12:31", "XXX"));
-                    abadSantosStation.addTrain(new Train("Train S595", "12:34", "12:37", "XX"));
-                    abadSantosStation.addTrain(new Train("Train S935", "12:39", "12:41", "XXX"));
-                    abadSantosStation.addTrain(new Train("Train S295", "12:44", "12:47", "XXX"));
                 }
 
                 displayTrainDetails(abadSantosStation);
@@ -322,16 +297,11 @@ public class HomeDashboard extends class_NavButtons {
                     blumentrittStation.addTrain(new Train("Train N334", "12:11", "12:14", "XX"));
                     blumentrittStation.addTrain(new Train("Train N812", "12:16", "12:20", "XXX"));
                     blumentrittStation.addTrain(new Train("Train N173", "12:21", "12:24", "XX"));
-                    blumentrittStation.addTrain(new Train("Train N284", "12:27", "12:30", "X"));
-                    blumentrittStation.addTrain(new Train("Train N395", "12:33", "12:36", "XXX"));
-                    blumentrittStation.addTrain(new Train("Train N506", "12:39", "12:42", "XX"));
+
                 } else { // Southbound data
                     blumentrittStation.addTrain(new Train("Train S273", "12:20", "12:23", "XX"));
                     blumentrittStation.addTrain(new Train("Train S384", "12:26", "12:29", "X"));
                     blumentrittStation.addTrain(new Train("Train S495", "12:32", "12:35", "XXX"));
-                    blumentrittStation.addTrain(new Train("Train S506", "12:38", "12:41", "XX"));
-                    blumentrittStation.addTrain(new Train("Train S034", "12:45", "12:51", "X"));
-                    blumentrittStation.addTrain(new Train("Train S867", "12:58", "13:03", "X"));
                 }
 
                 displayTrainDetails(blumentrittStation);
@@ -349,16 +319,11 @@ public class HomeDashboard extends class_NavButtons {
                     tayumanStation.addTrain(new Train("Train N184", "12:25", "12:28", "X"));
                     tayumanStation.addTrain(new Train("Train N295", "12:31", "12:34", "XX"));
                     tayumanStation.addTrain(new Train("Train N406", "12:37", "12:40", "XXX"));
-                    tayumanStation.addTrain(new Train("Train N517", "12:43", "12:46", "XX"));
-                    tayumanStation.addTrain(new Train("Train N187", "12:53", "12:56", "X"));
-                    tayumanStation.addTrain(new Train("Train N431", "12:59", "13:05", "XXX"));
+
                 } else { // Southbound data
                     tayumanStation.addTrain(new Train("Train S284", "12:24", "12:27", "XXX"));
                     tayumanStation.addTrain(new Train("Train S395", "12:30", "12:33", "XX"));
                     tayumanStation.addTrain(new Train("Train S506", "12:36", "12:39", "X"));
-                    tayumanStation.addTrain(new Train("Train S617", "12:42", "12:45", "XX"));
-                    tayumanStation.addTrain(new Train("Train S147", "12:48", "12:53", "XXX"));
-                    tayumanStation.addTrain(new Train("Train S420", "13:02", "13:05", "XXX"));
                 }
 
                 displayTrainDetails(tayumanStation);
@@ -376,16 +341,11 @@ public class HomeDashboard extends class_NavButtons {
                     bambangStation.addTrain(new Train("Train N194", "12:29", "12:32", "XX"));
                     bambangStation.addTrain(new Train("Train N305", "12:35", "12:38", "X"));
                     bambangStation.addTrain(new Train("Train N416", "12:41", "12:44", "XXX"));
-                    bambangStation.addTrain(new Train("Train N527", "12:47", "12:50", "XX"));
-                    bambangStation.addTrain(new Train("Train N638", "12:53", "12:56", "X"));
-                    bambangStation.addTrain(new Train("Train N749", "12:59", "13:02", "XXX"));
+
                 } else { // Southbound data
                     bambangStation.addTrain(new Train("Train S294", "12:28", "12:31", "XXX"));
                     bambangStation.addTrain(new Train("Train S405", "12:34", "12:37", "XX"));
                     bambangStation.addTrain(new Train("Train S516", "12:40", "12:43", "XXX"));
-                    bambangStation.addTrain(new Train("Train S627", "12:46", "12:49", "XX"));
-                    bambangStation.addTrain(new Train("Train S738", "12:52", "12:55", "XX"));
-                    bambangStation.addTrain(new Train("Train S849", "12:58", "13:01", "XXX"));
                 }
 
                 displayTrainDetails(bambangStation);
@@ -403,14 +363,11 @@ public class HomeDashboard extends class_NavButtons {
                     djoseStation.addTrain(new Train("Train N204", "12:33", "12:36", "XXX"));
                     djoseStation.addTrain(new Train("Train N315", "12:39", "12:42", "XXX"));
                     djoseStation.addTrain(new Train("Train N426", "12:45", "12:48", "XX"));
-                    djoseStation.addTrain(new Train("Train N537", "12:51", "12:54", "XXX"));
-                    djoseStation.addTrain(new Train("Train N759", "13:03", "13:06", "XXX"));
+
                 } else { // Southbound data
                     djoseStation.addTrain(new Train("Train S304", "12:32", "12:35", "XXX"));
                     djoseStation.addTrain(new Train("Train S415", "12:38", "12:41", "XXX"));
                     djoseStation.addTrain(new Train("Train S526", "12:44", "12:47", "XXX"));
-                    djoseStation.addTrain(new Train("Train S637", "12:50", "12:53", "XXX"));
-                    djoseStation.addTrain(new Train("Train S859", "13:02", "13:05", "XXX"));
                 }
 
                 displayTrainDetails(djoseStation);
@@ -428,16 +385,11 @@ public class HomeDashboard extends class_NavButtons {
                     carriedoStation.addTrain(new Train("Train N214", "12:37", "12:40", "XX"));
                     carriedoStation.addTrain(new Train("Train N325", "12:43", "12:46", "XXX"));
                     carriedoStation.addTrain(new Train("Train N436", "12:49", "12:52", "XX"));
-                    carriedoStation.addTrain(new Train("Train N547", "12:55", "12:58", "XX"));
-                    carriedoStation.addTrain(new Train("Train N658", "13:01", "13:04", "XX"));
-                    carriedoStation.addTrain(new Train("Train N769", "13:07", "13:10", "XXX"));
+
                 } else { // Southbound data
                     carriedoStation.addTrain(new Train("Train S314", "12:36", "12:39", "XX"));
                     carriedoStation.addTrain(new Train("Train S425", "12:42", "12:45", "XXX"));
                     carriedoStation.addTrain(new Train("Train S536", "12:48", "12:51", "XX"));
-                    carriedoStation.addTrain(new Train("Train S647", "12:54", "12:57", "XX"));
-                    carriedoStation.addTrain(new Train("Train S758", "13:00", "13:03", "XXX"));
-                    carriedoStation.addTrain(new Train("Train S869", "13:06", "13:09", "XXX"));
                 }
 
                 displayTrainDetails(carriedoStation);
@@ -455,16 +407,11 @@ public class HomeDashboard extends class_NavButtons {
                     centralStation.addTrain(new Train("Train N224", "12:41", "12:44", "XX"));
                     centralStation.addTrain(new Train("Train N335", "12:47", "12:50", "XX"));
                     centralStation.addTrain(new Train("Train N446", "12:53", "12:56", "X"));
-                    centralStation.addTrain(new Train("Train N557", "12:59", "13:02", "XX"));
-                    centralStation.addTrain(new Train("Train N668", "13:05", "13:08", "X"));
-                    centralStation.addTrain(new Train("Train N779", "13:11", "13:14", "XXX"));
+
                 } else { // Southbound data
                     centralStation.addTrain(new Train("Train S324", "12:40", "12:43", "XXX"));
                     centralStation.addTrain(new Train("Train S435", "12:46", "12:49", "XXX"));
                     centralStation.addTrain(new Train("Train S546", "12:52", "12:55", "X"));
-                    centralStation.addTrain(new Train("Train S657", "12:58", "13:01", "XX"));
-                    centralStation.addTrain(new Train("Train S768", "13:04", "13:07", "X"));
-                    centralStation.addTrain(new Train("Train S879", "13:10", "13:13", "XXX"));
                 }
 
                 displayTrainDetails(centralStation);
@@ -482,16 +429,11 @@ public class HomeDashboard extends class_NavButtons {
                     unationsStation.addTrain(new Train("Train N234", "12:45", "12:48", "XX"));
                     unationsStation.addTrain(new Train("Train N345", "12:51", "12:54", "X"));
                     unationsStation.addTrain(new Train("Train N456", "12:57", "13:00", "XXX"));
-                    unationsStation.addTrain(new Train("Train N567", "13:03", "13:06", "XX"));
-                    unationsStation.addTrain(new Train("Train N678", "13:09", "13:12", "X"));
-                    unationsStation.addTrain(new Train("Train N789", "13:15", "13:18", "XXX"));
+
                 } else { // Southbound data
                     unationsStation.addTrain(new Train("Train S334", "12:44", "12:47", "XX"));
                     unationsStation.addTrain(new Train("Train S445", "12:50", "12:53", "X"));
                     unationsStation.addTrain(new Train("Train S556", "12:56", "12:59", "XXX"));
-                    unationsStation.addTrain(new Train("Train S667", "13:02", "13:05", "XX"));
-                    unationsStation.addTrain(new Train("Train S778", "13:08", "13:11", "X"));
-                    unationsStation.addTrain(new Train("Train S889", "13:14", "13:17", "XXX"));
                 }
 
                 displayTrainDetails(unationsStation);
@@ -509,16 +451,11 @@ public class HomeDashboard extends class_NavButtons {
                     pedroGilStation.addTrain(new Train("Train N128", "12:00", "12:05", "XXX"));
                     pedroGilStation.addTrain(new Train("Train N337", "12:10", "12:15", "XX"));
                     pedroGilStation.addTrain(new Train("Train N482", "12:20", "12:25", "X"));
-                    pedroGilStation.addTrain(new Train("Train N594", "12:30", "12:35", "XX"));
-                    pedroGilStation.addTrain(new Train("Train N665", "12:40", "12:45", "XXX"));
-                    pedroGilStation.addTrain(new Train("Train N751", "12:50", "12:55", "X"));
+
                 } else { // Southbound data
                     pedroGilStation.addTrain(new Train("Train S309", "12:05", "12:10", "XX"));
                     pedroGilStation.addTrain(new Train("Train S487", "12:15", "12:20", "XXX"));
                     pedroGilStation.addTrain(new Train("Train S556", "12:25", "12:30", "X"));
-                    pedroGilStation.addTrain(new Train("Train S698", "12:35", "12:40", "XX"));
-                    pedroGilStation.addTrain(new Train("Train S740", "12:45", "12:50", "X"));
-                    pedroGilStation.addTrain(new Train("Train S812", "12:55", "13:00", "XXX"));
                 }
 
                 displayTrainDetails(pedroGilStation);
@@ -536,16 +473,11 @@ public class HomeDashboard extends class_NavButtons {
                     quirinoStation.addTrain(new Train("Train N214", "12:05", "12:10", "XX"));
                     quirinoStation.addTrain(new Train("Train N371", "12:15", "12:20", "XXX"));
                     quirinoStation.addTrain(new Train("Train N492", "12:25", "12:30", "X"));
-                    quirinoStation.addTrain(new Train("Train N530", "12:35", "12:40", "XX"));
-                    quirinoStation.addTrain(new Train("Train N673", "12:45", "12:50", "X"));
-                    quirinoStation.addTrain(new Train("Train N746", "12:55", "13:00", "XXX"));
+
                 } else { // Southbound data
                     quirinoStation.addTrain(new Train("Train S218", "12:10", "12:15", "XX"));
                     quirinoStation.addTrain(new Train("Train S390", "12:20", "12:25", "X"));
                     quirinoStation.addTrain(new Train("Train S469", "12:30", "12:35", "XXX"));
-                    quirinoStation.addTrain(new Train("Train S583", "12:40", "12:45", "XX"));
-                    quirinoStation.addTrain(new Train("Train S629", "12:50", "12:55", "X"));
-                    quirinoStation.addTrain(new Train("Train S750", "12:55", "13:00", "XXX"));
                 }
 
                 displayTrainDetails(quirinoStation);
@@ -563,16 +495,11 @@ public class HomeDashboard extends class_NavButtons {
                     vitoCruzStation.addTrain(new Train("Train N215", "12:10", "12:15", "XX"));
                     vitoCruzStation.addTrain(new Train("Train N399", "12:20", "12:25", "XXX"));
                     vitoCruzStation.addTrain(new Train("Train N479", "12:30", "12:35", "X"));
-                    vitoCruzStation.addTrain(new Train("Train N520", "12:40", "12:45", "XX"));
-                    vitoCruzStation.addTrain(new Train("Train N688", "12:50", "12:55", "XXX"));
-                    vitoCruzStation.addTrain(new Train("Train N701", "12:55", "13:00", "X"));
+
                 } else { // Southbound data
                     vitoCruzStation.addTrain(new Train("Train S309", "12:15", "12:20", "XX"));
                     vitoCruzStation.addTrain(new Train("Train S452", "12:25", "12:30", "X"));
                     vitoCruzStation.addTrain(new Train("Train S513", "12:35", "12:40", "XXX"));
-                    vitoCruzStation.addTrain(new Train("Train S640", "12:45", "12:50", "XX"));
-                    vitoCruzStation.addTrain(new Train("Train S718", "12:50", "12:55", "X"));
-                    vitoCruzStation.addTrain(new Train("Train S812", "12:55", "13:00", "XXX"));
                 }
 
                 displayTrainDetails(vitoCruzStation);
@@ -590,16 +517,11 @@ public class HomeDashboard extends class_NavButtons {
                     gilPuyatStation.addTrain(new Train("Train N155", "12:15", "12:20", "XX"));
                     gilPuyatStation.addTrain(new Train("Train N237", "12:25", "12:30", "XXX"));
                     gilPuyatStation.addTrain(new Train("Train N348", "12:35", "12:40", "X"));
-                    gilPuyatStation.addTrain(new Train("Train N469", "12:45", "12:50", "XX"));
-                    gilPuyatStation.addTrain(new Train("Train N550", "12:55", "13:00", "XXX"));
-                    gilPuyatStation.addTrain(new Train("Train N603", "13:00", "13:05", "X"));
+
                 } else { // Southbound data
                     gilPuyatStation.addTrain(new Train("Train S119", "12:20", "12:25", "XX"));
                     gilPuyatStation.addTrain(new Train("Train S251", "12:30", "12:35", "X"));
                     gilPuyatStation.addTrain(new Train("Train S358", "12:40", "12:45", "XXX"));
-                    gilPuyatStation.addTrain(new Train("Train S463", "12:50", "12:55", "XX"));
-                    gilPuyatStation.addTrain(new Train("Train S571", "12:55", "13:00", "X"));
-                    gilPuyatStation.addTrain(new Train("Train S688", "13:00", "13:05", "XXX"));
                 }
 
                 displayTrainDetails(gilPuyatStation);
@@ -617,16 +539,12 @@ public class HomeDashboard extends class_NavButtons {
                     libertadStation.addTrain(new Train("Train N123", "12:25", "12:30", "XX"));
                     libertadStation.addTrain(new Train("Train N276", "12:35", "12:40", "XXX"));
                     libertadStation.addTrain(new Train("Train N354", "12:45", "12:50", "X"));
-                    libertadStation.addTrain(new Train("Train N478", "12:55", "13:00", "XX"));
-                    libertadStation.addTrain(new Train("Train N524", "13:05", "13:10", "XXX"));
-                    libertadStation.addTrain(new Train("Train N688", "13:15", "13:20", "X"));
+
                 } else { // Southbound data
                     libertadStation.addTrain(new Train("Train S207", "12:30", "12:35", "XX"));
                     libertadStation.addTrain(new Train("Train S359", "12:40", "12:45", "XXX"));
                     libertadStation.addTrain(new Train("Train S460", "12:50", "12:55", "X"));
-                    libertadStation.addTrain(new Train("Train S527", "12:55", "13:00", "XX"));
-                    libertadStation.addTrain(new Train("Train S601", "13:05", "13:10", "X"));
-                    libertadStation.addTrain(new Train("Train S749", "13:15", "13:20", "XXX"));
+
                 }
 
                 displayTrainDetails(libertadStation);
@@ -644,16 +562,11 @@ public class HomeDashboard extends class_NavButtons {
                     edsaStation.addTrain(new Train("Train N387", "12:05", "12:10", "XX"));
                     edsaStation.addTrain(new Train("Train N493", "12:15", "12:20", "XXX"));
                     edsaStation.addTrain(new Train("Train N605", "12:25", "12:30", "X"));
-                    edsaStation.addTrain(new Train("Train N718", "12:35", "12:40", "XX"));
-                    edsaStation.addTrain(new Train("Train N820", "12:45", "12:50", "XXX"));
-                    edsaStation.addTrain(new Train("Train N945", "12:55", "13:00", "X"));
+
                 } else { // Southbound data
                     edsaStation.addTrain(new Train("Train S224", "12:10", "12:15", "X"));
                     edsaStation.addTrain(new Train("Train S334", "12:20", "12:25", "XX"));
                     edsaStation.addTrain(new Train("Train S468", "12:30", "12:35", "X"));
-                    edsaStation.addTrain(new Train("Train S577", "12:40", "12:45", "XX"));
-                    edsaStation.addTrain(new Train("Train S684", "12:50", "12:55", "X"));
-                    edsaStation.addTrain(new Train("Train S799", "12:55", "13:00", "XX"));
                 }
 
                 displayTrainDetails(edsaStation);
@@ -671,16 +584,11 @@ public class HomeDashboard extends class_NavButtons {
                     baclaranStation.addTrain(new Train("Train N236", "12:20", "12:25", "X"));
                     baclaranStation.addTrain(new Train("Train N384", "12:30", "12:35", "X"));
                     baclaranStation.addTrain(new Train("Train N429", "12:40", "12:45", "X"));
-                    baclaranStation.addTrain(new Train("Train N502", "12:50", "12:55", "X"));
-                    baclaranStation.addTrain(new Train("Train N615", "12:55", "13:00", "X"));
-                    baclaranStation.addTrain(new Train("Train N732", "13:05", "13:10", "X"));
+
                 } else { // Southbound data
                     baclaranStation.addTrain(new Train("Train S113", "12:25", "12:30", "X"));
                     baclaranStation.addTrain(new Train("Train S275", "12:35", "12:40", "XX"));
                     baclaranStation.addTrain(new Train("Train S348", "12:45", "12:50", "X"));
-                    baclaranStation.addTrain(new Train("Train S460", "12:55", "13:00", "X"));
-                    baclaranStation.addTrain(new Train("Train S532", "13:05", "13:10", "X"));
-                    baclaranStation.addTrain(new Train("Train S682", "13:15", "13:20", "XX"));
                 }
 
                 displayTrainDetails(baclaranStation);
@@ -691,7 +599,7 @@ public class HomeDashboard extends class_NavButtons {
 
     private void displayTrainDetails(Station station) {
         ArrayList<Train> trains = station.getTrains();
-        for (int i = 0; i < trains.size(); i++) {
+        for (int i = 0; i < 3; i++) {
             Train train = trains.get(i);
 
             String trainId = "train_" + (i + 1);

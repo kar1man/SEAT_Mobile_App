@@ -362,12 +362,14 @@ public class TrainSched extends class_NavButtons {
                     djoseStation.addTrain(new Train("Train N426", "12:45", "12:48", "XX"));
                     djoseStation.addTrain(new Train("Train N537", "12:51", "12:54", "XXX"));
                     djoseStation.addTrain(new Train("Train N759", "13:03", "13:06", "XXX"));
+                    djoseStation.addTrain(new Train("Train N239", "13:20", "13:25", "XX"));
                 } else { // Southbound data
                     djoseStation.addTrain(new Train("Train S304", "12:32", "12:35", "XXX"));
                     djoseStation.addTrain(new Train("Train S415", "12:38", "12:41", "XXX"));
                     djoseStation.addTrain(new Train("Train S526", "12:44", "12:47", "XXX"));
                     djoseStation.addTrain(new Train("Train S637", "12:50", "12:53", "XXX"));
                     djoseStation.addTrain(new Train("Train S859", "13:02", "13:05", "XXX"));
+                    djoseStation.addTrain(new Train("Train S921", "13:23", "13:35", "XXX"));
                 }
 
                 displayTrainDetails(djoseStation);
