@@ -91,4 +91,5 @@
     <string name="tell_head">Tell Us Your Concerns:</string>
     <string name="typuchase">Thank you for your purchase!</string>
     <string name="recent_msg">The recent order has been credited to your SEAT balance. \nCheck your account for more details.</string>
+    <string name="incoming_trains"><u>Incoming Trains</u></string>
 </resources>

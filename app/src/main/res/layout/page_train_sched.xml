@@ -1013,7 +1013,8 @@
                 android:elevation="10dp"
                 android:fontFamily="@font/inter_extrabold"
                 android:gravity="center"
-                android:text="Incoming Trains"
+                android:textSize="15sp"
+                android:text="@string/incoming_trains"
                 android:textColor="#393013" />
 
             <ScrollView

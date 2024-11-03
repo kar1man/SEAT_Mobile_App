@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -29,6 +30,7 @@ public class HomeDashboard extends class_NavButtons {
 
     private LinearLayout dotRoosevelt, dotBalintawak, dotMonumento, dotFifthAve, dotRpapa, dotAbadSantos, dotBlumentritt, dotTayuman, dotBambang, dotDJose, dotCarriedo, dotCentral, dotUNations, dotPGil, dotQuirino, dotVCruz, dotGilPuyat, dotLibertad, dotEdsa, dotBaclaran;
     private Button btnRoosevelt, btnBalintawak, btnMonumento, btnFifthAve, btnRpapa, btnAbadSantos, btnBlumentritt, btnTayuman, btnBambang, btnDJose, btnCarriedo, btnCentral, btnUNations, btnPGil, btnQuirino, btnVCruz, btnGilPuyat, btnLibertad, btnEdsa, btnBaclaran;
+    private ImageButton balResetBtn, aboutMascot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,21 +47,36 @@ public class HomeDashboard extends class_NavButtons {
         topupOrLoanHandler();
         newsButtonHandler();
         balanceUpdate();
-
-
-//        resetData();
+        onAboutRedirect();
+        onResetBalance();
     }
 
-//    private void resetData() {
-//        SharedPreferences prefs = getSharedPreferences("appData", MODE_PRIVATE);
-//        SharedPreferences.Editor editor = prefs.edit();
-//        editor.clear(); // Clears all data
-//        editor.apply(); // Apply changes
-//
-//        // Optionally, reset the displayed balance to the default
-//        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
-//        currentBalanceView.setText("₱0.00"); // Set to default display
-//    }
+    private void onAboutRedirect() {
+        aboutMascot = findViewById(R.id.sitMascot);
+        aboutMascot.setOnClickListener(View -> {
+            Intent aboutRedirect = new Intent(this, About.class);
+            startActivity(aboutRedirect);
+        });
+    }
+
+    private void onResetBalance() {
+        balResetBtn = findViewById(R.id.resetBal);
+        balResetBtn.setOnClickListener(View -> {
+            resetBalance();
+        });
+    }
+
+    private void resetBalance() {
+        SharedPreferences prefs = getSharedPreferences("appData", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.clear(); // Clears all data
+        editor.apply(); // Apply changes
+        editor.commit();
+
+        // Optionally, reset the displayed balance to the default
+        TextView currentBalanceView = findViewById(R.id.balanceDisplay);
+        currentBalanceView.setText("₱0.00"); // Set to default display
+    }
 
     @Override
     protected void onResume() {
@@ -105,7 +122,6 @@ public class HomeDashboard extends class_NavButtons {
             backToDashboard.removeExtra("addedBalance");
         }
     }
-
 
 
     private void newsButtonHandler() {

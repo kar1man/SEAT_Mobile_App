@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E7AD29"
+    android:background="@drawable/topup_comp_bg"
     android:orientation="vertical"
     tools:context=".TopUpComplete">
 
@@ -74,7 +74,7 @@
                 android:gravity="center"
                 android:letterSpacing="0.02"
                 android:padding="0dp"
-                android:text="TOP UP COMPLETE"
+                android:text="TOP UP COMPLETE!"
                 android:textColor="#FDEDBA"
                 android:textSize="25dp" />
         </LinearLayout>
