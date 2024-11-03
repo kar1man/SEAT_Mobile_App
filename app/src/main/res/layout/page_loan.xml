@@ -384,7 +384,7 @@
                             android:background="@android:color/transparent"
                             android:digits="0123456789-"
                             android:fontFamily="@font/inter_extrabold"
-                            android:hint="@string/account_format"
+                            android:hint="0000"
                             android:inputType="number"
                             android:lineSpacingExtra="0px"
                             android:maxLength="14"
